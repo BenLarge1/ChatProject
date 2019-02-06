@@ -15,6 +15,8 @@
 		CE22DF0C2208F2610082633E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */; };
 		CE22DF182208F7BD0082633E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF172208F7BD0082633E /* GoogleService-Info.plist */; };
 		CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */; };
+		CEAEE857220B8851007D522D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEE856220B8851007D522D /* SignUpViewController.swift */; };
+		CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEE858220B88A2007D522D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE22DF0D2208F2610082633E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE22DF172208F7BD0082633E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
+		CEAEE856220B8851007D522D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CEAEE858220B88A2007D522D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				CE22DF012208F2610082633E /* AppDelegate.swift */,
 				CE22DF032208F2610082633E /* ViewController.swift */,
 				CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */,
+				CEAEE856220B8851007D522D /* SignUpViewController.swift */,
+				CEAEE858220B88A2007D522D /* HomeViewController.swift */,
 				CE22DF052208F2610082633E /* Main.storyboard */,
 				CE22DF082208F2610082633E /* Assets.xcassets */,
 				CE22DF172208F7BD0082633E /* GoogleService-Info.plist */,
@@ -211,8 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */,
 				CE22DF042208F2610082633E /* ViewController.swift in Sources */,
 				CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */,
+				CEAEE857220B8851007D522D /* SignUpViewController.swift in Sources */,
 				CE22DF022208F2610082633E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

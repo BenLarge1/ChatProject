@@ -37,11 +37,11 @@
             <objects>
                 <viewController title="StartView" id="qtj-49-caB" customClass="StartPageViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Oc-5A-eq7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9bt-v4-SWK">
-                                <rect key="frame" x="63" y="36" width="250" height="250"/>
+                                <rect key="frame" x="63" y="56" width="250" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GSC-oI-lwF">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
@@ -115,6 +115,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Kx5-fY-iAE" kind="show" id="QZV-3K-yNZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yz5-zA-BrC">
                                 <rect key="frame" x="171" y="379" width="125" height="30"/>
@@ -147,6 +150,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="zBu-zS-91O"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="emailTextField" destination="qws-h1-Rhv" id="cbM-BL-qyY"/>
                         <outlet property="passwordTextField" destination="ri5-sb-wiD" id="yfg-jr-nNC"/>
@@ -313,14 +317,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSN-VW-MVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1833" y="-610"/>
+            <point key="canvasLocation" x="-1778" y="-610"/>
         </scene>
-        <!--SignUpView-->
+        <!--Sign Up-->
         <scene sceneID="opt-Dk-PO9">
             <objects>
-                <viewController title="SignUpView" id="NUz-bE-L57" sceneMemberID="viewController">
+                <viewController title="Sign Up" id="NUz-bE-L57" customClass="SignUpViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lA5-vz-0c8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9NO-ca-hp3">
@@ -356,6 +360,8 @@
                         <color key="backgroundColor" red="0.094117647060000004" green="0.43137254899999999" blue="0.0" alpha="0.7325288955" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="s4p-mT-oCL"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v02-y3-Cwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
