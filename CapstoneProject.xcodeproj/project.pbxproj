@@ -14,6 +14,7 @@
 		CE22DF092208F2610082633E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF082208F2610082633E /* Assets.xcassets */; };
 		CE22DF0C2208F2610082633E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */; };
 		CE22DF182208F7BD0082633E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF172208F7BD0082633E /* GoogleService-Info.plist */; };
+		CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CE22DF0B2208F2610082633E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE22DF0D2208F2610082633E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE22DF172208F7BD0082633E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				CE22DF012208F2610082633E /* AppDelegate.swift */,
 				CE22DF032208F2610082633E /* ViewController.swift */,
+				CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */,
 				CE22DF052208F2610082633E /* Main.storyboard */,
 				CE22DF082208F2610082633E /* Assets.xcassets */,
 				CE22DF172208F7BD0082633E /* GoogleService-Info.plist */,
@@ -168,16 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -192,15 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CapstoneProject-checkManifestLockResult.txt",
 			);
@@ -217,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE22DF042208F2610082633E /* ViewController.swift in Sources */,
+				CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */,
 				CE22DF022208F2610082633E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
