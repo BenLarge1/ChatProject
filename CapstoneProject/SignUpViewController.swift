@@ -28,20 +28,25 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmTextField: UITextField!
     
-    @IBAction func signUpAction(_ sender: Any) {
-        if passwordTextField.text != passwordConfirmTextField.text {
+    @IBAction func signUpAction(_ sender: UIButton)
+    {
+        if passwordTextField.text != passwordConfirmTextField.text
+        {
             let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
         }
-        else{
+        else
+        {
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in
-                if error == nil {
+                if error == nil
+                {
                     self.performSegue(withIdentifier: "signupToHome", sender: self)
                 }
-                else{
+                else
+                {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     

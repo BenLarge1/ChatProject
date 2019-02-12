@@ -31,6 +31,7 @@
 		CE22DF0B2208F2610082633E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE22DF0D2208F2610082633E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE22DF172208F7BD0082633E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE269A8F2212554D00167C2A /* CapstoneProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapstoneProject.entitlements; sourceTree = "<group>"; };
 		CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		CEAEE856220B8851007D522D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CEAEE858220B88A2007D522D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		CE22DF002208F2610082633E /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				CE269A8F2212554D00167C2A /* CapstoneProject.entitlements */,
 				CE22DF012208F2610082633E /* AppDelegate.swift */,
 				CE22DF032208F2610082633E /* ViewController.swift */,
 				CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */,
@@ -136,6 +138,11 @@
 					CE22DEFD2208F2610082633E = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -361,6 +368,7 @@
 			baseConfigurationReference = 0C54B6EE51928E7B8163F7BE /* Pods-CapstoneProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CapstoneProject/CapstoneProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBBYK72NK3;
 				INFOPLIST_FILE = CapstoneProject/Info.plist;
@@ -377,6 +385,7 @@
 			baseConfigurationReference = 8241320A2C02872A5BBDCADB /* Pods-CapstoneProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CapstoneProject/CapstoneProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBBYK72NK3;
 				INFOPLIST_FILE = CapstoneProject/Info.plist;

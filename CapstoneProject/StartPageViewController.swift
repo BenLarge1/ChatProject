@@ -16,7 +16,8 @@ class StartPageViewController: UIViewController {
 	
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
-	
+    @IBOutlet weak var loginToHome: UIButton!
+    
     @IBAction func loginAction(_ sender: Any) {
         
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
