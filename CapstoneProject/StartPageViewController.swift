@@ -18,8 +18,8 @@ class StartPageViewController: UIViewController {
 	@IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginToHome: UIButton!
     
-    @IBAction func loginAction(_ sender: Any) {
-        
+    @IBAction func loginAction(_ sender: UIButton)
+	{
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if error == nil{
                 self.performSegue(withIdentifier: "loginToHome", sender: self)
