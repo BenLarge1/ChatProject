@@ -21,10 +21,12 @@ class StartPageViewController: UIViewController {
     @IBAction func loginAction(_ sender: UIButton)
 	{
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            if error == nil{
+            if error != nil
+			{
                 self.performSegue(withIdentifier: "loginToHome", sender: self)
             }
-            else{
+            else
+			{
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
@@ -34,6 +36,17 @@ class StartPageViewController: UIViewController {
         }
         
     }
+    
+    //var auth = firebase.auth();
+
+    
+    //auth.sendPasswordResetEmail(emailAddress).then(function()
+    //{
+    // Email sent.
+    //}).catch(function(error)
+    //{
+    // An error happened.
+    //});
     
 	override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
