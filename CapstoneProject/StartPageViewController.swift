@@ -20,8 +20,8 @@ class StartPageViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: UIButton)
 	{
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            if error != nil
+        Auth.auth().signIn(withEmail: emailTextField, password: passwordTextField) { (user, error) in
+            if user != nil && error == nil
 			{
                 self.performSegue(withIdentifier: "loginToHome", sender: self)
             }
@@ -36,17 +36,35 @@ class StartPageViewController: UIViewController {
         }
         
     }
+	
+    @IBAction func forgotPasswordTapped(_ sender: Any)
+    {
+        let forgotPasswordAlert = UIAlertController(title: "Forgot password?", message: "Enter email address", preferredStyle: .alert)
+        forgotPasswordAlert.addTextField { (textField) in
+            textField.placeholder = "Enter email address"
+        }
+        forgotPasswordAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        forgotPasswordAlert.addAction(UIAlertAction(title: "Reset Password", style: .default, handler: { (action) in
+            let resetEmail = forgotPasswordAlert.textFields?.first?.text
+            Auth.auth().sendPasswordReset(withEmail: resetEmail!, completion: { (error) in
+                if error != nil
+                {
+                    let resetFailedAlert = UIAlertController(title: "Reset Failed", message: "Error: \(String(describing: error?.localizedDescription))", preferredStyle: .alert)
+                    resetFailedAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(resetFailedAlert, animated: true, completion: nil)
+                }
+                else
+                {
+                    let resetEmailSentAlert = UIAlertController(title: "Reset email sent successfully", message: "Check your email", preferredStyle: .alert)
+                    resetEmailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(resetEmailSentAlert, animated: true, completion: nil)
+                }
+            })
+        }))
+        //PRESENT ALERT
+        self.present(forgotPasswordAlert, animated: true, completion: nil)
+    }
     
-    //var auth = firebase.auth();
-
-    
-    //auth.sendPasswordResetEmail(emailAddress).then(function()
-    //{
-    // Email sent.
-    //}).catch(function(error)
-    //{
-    // An error happened.
-    //});
     
 	override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
