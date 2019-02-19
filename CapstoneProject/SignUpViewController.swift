@@ -31,13 +31,28 @@ class SignUpViewController: UIViewController {
     {
         if emailTextField != nil && passwordTextField != nil && confirmPasswordTextField != nil && passwordTextField.text == confirmPasswordTextField.text
         {
-            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {authResult, error in}
-            
-            
-        }
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {authResult, error in
+			if error == nil
+			{
+				self.performSegue(withIdentifier: "signupToHome", sender: self)
+			}
+			else
+			{
+				let alertController = UIAlertController(title: "Error", message: "could not create user, check to make sure you are using a valid email address", preferredStyle: .alert)
+				let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+				
+				alertController.addAction(defaultAction)
+				self.present(alertController, animated: true, completion: nil)
+			}
+        																								} //HEY LOOK AT ME
+		}
         else
         {
-            
+			let alertController = UIAlertController(title: "Error", message: "could not create user, check to make sure you have filled out all fields, or that your password matches the confirm password field", preferredStyle: .alert)
+			let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+			
+			alertController.addAction(defaultAction)
+			self.present(alertController, animated: true, completion: nil)
         }
     }
     

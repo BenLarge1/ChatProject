@@ -16,6 +16,7 @@
 		CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */; };
 		CE5A2547221B8DE800B954B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5A2546221B8DE800B954B6 /* GoogleService-Info.plist */; };
 		CE5A2549221B912100B954B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A2548221B912100B954B6 /* SignUpViewController.swift */; };
+		CE6AF903221CBFD700611FF5 /* ReportBullyingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AF902221CBFD700611FF5 /* ReportBullyingFormViewController.swift */; };
 		CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */; };
 		CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEE858220B88A2007D522D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		CE5A2546221B8DE800B954B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CE5A2548221B912100B954B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE6AF902221CBFD700611FF5 /* ReportBullyingFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportBullyingFormViewController.swift; path = "/Users/user/Documents/Altec-Project-2019/CapstoneProject/ReportBullyingFormViewController.swift"; sourceTree = "<absolute>"; };
 		CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		CEAEE858220B88A2007D522D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				CE269A8F2212554D00167C2A /* CapstoneProject.entitlements */,
 				CE22DF012208F2610082633E /* AppDelegate.swift */,
 				CE22DF032208F2610082633E /* ViewController.swift */,
+				CE6AF902221CBFD700611FF5 /* ReportBullyingFormViewController.swift */,
 				CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */,
 				CEAEE858220B88A2007D522D /* HomeViewController.swift */,
 				CE5A2548221B912100B954B6 /* SignUpViewController.swift */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5A2549221B912100B954B6 /* SignUpViewController.swift in Sources */,
+				CE6AF903221CBFD700611FF5 /* ReportBullyingFormViewController.swift in Sources */,
 				CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */,
 				CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */,
 				CE22DF042208F2610082633E /* ViewController.swift in Sources */,
