@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class ReportBullyingFormViewController: UIViewController {
 
@@ -19,7 +21,13 @@ class ReportBullyingFormViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+	var ref: DatabaseReference!
+	ref = Database.database().reference()
+	
+	
+	
+	
 
     /*
     // MARK: - Navigation

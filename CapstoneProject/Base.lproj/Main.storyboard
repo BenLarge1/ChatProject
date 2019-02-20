@@ -525,7 +525,7 @@
                                 <rect key="frame" x="0.0" y="87" width="375" height="48"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="XWP-tl-Jur"/>
+                                    <constraint firstAttribute="height" constant="48" id="GnE-7P-A2P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
                                 <state key="normal" title="   Report Bullying">
@@ -538,49 +538,109 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv9-k6-oLx">
                                 <rect key="frame" x="326" y="98" width="29" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="29" id="186-i0-bKZ"/>
-                                    <constraint firstAttribute="height" constant="27" id="ss7-DD-Wea"/>
+                                    <constraint firstAttribute="width" constant="29" id="ATk-j1-UQO"/>
+                                    <constraint firstAttribute="height" constant="27" id="StW-ZY-AMc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-You have been bullied" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7x-ja-YzH">
-                                <rect key="frame" x="20" y="143" width="155.5" height="18"/>
+                                <rect key="frame" x="38" y="208" width="156" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="FEg-sQ-Rvp"/>
+                                    <constraint firstAttribute="height" constant="18" id="jZt-DI-APA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-You have witnessed someone being bullied" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVn-h6-7g4">
-                                <rect key="frame" x="20" y="161" width="299.5" height="18"/>
+                                <rect key="frame" x="38" y="182" width="299.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299.5" id="MEL-2Q-96Q"/>
+                                    <constraint firstAttribute="height" constant="18" id="uJh-Js-ZZS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should report bullying if..." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKU-gB-epi">
+                                <rect key="frame" x="16" y="156" width="299.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299.5" id="WNQ-Lv-WKh"/>
+                                    <constraint firstAttribute="height" constant="18" id="pbr-MP-VJN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examples of bullying include..." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sck-3Q-f5r">
+                                <rect key="frame" x="16" y="259" width="299.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299.5" id="HhE-we-zwx"/>
+                                    <constraint firstAttribute="height" constant="18" id="YG3-0e-8HS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ll-dg-cMX">
+                                <rect key="frame" x="38" y="296" width="300" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Bw3-wf-uKv"/>
+                                    <constraint firstAttribute="height" constant="233" id="Ohc-yF-MDp"/>
+                                </constraints>
+                                <string key="text">-Persistent or egregious use of abusive, insulting, or offensive language
+-Aggressive yelling or shouting
+-Unwarranted physical contact or threatening gestures
+-Making repeated negative comments about a person’s appearance, lifestyle, family, or culture
+-Regularly inappropriately teasing or making someone the brunt of pranks or practical jokes
+-Circulating inappropriate or embarrassing photos or videos via email or social media</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWa-nc-Pc6">
+                                <rect key="frame" x="12.5" y="544" width="350" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="UyA-Od-w7C"/>
+                                    <constraint firstAttribute="height" constant="103" id="qdq-xi-axU"/>
+                                </constraints>
+                                <string key="text">All bullying reports will be reviewed by a Student Committee weekly. If you have a concern that needs to be looked at today, please talk to a teacher or trusted adult.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.79215686269999996" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZvP-SH-niM" firstAttribute="top" secondItem="oiS-SB-7N0" secondAttribute="bottom" constant="43" id="2VT-8T-55g"/>
+                            <constraint firstItem="ZvP-SH-niM" firstAttribute="trailing" secondItem="8ba-Cl-iNn" secondAttribute="trailing" id="3Zn-V3-MHZ"/>
                             <constraint firstItem="oiS-SB-7N0" firstAttribute="top" secondItem="w0S-u6-tlU" secondAttribute="top" id="8m3-wv-BPn"/>
-                            <constraint firstItem="Hv9-k6-oLx" firstAttribute="top" secondItem="oiS-SB-7N0" secondAttribute="bottom" constant="54" id="Atx-T3-DnS"/>
-                            <constraint firstItem="8ba-Cl-iNn" firstAttribute="trailing" secondItem="Hv9-k6-oLx" secondAttribute="trailing" constant="20" id="Dg3-8L-fYh"/>
-                            <constraint firstItem="N7x-ja-YzH" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="20" id="MlL-fF-Bw7"/>
-                            <constraint firstItem="ZvP-SH-niM" firstAttribute="trailing" secondItem="8ba-Cl-iNn" secondAttribute="trailing" id="XLS-bC-UFC"/>
-                            <constraint firstItem="ZvP-SH-niM" firstAttribute="centerX" secondItem="w0S-u6-tlU" secondAttribute="centerX" id="XTw-4c-q7Z"/>
-                            <constraint firstItem="AVn-h6-7g4" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="20" id="iN8-D1-Q7n"/>
-                            <constraint firstItem="ZvP-SH-niM" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" id="j3f-aj-2k2"/>
+                            <constraint firstItem="8ba-Cl-iNn" firstAttribute="trailing" secondItem="Hv9-k6-oLx" secondAttribute="trailing" constant="20" id="ALV-wg-L6W"/>
+                            <constraint firstItem="AVn-h6-7g4" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="38" id="Abc-ea-Gac"/>
+                            <constraint firstItem="AVn-h6-7g4" firstAttribute="top" secondItem="aKU-gB-epi" secondAttribute="bottom" constant="8" id="Bsj-pZ-pQl"/>
+                            <constraint firstItem="aKU-gB-epi" firstAttribute="top" secondItem="ZvP-SH-niM" secondAttribute="bottom" constant="21" id="DOV-aV-xcd"/>
+                            <constraint firstItem="ZvP-SH-niM" firstAttribute="top" secondItem="oiS-SB-7N0" secondAttribute="bottom" constant="43" id="F9Y-GP-zes"/>
+                            <constraint firstItem="N7x-ja-YzH" firstAttribute="top" secondItem="AVn-h6-7g4" secondAttribute="bottom" constant="8" id="I73-GY-ZGV"/>
+                            <constraint firstItem="7ll-dg-cMX" firstAttribute="top" secondItem="sck-3Q-f5r" secondAttribute="bottom" constant="19" id="Itq-pS-05m"/>
+                            <constraint firstItem="7ll-dg-cMX" firstAttribute="centerX" secondItem="w0S-u6-tlU" secondAttribute="centerX" id="T5l-xk-yNt"/>
+                            <constraint firstItem="N7x-ja-YzH" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="38" id="c3b-7J-tKk"/>
+                            <constraint firstItem="DWa-nc-Pc6" firstAttribute="centerX" secondItem="w0S-u6-tlU" secondAttribute="centerX" id="eif-s4-HDy"/>
+                            <constraint firstItem="Hv9-k6-oLx" firstAttribute="top" secondItem="oiS-SB-7N0" secondAttribute="bottom" constant="54" id="evv-mX-hrw"/>
                             <constraint firstItem="oiS-SB-7N0" firstAttribute="trailing" secondItem="8ba-Cl-iNn" secondAttribute="trailing" id="m0B-8J-FKt"/>
                             <constraint firstItem="oiS-SB-7N0" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" id="pWN-sO-pVG"/>
-                            <constraint firstItem="N7x-ja-YzH" firstAttribute="top" secondItem="ZvP-SH-niM" secondAttribute="bottom" constant="8" id="q1i-SB-ndx"/>
-                            <constraint firstItem="AVn-h6-7g4" firstAttribute="leading" secondItem="N7x-ja-YzH" secondAttribute="leading" id="qvJ-ke-gIl"/>
-                            <constraint firstItem="AVn-h6-7g4" firstAttribute="top" secondItem="N7x-ja-YzH" secondAttribute="bottom" id="vem-tr-MfY"/>
+                            <constraint firstItem="aKU-gB-epi" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="16" id="pjI-b7-kOf"/>
+                            <constraint firstItem="ZvP-SH-niM" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" id="wcr-H7-Kjz"/>
+                            <constraint firstItem="sck-3Q-f5r" firstAttribute="top" secondItem="N7x-ja-YzH" secondAttribute="bottom" constant="33" id="yMk-Tf-a0J"/>
+                            <constraint firstItem="sck-3Q-f5r" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="16" id="zAa-Vj-8VJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ba-Cl-iNn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cK-ms-bVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-224.63768115942031" y="-658.69565217391312"/>
+            <point key="canvasLocation" x="-224.80000000000001" y="-658.92053973013503"/>
         </scene>
         <!--Report Bullying Form View Controller-->
         <scene sceneID="ML9-IK-FCy">
@@ -607,7 +667,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of incident" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="57Y-9L-IvG">
                                 <rect key="frame" x="32" y="202" width="309" height="30"/>
@@ -699,13 +759,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lD5-ME-2mP">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lD5-ME-2mP">
                                 <rect key="frame" x="294" y="119" width="49" height="31"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="Q6d-Dq-DqE"/>
                                     <constraint firstAttribute="width" constant="47" id="cfc-ku-g5b"/>
                                 </constraints>
+                                <color key="tintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -858,7 +919,7 @@
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with angry feelings and emotions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtt-gC-DiD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with bullying online or on social media" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtt-gC-DiD">
                                 <rect key="frame" x="20" y="244" width="314" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="KmU-7p-gJl"/>
@@ -874,7 +935,7 @@
                                     <constraint firstAttribute="height" constant="73" id="iDr-ud-1lo"/>
                                     <constraint firstAttribute="width" constant="314" id="j9u-AT-VKH"/>
                                 </constraints>
-                                <string key="text">-Provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals.</string>
+                                <string key="text">-Provides 24/7, free and confidential support for people in distress and prevention and crisis resources for you or your loved ones.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1233,7 +1294,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8y-nI-qJZ">
                                 <rect key="frame" x="66.5" y="191" width="242" height="30"/>
@@ -1243,7 +1304,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idG-aV-gVp">
                                 <rect key="frame" x="66.5" y="229" width="242" height="30"/>
@@ -1253,7 +1314,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="egB-ex-OXc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1266,7 +1327,7 @@
                                                 <state key="normal" title="Back"/>
                                             </button>
                                             <connections>
-                                                <segue destination="qtj-49-caB" kind="show" id="6bP-Gz-EGR"/>
+                                                <segue destination="qtj-49-caB" kind="show" id="Y3J-RF-rn0"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1325,12 +1386,13 @@
         <image name="report_icon" width="227" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="6ki-Q1-EEb"/>
         <segue reference="MDw-Up-KSE"/>
-        <segue reference="6Gv-eq-y9R"/>
+        <segue reference="7ic-es-Bfd"/>
         <segue reference="Pbt-MJ-Zjg"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="eQx-93-dmL"/>
-        <segue reference="OPD-p9-m9C"/>
-        <segue reference="6bP-Gz-EGR"/>
+        <segue reference="afb-X2-Uth"/>
+        <segue reference="o3M-K6-SmN"/>
     </inferredMetricsTieBreakers>
 </document>
