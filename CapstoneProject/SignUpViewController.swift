@@ -23,9 +23,12 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK Variables
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     
     @IBAction func createUserAccount(_ sender: UIButton)
     {

@@ -1601,12 +1601,13 @@
                         <outlet property="confirmPasswordTextField" destination="idG-aV-gVp" id="CSD-B2-ErF"/>
                         <outlet property="emailTextField" destination="cAY-9q-LG4" id="SrJ-vb-BvN"/>
                         <outlet property="passwordTextField" destination="s8y-nI-qJZ" id="Hrp-6Q-Uq4"/>
+                        <outlet property="usernameTextField" destination="5xl-Bh-36N" id="LSd-nw-YtE"/>
                         <segue destination="Kx5-fY-iAE" kind="show" identifier="signupToHome" id="OPD-p9-m9C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAm-jo-TA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2874.4000000000001" y="210.94452773613196"/>
+            <point key="canvasLocation" x="-2647" y="207"/>
         </scene>
     </scenes>
     <resources>
