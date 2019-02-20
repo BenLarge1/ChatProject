@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qtj-49-caB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qtj-49-caB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Symbol.ttf">
-            <string>Symbol</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--StartView-->
         <scene sceneID="3nZ-ad-8Df">
@@ -437,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2X-MU-hsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-229" y="-2732"/>
+            <point key="canvasLocation" x="-2591" y="-1433"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xj4-8A-MDx">
@@ -468,7 +461,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1J-yB-GHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178" y="-2043"/>
+            <point key="canvasLocation" x="-1638" y="-1488"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Fe-ZY-a6Q">
@@ -498,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeu-QF-7V3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="177" y="-1367"/>
+            <point key="canvasLocation" x="-511" y="-1488"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PDK-WO-6lJ">
@@ -580,7 +573,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cK-ms-bVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-224.63768115942031" y="-658.69565217391312"/>
+            <point key="canvasLocation" x="-602" y="-625"/>
         </scene>
         <!--Report Bullying Form View Controller-->
         <scene sceneID="ML9-IK-FCy">
@@ -745,7 +738,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNq-RA-SA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="-659"/>
+            <point key="canvasLocation" x="166" y="-615"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="09J-BT-d0R">
@@ -978,7 +971,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVi-zv-lHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1655.072463768116" y="244.56521739130437"/>
+            <point key="canvasLocation" x="-1162" y="275"/>
         </scene>
         <!--Resources View Controller-->
         <scene sceneID="eLc-sb-Agn">
@@ -1215,7 +1208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XuS-wl-xC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="495" y="280"/>
+            <point key="canvasLocation" x="868" y="-591"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Q0f-2E-Liv">
@@ -1326,11 +1319,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MDw-Up-KSE"/>
-        <segue reference="6Gv-eq-y9R"/>
+        <segue reference="7ic-es-Bfd"/>
         <segue reference="Pbt-MJ-Zjg"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="eQx-93-dmL"/>
-        <segue reference="OPD-p9-m9C"/>
+        <segue reference="Tll-4x-RWO"/>
         <segue reference="6bP-Gz-EGR"/>
     </inferredMetricsTieBreakers>
 </document>
