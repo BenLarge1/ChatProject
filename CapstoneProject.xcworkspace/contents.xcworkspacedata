@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/user/Documents/Altec-Project-2019/CapstoneProject/ReportBullyingFormViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:CapstoneProject.xcodeproj">
    </FileRef>
    <FileRef
