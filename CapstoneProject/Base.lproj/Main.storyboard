@@ -796,7 +796,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ll-dg-cMX">
-                                <rect key="frame" x="38" y="296" width="300" height="233"/>
+                                <rect key="frame" x="37.5" y="296" width="300" height="233"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Bw3-wf-uKv"/>
                                     <constraint firstAttribute="height" constant="233" id="Ohc-yF-MDp"/>
@@ -850,7 +850,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cK-ms-bVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-224.80000000000001" y="-658.92053973013503"/>
+            <point key="canvasLocation" x="-551" y="-616"/>
         </scene>
         <!--Report Bullying Form View Controller-->
         <scene sceneID="ML9-IK-FCy">
