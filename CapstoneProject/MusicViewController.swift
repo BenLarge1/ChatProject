@@ -1,5 +1,5 @@
 //
-//  ReportBullyingFormViewController.swift
+//  MusicViewController.swift
 //  CapstoneProject
 //
 //  Created by User on 2/21/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReportBullyingFormViewController: UIViewController {
+class MusicViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,22 +16,7 @@ class ReportBullyingFormViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var anonSwitch: UISwitch!
-    @IBAction func toggleSwitch(_ sender: UISwitch)
-    {
-        if anonSwitch.isOn
-        {
-            nameTextField.isUserInteractionEnabled = false
-			
-        }
-        else
-        {
-            nameTextField.isUserInteractionEnabled = true
 
-        }
-    }
-    
     /*
     // MARK: - Navigation
 

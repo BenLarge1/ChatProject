@@ -402,10 +402,10 @@
             </objects>
             <point key="canvasLocation" x="-1655.2" y="-590.55472263868069"/>
         </scene>
-        <!--View Controller-->
+        <!--Music View Controller-->
         <scene sceneID="c3Q-Ds-X89">
             <objects>
-                <viewController id="b3u-nv-bKG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="musicview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b3u-nv-bKG" customClass="MusicViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wdA-9R-rz8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -436,10 +436,10 @@
             </objects>
             <point key="canvasLocation" x="-2591" y="-1433"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="Xj4-8A-MDx">
             <objects>
-                <viewController id="V7e-wa-HV6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V7e-wa-HV6" customClass="GameViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gSB-Jl-dnd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -959,7 +959,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lD5-ME-2mP">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lD5-ME-2mP">
                                 <rect key="frame" x="294" y="96" width="49" height="31"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -967,6 +967,9 @@
                                     <constraint firstAttribute="width" constant="47" id="sbK-jF-n9q"/>
                                 </constraints>
                                 <color key="tintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="toggleSwitch:" destination="drQ-px-qf8" eventType="valueChanged" id="GsB-9s-xGM"/>
+                                </connections>
                             </switch>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SiI-eD-fdz">
                                 <rect key="frame" x="16" y="372" width="343" height="216"/>
@@ -1023,6 +1026,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q50-Ed-Fq4"/>
                     </view>
+                    <connections>
+                        <outlet property="anonSwitch" destination="lD5-ME-2mP" id="gsr-4f-4i8"/>
+                        <outlet property="nameTextField" destination="f4S-12-EeC" id="Gie-h7-nLW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNq-RA-SA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1646,13 +1653,12 @@
         <image name="report_icon" width="227" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6ki-Q1-EEb"/>
         <segue reference="MDw-Up-KSE"/>
         <segue reference="7ic-es-Bfd"/>
         <segue reference="Uvh-gu-zaF"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="eQx-93-dmL"/>
-        <segue reference="Tll-4x-RWO"/>
+        <segue reference="mVH-vq-pnR"/>
         <segue reference="Y3J-RF-rn0"/>
     </inferredMetricsTieBreakers>
 </document>
