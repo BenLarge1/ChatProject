@@ -740,16 +740,6 @@
                                     <segue destination="drQ-px-qf8" kind="show" id="6ki-Q1-EEb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv9-k6-oLx">
-                                <rect key="frame" x="326" y="122" width="29" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="29" id="ATk-j1-UQO"/>
-                                    <constraint firstAttribute="height" constant="27" id="StW-ZY-AMc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-You have been bullied" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7x-ja-YzH">
                                 <rect key="frame" x="38" y="219" width="156" height="18"/>
                                 <constraints>
@@ -830,21 +820,31 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv9-k6-oLx">
+                                <rect key="frame" x="330" y="109" width="29" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="jod-uK-WOc"/>
+                                    <constraint firstAttribute="width" constant="29" id="vuX-BG-z3q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZvP-SH-niM" firstAttribute="trailing" secondItem="8ba-Cl-iNn" secondAttribute="trailing" id="3Zn-V3-MHZ"/>
-                            <constraint firstItem="8ba-Cl-iNn" firstAttribute="trailing" secondItem="Hv9-k6-oLx" secondAttribute="trailing" constant="20" id="ALV-wg-L6W"/>
                             <constraint firstItem="AVn-h6-7g4" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="38" id="Abc-ea-Gac"/>
                             <constraint firstItem="AVn-h6-7g4" firstAttribute="top" secondItem="aKU-gB-epi" secondAttribute="bottom" constant="8" id="Bsj-pZ-pQl"/>
                             <constraint firstItem="aKU-gB-epi" firstAttribute="top" secondItem="ZvP-SH-niM" secondAttribute="bottom" constant="21" id="DOV-aV-xcd"/>
                             <constraint firstItem="N7x-ja-YzH" firstAttribute="top" secondItem="AVn-h6-7g4" secondAttribute="bottom" constant="8" id="I73-GY-ZGV"/>
                             <constraint firstItem="7ll-dg-cMX" firstAttribute="top" secondItem="sck-3Q-f5r" secondAttribute="bottom" constant="19" id="Itq-pS-05m"/>
+                            <constraint firstItem="8ba-Cl-iNn" firstAttribute="trailing" secondItem="Hv9-k6-oLx" secondAttribute="trailing" constant="16" id="Lea-u1-BjR"/>
                             <constraint firstItem="7ll-dg-cMX" firstAttribute="centerX" secondItem="w0S-u6-tlU" secondAttribute="centerX" id="T5l-xk-yNt"/>
                             <constraint firstItem="ZvP-SH-niM" firstAttribute="top" secondItem="oiS-SB-7N0" secondAttribute="bottom" constant="30" id="YCu-6s-RxQ"/>
                             <constraint firstItem="N7x-ja-YzH" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="38" id="c3b-7J-tKk"/>
                             <constraint firstItem="DWa-nc-Pc6" firstAttribute="centerX" secondItem="w0S-u6-tlU" secondAttribute="centerX" id="eif-s4-HDy"/>
-                            <constraint firstItem="Hv9-k6-oLx" firstAttribute="top" secondItem="oiS-SB-7N0" secondAttribute="bottom" constant="54" id="evv-mX-hrw"/>
+                            <constraint firstItem="Hv9-k6-oLx" firstAttribute="top" secondItem="oiS-SB-7N0" secondAttribute="bottom" constant="41" id="fDX-4B-0fQ"/>
                             <constraint firstItem="oiS-SB-7N0" firstAttribute="trailing" secondItem="8ba-Cl-iNn" secondAttribute="trailing" id="m0B-8J-FKt"/>
                             <constraint firstItem="oiS-SB-7N0" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" id="pWN-sO-pVG"/>
                             <constraint firstItem="aKU-gB-epi" firstAttribute="leading" secondItem="8ba-Cl-iNn" secondAttribute="leading" constant="16" id="pjI-b7-kOf"/>
@@ -1037,172 +1037,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotlines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-nv-t77">
-                                <rect key="frame" x="0.0" y="99" width="375" height="31.5"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="31.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31.5" id="vWP-2S-pge"/>
+                                    <constraint firstAttribute="height" constant="31.5" id="W3v-lI-QVc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer listening line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8G-KZ-8OL">
-                                <rect key="frame" x="41" y="152" width="134" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="b7m-Ou-iWo"/>
-                                    <constraint firstAttribute="height" constant="23" id="iFT-Kc-ubY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zq0-39-iCm">
-                                <rect key="frame" x="179" y="152" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="DsZ-1t-aKu"/>
-                                    <constraint firstAttribute="width" constant="155" id="kcV-HE-fsW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-399-PEER">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suicide Hotline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vq-cm-4lH">
-                                <rect key="frame" x="41" y="322" width="177" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="Pff-fA-HhR"/>
-                                    <constraint firstAttribute="height" constant="23" id="uxY-wA-T3f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMM-YF-Nlq">
-                                <rect key="frame" x="179" y="322" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="X9G-pc-MbP"/>
-                                    <constraint firstAttribute="height" constant="23" id="eHS-tW-Oie"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-442-HOPE">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anger Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nP-w3-m7E">
-                                <rect key="frame" x="41" y="431" width="149" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="EWd-mi-Ua6"/>
-                                    <constraint firstAttribute="width" constant="149" id="yMe-4H-BIv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-Ye-YGq">
-                                <rect key="frame" x="179" y="431" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="aTY-qH-K1R"/>
-                                    <constraint firstAttribute="height" constant="23" id="g8O-hk-WpP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-999-9999">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with angry feelings and emotions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXe-Ev-hFj">
-                                <rect key="frame" x="20" y="454" width="314" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="3TA-rD-m28"/>
-                                    <constraint firstAttribute="width" constant="314" id="wrU-aq-bz7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyber Bullying" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lS-fl-63J">
-                                <rect key="frame" x="41" y="241" width="177" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="tYT-fD-P5X"/>
-                                    <constraint firstAttribute="height" constant="23" id="xMt-2U-OaN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eha-qQ-wWQ">
-                                <rect key="frame" x="179" y="241" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="IVn-DP-RY6"/>
-                                    <constraint firstAttribute="height" constant="23" id="vmw-yY-TbG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-829-0067">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with bullying online or on social media" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtt-gC-DiD">
-                                <rect key="frame" x="20" y="264" width="314" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="KmU-7p-gJl"/>
-                                    <constraint firstAttribute="width" constant="314" id="TIR-QK-48A"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjG-Hb-ajz">
-                                <rect key="frame" x="20" y="345" width="314" height="73"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="iDr-ud-1lo"/>
-                                    <constraint firstAttribute="width" constant="314" id="j9u-AT-VKH"/>
-                                </constraints>
-                                <string key="text">-Provides 24/7, free and confidential support for people in distress and prevention and crisis resources for you or your loved ones.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBb-Wj-gic">
-                                <rect key="frame" x="20" y="175" width="314" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="AJ8-pw-e3I"/>
-                                    <constraint firstAttribute="height" constant="53" id="CGV-eG-QpM"/>
-                                </constraints>
-                                <string key="text">-Confidential and anonymous listening line for advice and counseling. Call if you need to talk with someone about being bullied.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Websites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qJ-d7-eIP">
                                 <rect key="frame" x="0.0" y="527" width="375" height="31.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31.5" id="iL9-d6-q6d"/>
+                                    <constraint firstAttribute="height" constant="31.5" id="ScA-Iz-iEf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti -Bullying Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKL-5b-Eub">
-                                <rect key="frame" x="88.5" y="582" width="198" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="8Tc-pH-OS8"/>
-                                    <constraint firstAttribute="width" constant="198" id="uTv-pj-tYh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aya-Wk-6SU">
-                                <rect key="frame" x="110" y="611" width="155" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="FEg-b7-piL"/>
-                                    <constraint firstAttribute="height" constant="29" id="M8V-s6-pH5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="www.stopbullying.gov">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="dTe-jB-E23">
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mfd-95-1QD"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Resources" id="Htx-vr-NxJ">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="0S2-0F-Ti4">
@@ -1213,53 +1069,217 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnF-Ro-0Ns">
+                                <rect key="frame" x="10" y="138" width="355" height="368"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="368" id="uh1-mB-1RW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpg-Nb-gAz">
+                                <rect key="frame" x="183" y="150" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="50Z-cO-4Og"/>
+                                    <constraint firstAttribute="height" constant="23" id="Exg-0l-Tal"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-399-PEER">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suicide Hotline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnc-5Q-aCd">
+                                <rect key="frame" x="41" y="318" width="177" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="e34-ub-2o0"/>
+                                    <constraint firstAttribute="height" constant="23" id="gzT-aX-014"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztz-Fd-3Pq">
+                                <rect key="frame" x="179" y="318" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="erP-YC-Zbu"/>
+                                    <constraint firstAttribute="width" constant="155" id="hhl-cN-ecP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-442-HOPE">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anger Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QK-4o-7sJ">
+                                <rect key="frame" x="41" y="427" width="149" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="dUx-FP-RTb"/>
+                                    <constraint firstAttribute="width" constant="149" id="grf-ME-e5n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf3-lc-1m3">
+                                <rect key="frame" x="179" y="427" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="KD6-LY-bGZ"/>
+                                    <constraint firstAttribute="width" constant="155" id="fGJ-xY-xjA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-999-9999">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with angry feelings and emotions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTq-AC-j14">
+                                <rect key="frame" x="20" y="450" width="314" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NnW-8r-tdl"/>
+                                    <constraint firstAttribute="width" constant="314" id="aFs-Vf-ESG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyber Bullying" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1B-dP-gGK">
+                                <rect key="frame" x="41" y="237" width="177" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="EZv-6Q-vKv"/>
+                                    <constraint firstAttribute="width" constant="177" id="lem-n3-whq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhR-lV-jFi">
+                                <rect key="frame" x="179" y="237" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="0WL-Zu-rhB"/>
+                                    <constraint firstAttribute="width" constant="155" id="sVC-mc-Opf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-829-0067">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with bullying online or on social media" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd8-F8-A5B">
+                                <rect key="frame" x="20" y="260" width="314" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="JSH-lW-Ek0"/>
+                                    <constraint firstAttribute="height" constant="45" id="Rnj-ei-SXV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7q-1O-clh">
+                                <rect key="frame" x="20" y="341" width="314" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="9eo-g3-gho"/>
+                                    <constraint firstAttribute="width" constant="314" id="kb4-RD-epC"/>
+                                </constraints>
+                                <string key="text">-Provides 24/7, free and confidential support for people in distress and prevention and crisis resources for you or your loved ones.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-0l-XxT">
+                                <rect key="frame" x="20" y="171" width="314" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="F4h-2O-5wj"/>
+                                    <constraint firstAttribute="height" constant="53" id="IEm-xD-fgp"/>
+                                </constraints>
+                                <string key="text">-Confidential and anonymous listening line for advice and counseling. Call if you need to talk with someone about being bullied.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer listening line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3N-4g-bDQ">
+                                <rect key="frame" x="41" y="150" width="134" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="4Dv-hd-7RM"/>
+                                    <constraint firstAttribute="width" constant="134" id="IHa-bA-ceg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y2-nD-Nqp">
+                                <rect key="frame" x="10" y="566" width="355" height="81"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Gto-UR-s9Q"/>
+                                    <constraint firstAttribute="width" constant="355" id="eeq-Wu-JZw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti -Bullying Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI6-2k-pdh">
+                                <rect key="frame" x="88.5" y="576" width="198" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="gVV-J8-h7s"/>
+                                    <constraint firstAttribute="height" constant="29" id="nKH-O4-Ull"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTT-EF-V72">
+                                <rect key="frame" x="110" y="605" width="155" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="k84-W7-3gu"/>
+                                    <constraint firstAttribute="height" constant="29" id="kGR-bW-p98"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="www.stopbullying.gov">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eha-qQ-wWQ" firstAttribute="top" secondItem="TBb-Wj-gic" secondAttribute="bottom" constant="13" id="2Yy-DE-2P4"/>
-                            <constraint firstItem="5nP-w3-m7E" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="4wy-sQ-WwX"/>
-                            <constraint firstItem="3vq-cm-4lH" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="5tp-SX-ZFM"/>
-                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="xZY-Ye-YGq" secondAttribute="trailing" constant="41" id="7Ih-Wn-2H7"/>
-                            <constraint firstItem="D8G-KZ-8OL" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="21.5" id="Dpk-Uh-a51"/>
-                            <constraint firstItem="xZY-Ye-YGq" firstAttribute="top" secondItem="kjG-Hb-ajz" secondAttribute="bottom" constant="13" id="E9L-nz-8kU"/>
-                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="eha-qQ-wWQ" secondAttribute="trailing" constant="41" id="H0u-yr-kig"/>
-                            <constraint firstItem="Aya-Wk-6SU" firstAttribute="top" secondItem="CKL-5b-Eub" secondAttribute="bottom" id="KNb-2A-N8U"/>
-                            <constraint firstItem="dTe-jB-E23" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" id="Kgj-ft-UDg"/>
-                            <constraint firstItem="NYS-nv-t77" firstAttribute="top" secondItem="dTe-jB-E23" secondAttribute="bottom" constant="31" id="LdP-kT-Z4r"/>
-                            <constraint firstItem="aMM-YF-Nlq" firstAttribute="trailing" secondItem="kjG-Hb-ajz" secondAttribute="trailing" id="MZt-HC-iwO"/>
-                            <constraint firstItem="2lS-fl-63J" firstAttribute="top" secondItem="TBb-Wj-gic" secondAttribute="bottom" constant="13" id="Ptl-r4-xVL"/>
-                            <constraint firstItem="NYS-nv-t77" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="QZA-ns-kSA"/>
-                            <constraint firstItem="2qJ-d7-eIP" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="RTU-4U-tdf"/>
-                            <constraint firstItem="CKL-5b-Eub" firstAttribute="centerX" secondItem="6dD-xT-EJ7" secondAttribute="centerX" id="Rad-Nr-v9g"/>
-                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="aMM-YF-Nlq" secondAttribute="trailing" constant="41" id="T7g-1P-uad"/>
-                            <constraint firstItem="2lS-fl-63J" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="TdG-aW-79a"/>
-                            <constraint firstItem="TBb-Wj-gic" firstAttribute="top" secondItem="D8G-KZ-8OL" secondAttribute="bottom" id="VXk-2n-Q05"/>
-                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="zq0-39-iCm" secondAttribute="trailing" constant="41" id="WMS-db-WX3"/>
-                            <constraint firstItem="eha-qQ-wWQ" firstAttribute="trailing" secondItem="Jtt-gC-DiD" secondAttribute="trailing" id="bBF-Bc-Xwr"/>
-                            <constraint firstItem="5nP-w3-m7E" firstAttribute="top" secondItem="kjG-Hb-ajz" secondAttribute="bottom" constant="13" id="bnD-qe-YZp"/>
-                            <constraint firstItem="aMM-YF-Nlq" firstAttribute="top" secondItem="Jtt-gC-DiD" secondAttribute="bottom" constant="13" id="dOU-Of-rka"/>
-                            <constraint firstItem="2qJ-d7-eIP" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" id="fmL-bZ-7J4"/>
-                            <constraint firstItem="D8G-KZ-8OL" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="hGO-hX-X8y"/>
-                            <constraint firstItem="dTe-jB-E23" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="hb7-Pm-Ag3"/>
-                            <constraint firstItem="3vq-cm-4lH" firstAttribute="top" secondItem="Jtt-gC-DiD" secondAttribute="bottom" constant="13" id="jo5-6o-pYg"/>
-                            <constraint firstItem="dTe-jB-E23" firstAttribute="top" secondItem="JK3-h7-UwO" secondAttribute="top" constant="4" id="l2c-05-C7D"/>
-                            <constraint firstItem="NYS-nv-t77" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" id="lfF-xT-e7c"/>
-                            <constraint firstItem="Aya-Wk-6SU" firstAttribute="centerX" secondItem="6dD-xT-EJ7" secondAttribute="centerX" id="m0L-ee-NkB"/>
-                            <constraint firstItem="kjG-Hb-ajz" firstAttribute="top" secondItem="3vq-cm-4lH" secondAttribute="bottom" id="oNo-eo-Nbh"/>
-                            <constraint firstItem="xZY-Ye-YGq" firstAttribute="trailing" secondItem="UXe-Ev-hFj" secondAttribute="trailing" id="pVN-wG-LiI"/>
-                            <constraint firstItem="zq0-39-iCm" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="21.5" id="sDv-b1-9V1"/>
-                            <constraint firstItem="Jtt-gC-DiD" firstAttribute="top" secondItem="2lS-fl-63J" secondAttribute="bottom" id="t6K-61-mwW"/>
-                            <constraint firstItem="2qJ-d7-eIP" firstAttribute="top" secondItem="UXe-Ev-hFj" secondAttribute="bottom" constant="28" id="tIk-Kz-wT6"/>
-                            <constraint firstItem="UXe-Ev-hFj" firstAttribute="top" secondItem="5nP-w3-m7E" secondAttribute="bottom" id="xVF-em-Q3W"/>
-                            <constraint firstItem="CKL-5b-Eub" firstAttribute="top" secondItem="2qJ-d7-eIP" secondAttribute="bottom" constant="23.5" id="yd0-f2-9Vc"/>
-                            <constraint firstItem="zq0-39-iCm" firstAttribute="trailing" secondItem="TBb-Wj-gic" secondAttribute="trailing" id="yjf-rl-dgL"/>
+                            <constraint firstItem="kd8-F8-A5B" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="20" id="0LU-Hd-Vw6"/>
+                            <constraint firstItem="7QK-4o-7sJ" firstAttribute="top" secondItem="M7q-1O-clh" secondAttribute="bottom" constant="13" id="8VR-qT-uZY"/>
+                            <constraint firstItem="M7q-1O-clh" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="20" id="9gj-i7-a1o"/>
+                            <constraint firstItem="y3N-4g-bDQ" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="26.5" id="A2c-11-jnV"/>
+                            <constraint firstItem="Ztz-Fd-3Pq" firstAttribute="top" secondItem="kd8-F8-A5B" secondAttribute="bottom" constant="13" id="AC0-sx-4JA"/>
+                            <constraint firstItem="QI6-2k-pdh" firstAttribute="centerX" secondItem="6dD-xT-EJ7" secondAttribute="centerX" id="Dy5-87-bJO"/>
+                            <constraint firstItem="5y2-nD-Nqp" firstAttribute="top" secondItem="2qJ-d7-eIP" secondAttribute="bottom" constant="7.5" id="Gn5-ze-O4k"/>
+                            <constraint firstItem="kd8-F8-A5B" firstAttribute="top" secondItem="e1B-dP-gGK" secondAttribute="bottom" id="K1a-W1-QTV"/>
+                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="sf3-lc-1m3" secondAttribute="trailing" constant="41" id="LQY-OY-GPS"/>
+                            <constraint firstItem="sf3-lc-1m3" firstAttribute="top" secondItem="M7q-1O-clh" secondAttribute="bottom" constant="13" id="Pj5-rP-gS6"/>
+                            <constraint firstItem="MTq-AC-j14" firstAttribute="top" secondItem="7QK-4o-7sJ" secondAttribute="bottom" id="Sza-Nu-FjU"/>
+                            <constraint firstItem="NYS-nv-t77" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="TCb-yN-Qw3"/>
+                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="uhR-lV-jFi" secondAttribute="trailing" constant="41" id="Toa-Ni-VKt"/>
+                            <constraint firstItem="XTT-EF-V72" firstAttribute="top" secondItem="QI6-2k-pdh" secondAttribute="bottom" id="Wvo-k8-pxr"/>
+                            <constraint firstItem="2qJ-d7-eIP" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="Z9i-Yn-whH"/>
+                            <constraint firstItem="dTe-jB-E23" firstAttribute="top" secondItem="JK3-h7-UwO" secondAttribute="top" constant="4" id="anP-eb-l8u"/>
+                            <constraint firstItem="jnF-Ro-0Ns" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="14.5" id="apw-VU-kB2"/>
+                            <constraint firstItem="2qJ-d7-eIP" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" id="b86-y8-vAy"/>
+                            <constraint firstItem="M7q-1O-clh" firstAttribute="top" secondItem="gnc-5Q-aCd" secondAttribute="bottom" id="bar-wd-wlO"/>
+                            <constraint firstItem="xm3-0l-XxT" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="47.5" id="c6J-Yf-ikl"/>
+                            <constraint firstItem="2qJ-d7-eIP" firstAttribute="top" secondItem="jnF-Ro-0Ns" secondAttribute="bottom" constant="21" id="cbI-gS-iZ2"/>
+                            <constraint firstItem="7QK-4o-7sJ" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="cns-Qy-zlK"/>
+                            <constraint firstItem="NYS-nv-t77" firstAttribute="top" secondItem="dTe-jB-E23" secondAttribute="bottom" constant="24" id="d4Z-oP-bYW"/>
+                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="jnF-Ro-0Ns" secondAttribute="trailing" constant="10" id="evD-ZN-mOY"/>
+                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="Ztz-Fd-3Pq" secondAttribute="trailing" constant="41" id="fNN-jf-vGO"/>
+                            <constraint firstItem="Mpg-Nb-gAz" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="26.5" id="fln-yZ-sqI"/>
+                            <constraint firstItem="y3N-4g-bDQ" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="gHG-6F-NHv"/>
+                            <constraint firstItem="5y2-nD-Nqp" firstAttribute="centerX" secondItem="6dD-xT-EJ7" secondAttribute="centerX" id="hmh-KK-ybA"/>
+                            <constraint firstItem="MTq-AC-j14" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="20" id="hmu-QB-zP5"/>
+                            <constraint firstItem="e1B-dP-gGK" firstAttribute="top" secondItem="xm3-0l-XxT" secondAttribute="bottom" constant="13" id="kvF-O6-Zdm"/>
+                            <constraint firstItem="XTT-EF-V72" firstAttribute="centerX" secondItem="6dD-xT-EJ7" secondAttribute="centerX" id="o6i-Yl-3kE"/>
+                            <constraint firstItem="dTe-jB-E23" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" id="pQv-8n-1qZ"/>
+                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="Mpg-Nb-gAz" secondAttribute="trailing" constant="37" id="pgL-aV-Wlg"/>
+                            <constraint firstItem="QI6-2k-pdh" firstAttribute="top" secondItem="2qJ-d7-eIP" secondAttribute="bottom" constant="17.5" id="piR-EK-kWl"/>
+                            <constraint firstItem="gnc-5Q-aCd" firstAttribute="top" secondItem="kd8-F8-A5B" secondAttribute="bottom" constant="13" id="pyk-S4-D22"/>
+                            <constraint firstItem="e1B-dP-gGK" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="ssN-tX-kPP"/>
+                            <constraint firstItem="NYS-nv-t77" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" id="vYJ-mY-C1h"/>
+                            <constraint firstItem="gnc-5Q-aCd" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="41" id="vjL-xU-lSS"/>
+                            <constraint firstItem="uhR-lV-jFi" firstAttribute="top" secondItem="xm3-0l-XxT" secondAttribute="bottom" constant="13" id="xhl-wz-H2W"/>
+                            <constraint firstItem="dTe-jB-E23" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="yiT-m4-qzu"/>
+                            <constraint firstItem="jnF-Ro-0Ns" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="10" id="yzD-3C-znS"/>
+                            <constraint firstItem="xm3-0l-XxT" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="20" id="zxg-Vx-fUZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JK3-h7-UwO"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVi-zv-lHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1162" y="275"/>
+            <point key="canvasLocation" x="-1162.4000000000001" y="274.81259370314842"/>
         </scene>
         <!--Resources View Controller-->
         <scene sceneID="eLc-sb-Agn">
@@ -1269,137 +1289,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer listening line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIt-Yw-7zV">
-                                <rect key="frame" x="22" y="237" width="177" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="k5h-2i-zcd"/>
-                                    <constraint firstAttribute="height" constant="23" id="tCR-Ot-Nx9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uy-ER-ilY">
-                                <rect key="frame" x="199" y="237" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="072-sH-g8X"/>
-                                    <constraint firstAttribute="height" constant="23" id="nGD-up-Udd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-399-PEER">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suicide Hotline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-Tc-MgT">
-                                <rect key="frame" x="16" y="400" width="177" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="64Y-va-7vW"/>
-                                    <constraint firstAttribute="height" constant="23" id="6lv-rk-Jss"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daO-RZ-aea">
-                                <rect key="frame" x="193" y="400" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="dQx-Ac-Ax1"/>
-                                    <constraint firstAttribute="height" constant="23" id="jc0-It-PMn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-442-HOPE">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anger Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-BC-hJX">
-                                <rect key="frame" x="16" y="509" width="177" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="Ev3-QC-Nlg"/>
-                                    <constraint firstAttribute="height" constant="23" id="hyY-NM-yq8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDt-do-44f">
-                                <rect key="frame" x="193" y="509" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="CdC-ap-d4V"/>
-                                    <constraint firstAttribute="width" constant="155" id="WeB-Ff-p9Y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-999-9999">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with angry feelings and emotions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4j-KC-5x3">
-                                <rect key="frame" x="34" y="532" width="314" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="BBI-1l-GYK"/>
-                                    <constraint firstAttribute="height" constant="45" id="n0B-MD-aKi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyber Bullying" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZg-Za-GBc">
-                                <rect key="frame" x="16" y="320" width="177" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="QwX-QD-Lel"/>
-                                    <constraint firstAttribute="width" constant="177" id="aJH-Ji-rtt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDh-9Z-uc8">
-                                <rect key="frame" x="193" y="320" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="3ne-Ic-s75"/>
-                                    <constraint firstAttribute="width" constant="155" id="n0o-3o-m7h"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-829-0067">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with angry feelings and emotions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qS-sR-rIY">
-                                <rect key="frame" x="34" y="343" width="314" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="0dh-fG-hpK"/>
-                                    <constraint firstAttribute="width" constant="314" id="s6A-dU-k8U"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vE7-Qy-1z2">
-                                <rect key="frame" x="34" y="423" width="314" height="73"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="ecs-wY-eHg"/>
-                                    <constraint firstAttribute="height" constant="73" id="geT-Hg-fJN"/>
-                                </constraints>
-                                <string key="text">-Provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEG-ni-b5b">
-                                <rect key="frame" x="40" y="260" width="314" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="ZfY-p2-ivB"/>
-                                    <constraint firstAttribute="height" constant="53" id="rmT-m0-HEO"/>
-                                </constraints>
-                                <string key="text">-Confidential and anonymous listening line for advice and counseling. Call if you need to talk with someone about being bullied.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mS-zQ-1tx">
                                 <rect key="frame" x="22" y="84" width="331" height="93"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="MSg-s0-RPU"/>
-                                    <constraint firstAttribute="width" constant="331" id="g1B-fC-tGf"/>
+                                    <constraint firstAttribute="height" constant="93" id="9OP-5L-alQ"/>
+                                    <constraint firstAttribute="width" constant="331" id="quz-qM-gBc"/>
                                 </constraints>
                                 <string key="text">Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
@@ -1407,10 +1301,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotlines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qML-82-3LK">
-                                <rect key="frame" x="126.5" y="185" width="122" height="32"/>
+                                <rect key="frame" x="126.5" y="176" width="122" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="IiZ-0j-nKL"/>
-                                    <constraint firstAttribute="width" constant="122" id="fRp-vz-a2k"/>
+                                    <constraint firstAttribute="height" constant="32" id="Z54-Ym-Hnc"/>
+                                    <constraint firstAttribute="width" constant="122" id="pEm-iL-igZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1419,8 +1313,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti -Bullying Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1J-vi-d3z">
                                 <rect key="frame" x="88.5" y="598" width="198" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="198" id="53j-jZ-UkF"/>
-                                    <constraint firstAttribute="height" constant="29" id="kHw-wq-WAG"/>
+                                    <constraint firstAttribute="height" constant="29" id="1GI-WC-vt6"/>
+                                    <constraint firstAttribute="width" constant="198" id="zyZ-78-ISr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1429,8 +1323,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Is2-yU-XNj">
                                 <rect key="frame" x="110" y="627" width="155" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="5wq-Rf-bLs"/>
-                                    <constraint firstAttribute="width" constant="155" id="dhd-Nd-7pc"/>
+                                    <constraint firstAttribute="width" constant="155" id="JxL-R3-qRE"/>
+                                    <constraint firstAttribute="height" constant="29" id="YkD-sy-xJ8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <state key="normal" title="www.stopbullying.gov">
@@ -1439,6 +1333,9 @@
                             </button>
                             <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-ve-OoL">
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="31n-b1-Cc1"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Resources" id="AKU-Vp-qc1">
                                         <leftBarButtonItems>
@@ -1452,51 +1349,181 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-IV-nZO">
+                                <rect key="frame" x="10" y="218" width="355" height="372"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="372" id="Uzr-10-d30"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MJ-8h-7qs">
+                                <rect key="frame" x="199" y="235" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="UhK-l2-PU6"/>
+                                    <constraint firstAttribute="height" constant="23" id="aNE-WQ-Fvt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-399-PEER">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suicide Hotline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSm-vg-fdM">
+                                <rect key="frame" x="34" y="399" width="177" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="4by-89-uWY"/>
+                                    <constraint firstAttribute="height" constant="23" id="wUN-RZ-D42"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFO-ku-kX5">
+                                <rect key="frame" x="193" y="398" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="ZOw-v2-36Y"/>
+                                    <constraint firstAttribute="width" constant="155" id="abv-fW-5A9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-442-HOPE">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anger Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WE-mp-Stm">
+                                <rect key="frame" x="34" y="507" width="177" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="CHb-P6-B0F"/>
+                                    <constraint firstAttribute="width" constant="177" id="SDI-7B-d3M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8z7-fj-7t6">
+                                <rect key="frame" x="193" y="507" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="Fym-CN-13i"/>
+                                    <constraint firstAttribute="height" constant="23" id="llQ-hb-ipJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-999-9999">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with angry feelings and emotions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d18-L7-k9W">
+                                <rect key="frame" x="34" y="530" width="314" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="Gzf-me-W1c"/>
+                                    <constraint firstAttribute="height" constant="45" id="Mdo-mu-SRh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyber Bullying" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClP-TI-CC9">
+                                <rect key="frame" x="34" y="319" width="177" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="I44-1B-h8U"/>
+                                    <constraint firstAttribute="width" constant="177" id="uPB-We-2Vz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvl-UC-nw2">
+                                <rect key="frame" x="193" y="318" width="155" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="5sB-YF-YIc"/>
+                                    <constraint firstAttribute="width" constant="155" id="vbv-87-q1Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="1-800-829-0067">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with angry feelings and emotions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6D-cM-mDY">
+                                <rect key="frame" x="34" y="341" width="314" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="kHT-vU-YIc"/>
+                                    <constraint firstAttribute="height" constant="45" id="saO-EF-8h6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-uJ-fKt">
+                                <rect key="frame" x="34" y="421" width="314" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="Nyn-mh-5Zj"/>
+                                    <constraint firstAttribute="width" constant="314" id="plA-LJ-elj"/>
+                                </constraints>
+                                <string key="text">-Provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3J-iW-lnH">
+                                <rect key="frame" x="40" y="258" width="314" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Dz2-zy-I4o"/>
+                                    <constraint firstAttribute="width" constant="314" id="XR0-VR-VEi"/>
+                                </constraints>
+                                <string key="text">-Confidential and anonymous listening line for advice and counseling. Call if you need to talk with someone about being bullied.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer listening line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT5-fv-gl5">
+                                <rect key="frame" x="40" y="236" width="177" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="5qp-EC-3Iu"/>
+                                    <constraint firstAttribute="width" constant="177" id="DEa-XC-QOD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2470588235" green="0.54117647059999996" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gFb-Tc-MgT" firstAttribute="top" secondItem="9qS-sR-rIY" secondAttribute="bottom" constant="12" id="08N-vZ-eeD"/>
-                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="ZDh-9Z-uc8" secondAttribute="trailing" constant="27" id="2rx-yy-LZg"/>
-                            <constraint firstItem="Wqd-ve-OoL" firstAttribute="trailing" secondItem="u2r-DD-O2R" secondAttribute="trailing" id="3W9-p0-sZr"/>
-                            <constraint firstItem="CIt-Yw-7zV" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="22" id="42m-87-2Oe"/>
-                            <constraint firstItem="qML-82-3LK" firstAttribute="centerX" secondItem="IX1-fo-tHb" secondAttribute="centerX" id="6JI-Nh-XMm"/>
-                            <constraint firstItem="Wqd-ve-OoL" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" id="7n2-ah-avW"/>
-                            <constraint firstItem="jZg-Za-GBc" firstAttribute="top" secondItem="GEG-ni-b5b" secondAttribute="bottom" constant="7" id="81b-6r-PE6"/>
-                            <constraint firstItem="hAe-BC-hJX" firstAttribute="top" secondItem="vE7-Qy-1z2" secondAttribute="bottom" constant="13" id="91Y-Kp-EPL"/>
-                            <constraint firstItem="qML-82-3LK" firstAttribute="top" secondItem="8mS-zQ-1tx" secondAttribute="bottom" constant="8" id="FMX-fJ-ae1"/>
-                            <constraint firstItem="hAe-BC-hJX" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="16" id="Gsc-c5-MSA"/>
-                            <constraint firstItem="ZDh-9Z-uc8" firstAttribute="top" secondItem="GEG-ni-b5b" secondAttribute="bottom" constant="7" id="J9D-KY-aw9"/>
-                            <constraint firstItem="9qS-sR-rIY" firstAttribute="top" secondItem="jZg-Za-GBc" secondAttribute="bottom" id="Kln-Ai-A9E"/>
-                            <constraint firstItem="Is2-yU-XNj" firstAttribute="top" secondItem="x1J-vi-d3z" secondAttribute="bottom" id="XXN-Tc-vOg"/>
-                            <constraint firstItem="CDt-do-44f" firstAttribute="trailing" secondItem="v4j-KC-5x3" secondAttribute="trailing" id="XaF-Ld-mLl"/>
-                            <constraint firstItem="CIt-Yw-7zV" firstAttribute="top" secondItem="qML-82-3LK" secondAttribute="bottom" constant="20" id="Xb7-r6-Urs"/>
-                            <constraint firstItem="8mS-zQ-1tx" firstAttribute="top" secondItem="Wqd-ve-OoL" secondAttribute="bottom" constant="16" id="Ztb-hx-ubm"/>
-                            <constraint firstItem="7uy-ER-ilY" firstAttribute="top" secondItem="qML-82-3LK" secondAttribute="bottom" constant="20" id="aFW-Yl-Nzx"/>
-                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="daO-RZ-aea" secondAttribute="trailing" constant="27" id="b1H-7N-D8x"/>
-                            <constraint firstItem="GEG-ni-b5b" firstAttribute="top" secondItem="CIt-Yw-7zV" secondAttribute="bottom" id="bfX-x5-AyE"/>
-                            <constraint firstItem="7uy-ER-ilY" firstAttribute="trailing" secondItem="GEG-ni-b5b" secondAttribute="trailing" id="cbD-AH-KT7"/>
-                            <constraint firstItem="vE7-Qy-1z2" firstAttribute="top" secondItem="gFb-Tc-MgT" secondAttribute="bottom" id="dmi-4U-at9"/>
-                            <constraint firstItem="CDt-do-44f" firstAttribute="top" secondItem="vE7-Qy-1z2" secondAttribute="bottom" constant="13" id="e5Q-e0-ih4"/>
-                            <constraint firstItem="x1J-vi-d3z" firstAttribute="centerX" secondItem="IX1-fo-tHb" secondAttribute="centerX" id="elb-bC-oZf"/>
-                            <constraint firstItem="x1J-vi-d3z" firstAttribute="top" secondItem="v4j-KC-5x3" secondAttribute="bottom" constant="21" id="gOH-OK-fAY"/>
-                            <constraint firstItem="Is2-yU-XNj" firstAttribute="centerX" secondItem="IX1-fo-tHb" secondAttribute="centerX" id="hq0-vL-yFa"/>
-                            <constraint firstItem="daO-RZ-aea" firstAttribute="trailing" secondItem="vE7-Qy-1z2" secondAttribute="trailing" id="k0t-Xf-YIR"/>
-                            <constraint firstItem="8mS-zQ-1tx" firstAttribute="centerX" secondItem="IX1-fo-tHb" secondAttribute="centerX" id="kTY-D6-Lpi"/>
-                            <constraint firstItem="v4j-KC-5x3" firstAttribute="top" secondItem="hAe-BC-hJX" secondAttribute="bottom" id="mgY-Va-aOS"/>
-                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="7uy-ER-ilY" secondAttribute="trailing" constant="21" id="nRd-X0-KKs"/>
-                            <constraint firstItem="Wqd-ve-OoL" firstAttribute="top" secondItem="u2r-DD-O2R" secondAttribute="top" constant="4" id="qYU-b1-64p"/>
-                            <constraint firstItem="gFb-Tc-MgT" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="16" id="quf-il-u8b"/>
-                            <constraint firstItem="jZg-Za-GBc" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="16" id="r4A-SR-Yyo"/>
-                            <constraint firstItem="ZDh-9Z-uc8" firstAttribute="trailing" secondItem="9qS-sR-rIY" secondAttribute="trailing" id="tY0-GQ-xUa"/>
-                            <constraint firstItem="daO-RZ-aea" firstAttribute="top" secondItem="9qS-sR-rIY" secondAttribute="bottom" constant="12" id="vEh-Yh-4FZ"/>
-                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="CDt-do-44f" secondAttribute="trailing" constant="27" id="vd0-GM-4tS"/>
+                            <constraint firstItem="Wqd-ve-OoL" firstAttribute="trailing" secondItem="u2r-DD-O2R" secondAttribute="trailing" id="0bM-hG-k9U"/>
+                            <constraint firstItem="qML-82-3LK" firstAttribute="centerX" secondItem="IX1-fo-tHb" secondAttribute="centerX" id="2Vh-vv-VlM"/>
+                            <constraint firstItem="ClP-TI-CC9" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="34" id="3wa-rj-6Fb"/>
+                            <constraint firstItem="3WE-mp-Stm" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="34" id="4cg-Hb-q9a"/>
+                            <constraint firstItem="ClP-TI-CC9" firstAttribute="top" secondItem="S3J-iW-lnH" secondAttribute="bottom" constant="8" id="4wL-kW-7Wg"/>
+                            <constraint firstItem="Jyi-uJ-fKt" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="34" id="7dQ-pB-kmB"/>
+                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="8z7-fj-7t6" secondAttribute="trailing" constant="27" id="8qE-F9-xEA"/>
+                            <constraint firstItem="d18-L7-k9W" firstAttribute="top" secondItem="3WE-mp-Stm" secondAttribute="bottom" id="9Py-eP-LDe"/>
+                            <constraint firstItem="SkP-IV-nZO" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="10" id="G3h-m4-tsR"/>
+                            <constraint firstItem="1MJ-8h-7qs" firstAttribute="top" secondItem="qML-82-3LK" secondAttribute="bottom" constant="27" id="KK9-2x-mnp"/>
+                            <constraint firstItem="MSm-vg-fdM" firstAttribute="top" secondItem="R6D-cM-mDY" secondAttribute="bottom" constant="13" id="LkE-vd-Iar"/>
+                            <constraint firstItem="Wqd-ve-OoL" firstAttribute="top" secondItem="u2r-DD-O2R" secondAttribute="top" constant="4" id="NAi-gs-zuC"/>
+                            <constraint firstItem="R6D-cM-mDY" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="34" id="Nu7-Ke-TD7"/>
+                            <constraint firstItem="d18-L7-k9W" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="34" id="S8z-Zs-jT6"/>
+                            <constraint firstItem="S3J-iW-lnH" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="40" id="U8N-Zj-Udi"/>
+                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="zvl-UC-nw2" secondAttribute="trailing" constant="27" id="Vph-cN-Lj3"/>
+                            <constraint firstItem="jT5-fv-gl5" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="40" id="ZOG-Bt-153"/>
+                            <constraint firstItem="x1J-vi-d3z" firstAttribute="top" secondItem="SkP-IV-nZO" secondAttribute="bottom" constant="8" id="cOl-fX-7xM"/>
+                            <constraint firstItem="zvl-UC-nw2" firstAttribute="top" secondItem="S3J-iW-lnH" secondAttribute="bottom" constant="7" id="dxO-F8-SIN"/>
+                            <constraint firstItem="SkP-IV-nZO" firstAttribute="top" secondItem="qML-82-3LK" secondAttribute="bottom" constant="10" id="e8B-7J-RiN"/>
+                            <constraint firstItem="Is2-yU-XNj" firstAttribute="top" secondItem="x1J-vi-d3z" secondAttribute="bottom" id="fjN-Gv-CCP"/>
+                            <constraint firstItem="R6D-cM-mDY" firstAttribute="top" secondItem="zvl-UC-nw2" secondAttribute="bottom" id="gfO-GE-QxY"/>
+                            <constraint firstItem="S3J-iW-lnH" firstAttribute="top" secondItem="1MJ-8h-7qs" secondAttribute="bottom" id="gsT-tg-pM6"/>
+                            <constraint firstItem="x1J-vi-d3z" firstAttribute="centerX" secondItem="IX1-fo-tHb" secondAttribute="centerX" id="iWh-rk-wUG"/>
+                            <constraint firstItem="8mS-zQ-1tx" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="22" id="j34-4r-C5Z"/>
+                            <constraint firstItem="8z7-fj-7t6" firstAttribute="top" secondItem="Jyi-uJ-fKt" secondAttribute="bottom" constant="13" id="lZz-uF-gsN"/>
+                            <constraint firstItem="Wqd-ve-OoL" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" id="lhD-ce-NbU"/>
+                            <constraint firstItem="qML-82-3LK" firstAttribute="top" secondItem="Wqd-ve-OoL" secondAttribute="bottom" constant="108" id="mcP-TB-i6w"/>
+                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="1MJ-8h-7qs" secondAttribute="trailing" constant="21" id="nhD-CQ-eu0"/>
+                            <constraint firstItem="jT5-fv-gl5" firstAttribute="top" secondItem="qML-82-3LK" secondAttribute="bottom" constant="28" id="q1z-Mj-VNL"/>
+                            <constraint firstItem="Jyi-uJ-fKt" firstAttribute="top" secondItem="UFO-ku-kX5" secondAttribute="bottom" id="qWD-R7-nbp"/>
+                            <constraint firstItem="MSm-vg-fdM" firstAttribute="leading" secondItem="u2r-DD-O2R" secondAttribute="leading" constant="34" id="s11-6I-zYh"/>
+                            <constraint firstItem="UFO-ku-kX5" firstAttribute="top" secondItem="R6D-cM-mDY" secondAttribute="bottom" constant="12" id="u0L-3p-AMd"/>
+                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="SkP-IV-nZO" secondAttribute="trailing" constant="10" id="wuf-JD-dPX"/>
+                            <constraint firstItem="u2r-DD-O2R" firstAttribute="trailing" secondItem="UFO-ku-kX5" secondAttribute="trailing" constant="27" id="x7Z-bk-inQ"/>
+                            <constraint firstItem="8mS-zQ-1tx" firstAttribute="top" secondItem="Wqd-ve-OoL" secondAttribute="bottom" constant="16" id="xqx-2P-ifC"/>
+                            <constraint firstItem="3WE-mp-Stm" firstAttribute="top" secondItem="Jyi-uJ-fKt" secondAttribute="bottom" constant="13" id="xwE-dQ-bjq"/>
+                            <constraint firstItem="Is2-yU-XNj" firstAttribute="centerX" secondItem="IX1-fo-tHb" secondAttribute="centerX" id="yi8-fw-EUH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u2r-DD-O2R"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XuS-wl-xC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-627"/>
+            <point key="canvasLocation" x="869.60000000000002" y="-627.4362818590705"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Q0f-2E-Liv">
@@ -1620,13 +1647,12 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6ki-Q1-EEb"/>
-        <segue reference="mnE-7O-Agb"/>
         <segue reference="MDw-Up-KSE"/>
         <segue reference="7ic-es-Bfd"/>
         <segue reference="Uvh-gu-zaF"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="eQx-93-dmL"/>
-        <segue reference="OPD-p9-m9C"/>
+        <segue reference="Tll-4x-RWO"/>
         <segue reference="Y3J-RF-rn0"/>
     </inferredMetricsTieBreakers>
 </document>
