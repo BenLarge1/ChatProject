@@ -326,7 +326,7 @@
                                 <items>
                                     <navigationItem title="HOME" id="L0L-vj-kdq">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="66e-Ev-ZYu"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="KLe-Ux-qKp">
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="KLe-Ux-qKp">
                                             <connections>
                                                 <segue destination="qtj-49-caB" kind="show" identifier="homeToLogin" id="o3M-K6-SmN"/>
                                             </connections>
@@ -483,7 +483,7 @@
                                     <constraint firstAttribute="height" constant="48" id="eDK-J2-ONF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="  Cyber Bullying">
+                                <state key="normal" title="  Cyber Bullying Chat">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -507,7 +507,7 @@
                                     <constraint firstAttribute="height" constant="48" id="nch-ep-4Q0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="  Today at Wilkerson">
+                                <state key="normal" title="  Today at Wilkerson Chat">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -541,7 +541,7 @@
                                     <constraint firstAttribute="height" constant="48" id="je5-Pv-rlE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="  Physical Bullying">
+                                <state key="normal" title="  Physical Bullying Chat">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -1545,14 +1545,9 @@
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Sign Up" id="aPk-LL-52w">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="vas-0m-rRv">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EQ3-FT-LNJ">
-                                                <rect key="frame" x="16" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kc0-wI-dbf">
                                             <connections>
-                                                <segue destination="qtj-49-caB" kind="show" id="Y3J-RF-rn0"/>
+                                                <segue destination="qtj-49-caB" kind="show" id="9nH-Z1-YxZ"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1626,10 +1621,10 @@
     <inferredMetricsTieBreakers>
         <segue reference="MDw-Up-KSE"/>
         <segue reference="ELq-0S-A5O"/>
-        <segue reference="a2W-6X-IOn"/>
+        <segue reference="eyz-B2-bxW"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="eQx-93-dmL"/>
-        <segue reference="Tll-4x-RWO"/>
-        <segue reference="o3M-K6-SmN"/>
+        <segue reference="OPD-p9-m9C"/>
+        <segue reference="9nH-Z1-YxZ"/>
     </inferredMetricsTieBreakers>
 </document>
