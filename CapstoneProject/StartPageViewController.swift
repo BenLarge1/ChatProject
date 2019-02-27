@@ -25,8 +25,8 @@ class StartPageViewController: UIViewController {
         	Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if user != nil && error == nil
 			{
-                self.performSegue(withIdentifier: "loginToHome", sender: self)
-            }
+					self.performSegue(withIdentifier: "loginToHome", sender: self)
+			}
             else
 			{
                 let alertController = UIAlertController(title: "Error", message: "incorrect email or password, if new user please select new user", preferredStyle: .alert)
@@ -39,7 +39,7 @@ class StartPageViewController: UIViewController {
 		}
 		else
 		{
-			let alertController = UIAlertController(title: "Error", message: "shit is broke yo", preferredStyle: .alert)
+			let alertController = UIAlertController(title: "Error", message: "please enter an email or password", preferredStyle: .alert)
 			let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 			alertController.addAction(defaultAction)
 			self.present(alertController, animated: true, completion: nil)

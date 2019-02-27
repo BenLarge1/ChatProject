@@ -37,7 +37,18 @@ class SignUpViewController: UIViewController {
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {authResult, error in
 			if error == nil
 			{
+				Auth.auth().currentUser?.sendEmailVerification { (error) in
+					if error != nil
+					{
+						let alertController = UIAlertController(title: "Error", message: "could not send email verification, unknown error (need to impliment error getting", preferredStyle: .alert)
+						let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+						
+						alertController.addAction(defaultAction)
+						self.present(alertController, animated: true, completion: nil)
+					}
+				
 				self.performSegue(withIdentifier: "signupToHome", sender: self)
+																}
 			}
 			else
 			{
