@@ -50,15 +50,21 @@ class ReportBullyingFormViewController: UIViewController {
 	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database (hopefully)
     {
 		
+		let key = ref.child("posts").childByAutoId().key
+		let post = ["report": reportDescriptionTextView.text as String?,
+					"name": nameTextField.text as String?,
+					"date": dateTextField.text as String?,
+					"uid": user?.uid as String?]
+		let childUpdates = ["/reports/\(String(describing: key))": post]
+		ref.updateChildValues(childUpdates)
 		
-		
-		self.ref.child("reports/" + (user?.uid)!).setValue(["report text": reportDescriptionTextView.text])
-		self.ref.child("reports/" + (user?.uid)!).setValue(["date": dateTextField.text])
+		//self.ref.child("reports/" + (user?.uid)!).setValue(["report text": reportDescriptionTextView.text])
+		//self.ref.child("reports/" + (user?.uid)!).setValue(["date": dateTextField.text])
         
-        if !anonSwitch.isOn
-        {
-			self.ref.child("reports/" + (user?.uid)!).setValue(["name": nameTextField.text])
-        }
+        //if !anonSwitch.isOn
+        //{
+			//self.ref.child("reports/" + (user?.uid)!).setValue(["name": nameTextField.text])
+        //}
     }
     
     
