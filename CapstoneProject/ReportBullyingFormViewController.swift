@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import MessageUI
 import Firebase
 import FirebaseDatabase
+
 //import FirebaseStorage MARK: Need to install firebase storage
 
-class ReportBullyingFormViewController: UIViewController {
+class ReportBullyingFormViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     var ref = Database.database().reference()
     
@@ -47,7 +49,7 @@ class ReportBullyingFormViewController: UIViewController {
 	
 	let user = Auth.auth().currentUser
 
-	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database (hopefully)
+	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
     {
 		
 		let key = ref.child("posts").childByAutoId().key
@@ -58,16 +60,46 @@ class ReportBullyingFormViewController: UIViewController {
 		let childUpdates = ["/reports/\(String(describing: key))": post]
 		ref.updateChildValues(childUpdates)
 		
-		//self.ref.child("reports/" + (user?.uid)!).setValue(["report text": reportDescriptionTextView.text])
-		//self.ref.child("reports/" + (user?.uid)!).setValue(["date": dateTextField.text])
-        
-        //if !anonSwitch.isOn
-        //{
-			//self.ref.child("reports/" + (user?.uid)!).setValue(["name": nameTextField.text])
-        //}
+		sendEmail()
     }
     
-    
+    func sendEmail()
+	{
+		let mailComposeViewController = configureMailController()
+		if MFMailComposeViewController.canSendMail()
+		{
+			self.present(mailComposeViewController, animated: true, completion: nil)
+		}
+		else
+		{
+			showMailError()
+		}
+	}
+	
+	func configureMailController() -> MFMailComposeViewController
+	{
+		let mailComposerVC = MFMailComposeViewController()
+		mailComposerVC.mailComposeDelegate = self
+		
+		mailComposerVC.setToRecipients(["wildcatsagainstbullying@gmail.com"])
+		mailComposerVC.setSubject("New Report From:" + (user?.uid)!)
+		mailComposerVC.setMessageBody("Report message\n" + reportDescriptionTextView.text, isHTML: false)
+		
+		return mailComposerVC
+	}
+	
+	func showMailError()
+	{
+		let sendMailErrorAlert = UIAlertController(title: "Could not send email", message: "Your device may not be able to send email, or you are running this from a simulator", preferredStyle: .alert)
+		let dismiss = UIAlertAction(title: "OK", style: .default, handler: nil)
+		sendMailErrorAlert.addAction(dismiss)
+		self.present(sendMailErrorAlert, animated: true, completion: nil)
+	}
+	
+	func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
+	{
+		controller.dismiss(animated: true, completion: nil)
+	}
     /*
     // MARK: - Navigation
 
