@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qtj-49-caB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qtj-49-caB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Symbol.ttf">
+            <string>Symbol</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--StartView-->
         <scene sceneID="3nZ-ad-8Df">
@@ -992,7 +999,7 @@
                                     <action selector="toggleSwitch:" destination="drQ-px-qf8" eventType="valueChanged" id="GsB-9s-xGM"/>
                                 </connections>
                             </switch>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SiI-eD-fdz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SiI-eD-fdz">
                                 <rect key="frame" x="16" y="372" width="343" height="216"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1010,6 +1017,7 @@
                                 </constraints>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
+                                    <action selector="writeReportToDatabase:" destination="drQ-px-qf8" eventType="touchUpInside" id="VdP-hh-5ta"/>
                                     <segue destination="nwK-Bw-mBH" kind="show" id="a3k-WT-pkZ"/>
                                 </connections>
                             </button>
@@ -1049,7 +1057,9 @@
                     </view>
                     <connections>
                         <outlet property="anonSwitch" destination="lD5-ME-2mP" id="gsr-4f-4i8"/>
+                        <outlet property="dateTextField" destination="57Y-9L-IvG" id="D4n-th-G6N"/>
                         <outlet property="nameTextField" destination="f4S-12-EeC" id="Gie-h7-nLW"/>
+                        <outlet property="reportDescriptionTextView" destination="SiI-eD-fdz" id="9db-kN-eq4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNq-RA-SA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1106,17 +1116,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKB-3S-PaZ">
-                                <rect key="frame" x="179" y="141" width="155" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="nna-sp-FbL"/>
-                                    <constraint firstAttribute="height" constant="23" id="yVd-Gy-PpA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="1-800-829-0067">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hotline for those dealing with bullying online or on social media" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7H-T4-p4o">
                                 <rect key="frame" x="20" y="167" width="314" height="45"/>
                                 <constraints>
@@ -1254,6 +1253,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rHs-tx-e7r">
+                                <rect key="frame" x="183" y="142" width="155" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1268,7 +1276,6 @@
                             <constraint firstItem="DBL-wD-0tF" firstAttribute="top" secondItem="pd1-c2-cl3" secondAttribute="bottom" constant="2" id="Fi8-zq-H2T"/>
                             <constraint firstItem="TUx-u0-xML" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="18.5" id="HA8-Rc-mwk"/>
                             <constraint firstItem="bgv-n7-isx" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="10" id="HbS-ob-QJl"/>
-                            <constraint firstItem="RKB-3S-PaZ" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="17.5" id="Izm-ZJ-WnU"/>
                             <constraint firstItem="7uL-0u-Phq" firstAttribute="top" secondItem="lMK-Jq-sNz" secondAttribute="bottom" constant="21" id="Jl1-tJ-f4Q"/>
                             <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="MDb-tG-1CD" secondAttribute="trailing" constant="10" id="M8f-K1-sYJ"/>
                             <constraint firstItem="pd1-c2-cl3" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="16" id="O28-bg-hBG"/>
@@ -1276,7 +1283,6 @@
                             <constraint firstItem="NYS-nv-t77" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="TCb-yN-Qw3"/>
                             <constraint firstItem="bgv-n7-isx" firstAttribute="top" secondItem="NYS-nv-t77" secondAttribute="bottom" constant="7.5" id="Teg-4K-GlH"/>
                             <constraint firstItem="Fwd-7G-Z9S" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="20" id="ThQ-SO-7fR"/>
-                            <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="RKB-3S-PaZ" secondAttribute="trailing" constant="41" id="Van-Qq-T2k"/>
                             <constraint firstItem="4Sg-LR-hAq" firstAttribute="leading" secondItem="JK3-h7-UwO" secondAttribute="leading" constant="20" id="X0u-sP-EAf"/>
                             <constraint firstItem="JK3-h7-UwO" firstAttribute="trailing" secondItem="dmT-R9-HtD" secondAttribute="trailing" constant="41" id="Xle-90-lkj"/>
                             <constraint firstItem="9R1-9v-1I6" firstAttribute="trailing" secondItem="JK3-h7-UwO" secondAttribute="trailing" id="YqO-w8-JK8"/>
@@ -1306,7 +1312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVi-zv-lHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1639" y="206"/>
+            <point key="canvasLocation" x="-1615" y="221"/>
         </scene>
         <!--Resources View Controller-->
         <scene sceneID="eLc-sb-Agn">
@@ -1553,7 +1559,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idG-aV-gVp">
                                 <rect key="frame" x="66.5" y="253" width="242" height="30"/>
@@ -1585,7 +1591,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartQuotesType="no" textContentType="username"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2O-Lc-idf">
                                 <rect key="frame" x="127.5" y="325" width="120" height="38"/>
@@ -1644,11 +1650,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MDw-Up-KSE"/>
-        <segue reference="ELq-0S-A5O"/>
+        <segue reference="7ic-es-Bfd"/>
         <segue reference="eyz-B2-bxW"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="eQx-93-dmL"/>
         <segue reference="Tll-4x-RWO"/>
-        <segue reference="o3M-K6-SmN"/>
+        <segue reference="9nH-Z1-YxZ"/>
     </inferredMetricsTieBreakers>
 </document>
