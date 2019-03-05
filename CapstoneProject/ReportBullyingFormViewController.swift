@@ -37,14 +37,14 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
             nameTextField.isUserInteractionEnabled = false
 			nameTextField.backgroundColor = #colorLiteral(red: 0.2470588235, green: 0.5411764706, blue: 0.2392156863, alpha: 1)
 			nameTextField.textColor = #colorLiteral(red: 0.2470588235, green: 0.5411764706, blue: 0.2392156863, alpha: 1)
-			nameTextField.attributedPlaceholder = NSAttributedString(string: "", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+            nameTextField.attributedPlaceholder = NSAttributedString(string: "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         }
         else
         {
             nameTextField.isUserInteractionEnabled = true
 			nameTextField.backgroundColor = UIColor.white
 			nameTextField.textColor = UIColor.black
-			nameTextField.attributedPlaceholder = NSAttributedString(string: "Your Name", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray])
+            nameTextField.attributedPlaceholder = NSAttributedString(string: "Your Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         }
     }
 	@IBOutlet weak var reportDescriptionTextView: UITextView!;
