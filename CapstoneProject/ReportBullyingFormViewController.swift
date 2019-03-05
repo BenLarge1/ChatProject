@@ -13,7 +13,7 @@ import FirebaseDatabase
 
 //import FirebaseStorage MARK: Need to install firebase storage
 
-class ReportBullyingFormViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class ReportBullyingFormViewController: UIViewController, MFMailComposeViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var ref = Database.database().reference()
     
@@ -23,6 +23,8 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 
         // Do any additional setup after loading the view.
     }
+    
+    //MARK Variables
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var anonSwitch: UISwitch!
@@ -100,6 +102,18 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 	{
 		controller.dismiss(animated: true, completion: nil)
 	}
+    
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer)
+    {
+        nameTextField.resignFirstResponder()
+        dateTextField.resignFirstResponder()
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+
+    }
+    
+    
     /*
     // MARK: - Navigation
 

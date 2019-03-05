@@ -1073,7 +1073,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNq-RA-SA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="JjQ-tC-4aR"/>
+                <tapGestureRecognizer id="JjQ-tC-4aR">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="drQ-px-qf8" id="OUL-tZ-um1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="168.80000000000001" y="-627.4362818590705"/>
         </scene>
@@ -1666,7 +1670,7 @@
         <segue reference="eyz-B2-bxW"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="eQx-93-dmL"/>
-        <segue reference="Tll-4x-RWO"/>
+        <segue reference="MsK-4U-Z0v"/>
         <segue reference="9nH-Z1-YxZ"/>
     </inferredMetricsTieBreakers>
 </document>
