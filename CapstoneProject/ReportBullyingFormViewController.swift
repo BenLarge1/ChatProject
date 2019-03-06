@@ -15,7 +15,7 @@ import FirebaseDatabase
 
 class ReportBullyingFormViewController: UIViewController, MFMailComposeViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    var ref = Database.database().reference()
+    var ref = Database.database().reference() //gets firebase connection
     
     override func viewDidLoad()
     {
@@ -49,10 +49,43 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
     }
 	@IBOutlet weak var reportDescriptionTextView: UITextView!;
 	
+	//MARK Variables #1
+	
 	let user = Auth.auth().currentUser
-
+    var imageView: UIImage!
+	var imagePicker = UIImagePickerController()
+	
+    func getReportImage()
+    {
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
+        {
+            //print("Button capture")
+            
+            imagePicker.delegate = self
+            imagePicker.sourceType = .savedPhotosAlbum
+            imagePicker.allowsEditing = false
+            
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!)
+    {
+        self.dismiss(animated: true, completion: { () -> Void in})
+        
+        imageView = image
+    }
+	
+	//uploadReportImage()
+	//{
+	
+	//}
+	
 	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
     {
+		getReportImage()
+		
+		//uploadReportImage()
 		
 		let key = ref.child("posts").childByAutoId().key
 		let post = ["report": reportDescriptionTextView.text as String?,
@@ -61,7 +94,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 					"uid": user?.uid as String?]
 		let childUpdates = ["/reports/\(String(describing: key))": post]
 		ref.updateChildValues(childUpdates)
-		
+        
 		sendEmail()
 		
 		let alertController = UIAlertController(title: "Success!", message: "Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.", preferredStyle: .alert)
@@ -72,7 +105,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 		
     }
 	
-	func GoToResourcesPages()
+	func GoToResourcesPages() //just calls transition to resources page
 	{
 		performSegue(withIdentifier: "reportToResources", sender: self)
 	}
