@@ -63,8 +63,20 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 		ref.updateChildValues(childUpdates)
 		
 		sendEmail()
+		
+		let alertController = UIAlertController(title: "Success!", message: "Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.", preferredStyle: .alert)
+		let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {action in self.GoToResourcesPages()})
+		
+		alertController.addAction(defaultAction)
+		self.present(alertController, animated: true, completion: nil)
+		
     }
-    
+	
+	func GoToResourcesPages()
+	{
+		performSegue(withIdentifier: "reportToResources", sender: self)
+	}
+	
     func sendEmail()
 	{
 		let mailComposeViewController = configureMailController()

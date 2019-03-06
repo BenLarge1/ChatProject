@@ -1030,7 +1030,6 @@
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
                                     <action selector="writeReportToDatabase:" destination="drQ-px-qf8" eventType="touchUpInside" id="VdP-hh-5ta"/>
-                                    <segue destination="nwK-Bw-mBH" kind="show" id="a3k-WT-pkZ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="transparent upload symbol" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-zw-zMT">
@@ -1083,6 +1082,7 @@
                         <outlet property="dateTextField" destination="57Y-9L-IvG" id="D4n-th-G6N"/>
                         <outlet property="nameTextField" destination="f4S-12-EeC" id="Gie-h7-nLW"/>
                         <outlet property="reportDescriptionTextView" destination="SiI-eD-fdz" id="9db-kN-eq4"/>
+                        <segue destination="39c-XF-OJY" kind="show" identifier="reportToResources" id="8Jl-Gh-0Bt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNq-RA-SA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1092,7 +1092,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="168.80000000000001" y="-627.4362818590705"/>
+            <point key="canvasLocation" x="201" y="-626"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="09J-BT-d0R">
@@ -1349,7 +1349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVi-zv-lHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1615.2" y="220.83958020989508"/>
+            <point key="canvasLocation" x="-919" y="219"/>
         </scene>
         <!--Resources View Controller-->
         <scene sceneID="eLc-sb-Agn">
@@ -1687,8 +1687,8 @@
         <image name="transparent upload symbol" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MDw-Up-KSE"/>
-        <segue reference="ELq-0S-A5O"/>
+        <segue reference="8Jl-Gh-0Bt"/>
+        <segue reference="7ic-es-Bfd"/>
         <segue reference="Uvh-gu-zaF"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="HgO-mC-RbM"/>
