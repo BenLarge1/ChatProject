@@ -108,6 +108,8 @@ PODS:
   - gRPC-Core/Interface (1.17.0)
   - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
+  - MessageInputBar (0.4.1):
+    - MessageInputBar/Core (= 0.4.1)
   - MessageInputBar/Core (0.4.1)
   - MessageKit (2.0.0):
     - MessageInputBar/Core
@@ -124,6 +126,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Firestore
   - Firebase/Storage
+  - MessageInputBar (from `https://github.com/MessageKit/MessageInputBar.git`, branch `master`)
   - MessageKit
 
 SPEC REPOS:
@@ -144,10 +147,19 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - leveldb-library
-    - MessageInputBar
     - MessageKit
     - nanopb
     - Protobuf
+
+EXTERNAL SOURCES:
+  MessageInputBar:
+    :branch: master
+    :git: https://github.com/MessageKit/MessageInputBar.git
+
+CHECKOUT OPTIONS:
+  MessageInputBar:
+    :commit: 4d31c031c7cbda48cad2d150c5f3144423976dc3
+    :git: https://github.com/MessageKit/MessageInputBar.git
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
@@ -166,11 +178,11 @@ SPEC CHECKSUMS:
   gRPC-Core: 4028031ed2c5267cca0d846c876d8046b1ecb9b6
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
-  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
+  MessageInputBar: 156d0e3e8284b341b04702811f9ce9330975844d
   MessageKit: 29c1c87e5a396d2ca7a3f712e5171dc9aba42a1e
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
 
-PODFILE CHECKSUM: 1b25f60386f350db2eaff3c5894b90887251e73b
+PODFILE CHECKSUM: 4ca2c6928d93d5c9dfee5016f441e9ff0d5141d6
 
 COCOAPODS: 1.6.1

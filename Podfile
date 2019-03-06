@@ -5,6 +5,7 @@ inhibit_all_warnings!
 
 target 'CapstoneProject' do
   pod 'MessageKit'
+pod 'MessageInputBar', :git => 'https://github.com/MessageKit/MessageInputBar.git', :branch => 'master'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'

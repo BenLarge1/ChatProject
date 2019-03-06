@@ -460,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2X-MU-hsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2694" y="-1436"/>
+            <point key="canvasLocation" x="-2529" y="-1340"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="Xj4-8A-MDx">
@@ -495,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1J-yB-GHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1638" y="-1488"/>
+            <point key="canvasLocation" x="-1697" y="-1340"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Fe-ZY-a6Q">
@@ -640,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeu-QF-7V3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511.19999999999999" y="-1489.2053973013494"/>
+            <point key="canvasLocation" x="-772" y="-1340"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H8I-OP-z3u">
@@ -710,10 +710,10 @@
             </objects>
             <point key="canvasLocation" x="271" y="-1412"/>
         </scene>
-        <!--Chat Home View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="nXE-Iw-oVw">
             <objects>
-                <viewController storyboardIdentifier="chathome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x1F-ss-8XM" customClass="ChatHomeViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chathome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x1F-ss-8XM" customClass="ChatViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AS8-vD-diZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -723,7 +723,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Td-fH-Ea0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1245" y="-2182"/>
+            <point key="canvasLocation" x="-1294" y="-2058"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kqg-fK-u0q">
@@ -1705,12 +1705,13 @@
         <image name="transparent upload symbol" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="mnE-7O-Agb"/>
         <segue reference="8Jl-Gh-0Bt"/>
         <segue reference="7ic-es-Bfd"/>
         <segue reference="Uvh-gu-zaF"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="HgO-mC-RbM"/>
-        <segue reference="Tll-4x-RWO"/>
+        <segue reference="rUW-Hv-1g3"/>
         <segue reference="o3M-K6-SmN"/>
     </inferredMetricsTieBreakers>
 </document>

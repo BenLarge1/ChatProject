@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CapstoneProject/RWRC">
+   </FileRef>
+   <FileRef
       location = "group:CapstoneProject.xcodeproj">
    </FileRef>
    <FileRef
