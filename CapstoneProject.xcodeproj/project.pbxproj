@@ -39,25 +39,6 @@
 		CE41EBA9221F4A9E001FE707 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		CE41EBAB221F4C85001FE707 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CE41EBAD221F4D9D001FE707 /* ReportBullyingFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportBullyingFormViewController.swift; sourceTree = "<group>"; };
-		CE50AC0122306C7000ADC945 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		CE50AC0222306C7000ADC945 /* DatabaseRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepresentation.swift; sourceTree = "<group>"; };
-		CE50AC0322306C7000ADC945 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		CE50AC0522306C7100ADC945 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
-		CE50AC0622306C7100ADC945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE50AC0722306C7100ADC945 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
-		CE50AC0922306C7100ADC945 /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
-		CE50AC0A22306C7100ADC945 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
-		CE50AC0B22306C7100ADC945 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
-		CE50AC0C22306C7100ADC945 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
-		CE50AC0E22306C7100ADC945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE50AC1022306C7100ADC945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE50AC1122306C7100ADC945 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CE50AC1222306C7100ADC945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE50AC1422306C7300ADC945 /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
-		CE50AC1522306C7300ADC945 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		CE50AC1622306C7300ADC945 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CE50AC1722306C7300ADC945 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		CE50AC1822306C7300ADC945 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		CE5A2546221B8DE800B954B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CE5A2548221B912100B954B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
@@ -106,11 +87,6 @@
 		CE22DF002208F2610082633E /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
-				CE50AC0422306C7100ADC945 /* Controllers */,
-				CE50AC0822306C7100ADC945 /* Extensions */,
-				CE50AC0022306C7000ADC945 /* Models */,
-				CE50AC0D22306C7100ADC945 /* Supporting Files */,
-				CE50AC1322306C7300ADC945 /* View Controllers */,
 				CE269A8F2212554D00167C2A /* CapstoneProject.entitlements */,
 				CE22DF012208F2610082633E /* AppDelegate.swift */,
 				CE22DF032208F2610082633E /* ViewController.swift */,
@@ -128,63 +104,6 @@
 				CE22DF0D2208F2610082633E /* Info.plist */,
 			);
 			path = CapstoneProject;
-			sourceTree = "<group>";
-		};
-		CE50AC0022306C7000ADC945 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CE50AC0122306C7000ADC945 /* Channel.swift */,
-				CE50AC0222306C7000ADC945 /* DatabaseRepresentation.swift */,
-				CE50AC0322306C7000ADC945 /* Message.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CE50AC0422306C7100ADC945 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CE50AC0522306C7100ADC945 /* AppController.swift */,
-				CE50AC0622306C7100ADC945 /* AppDelegate.swift */,
-				CE50AC0722306C7100ADC945 /* AppSettings.swift */,
-			);
-			name = Controllers;
-			path = RWRC/Controllers;
-			sourceTree = "<group>";
-		};
-		CE50AC0822306C7100ADC945 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CE50AC0922306C7100ADC945 /* UICollectionView+Additions.swift */,
-				CE50AC0A22306C7100ADC945 /* UIColor+Additions.swift */,
-				CE50AC0B22306C7100ADC945 /* UIImage+Additions.swift */,
-				CE50AC0C22306C7100ADC945 /* UIView+Additions.swift */,
-			);
-			name = Extensions;
-			path = RWRC/Extensions;
-			sourceTree = "<group>";
-		};
-		CE50AC0D22306C7100ADC945 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE50AC0E22306C7100ADC945 /* Assets.xcassets */,
-				CE50AC0F22306C7100ADC945 /* LaunchScreen.storyboard */,
-				CE50AC1122306C7100ADC945 /* GoogleService-Info.plist */,
-				CE50AC1222306C7100ADC945 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			path = "RWRC/Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE50AC1322306C7300ADC945 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CE50AC1422306C7300ADC945 /* ChannelsViewController.swift */,
-				CE50AC1522306C7300ADC945 /* ChatViewController.swift */,
-				CE50AC1622306C7300ADC945 /* LoginViewController.swift */,
-				CE50AC1722306C7300ADC945 /* LoginViewController.xib */,
-				CE50AC1822306C7300ADC945 /* NavigationController.swift */,
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		FAF43A0666ED7678BFD1502A /* Pods */ = {
@@ -361,14 +280,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE22DF0B2208F2610082633E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CE50AC0F22306C7100ADC945 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE50AC1022306C7100ADC945 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

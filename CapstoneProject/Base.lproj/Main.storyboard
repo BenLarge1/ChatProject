@@ -1032,23 +1032,8 @@
                                     <action selector="writeReportToDatabase:" destination="drQ-px-qf8" eventType="touchUpInside" id="VdP-hh-5ta"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transparent upload symbol" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-zw-zMT">
-                                <rect key="frame" x="16" y="596" width="29" height="29"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="8Dx-ij-9ZA"/>
-                                    <constraint firstAttribute="width" constant="29" id="Ae9-E9-ZWM"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="JjQ-tC-4aR" appends="YES" id="Vhi-9p-Aez"/>
-                                </connections>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Upload Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-4w-2Jx">
-                                <rect key="frame" x="45" y="596" width="149" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="  Upload Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-4w-2Jx">
+                                <rect key="frame" x="49" y="595" width="149" height="29"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="149" id="Gcu-eq-nai"/>
@@ -1057,6 +1042,18 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E74-Rs-9w7">
+                                <rect key="frame" x="16" y="595" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="transparent upload symbol"/>
+                                <connections>
+                                    <action selector="btnClicked" destination="drQ-px-qf8" eventType="touchUpInside" id="pT9-cJ-EIW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-Rn-v54">
+                                <rect key="frame" x="15" y="632" width="183" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1066,11 +1063,8 @@
                             <constraint firstItem="SiI-eD-fdz" firstAttribute="top" secondItem="cRD-Vu-Z2v" secondAttribute="bottom" constant="24" id="8X7-PQ-LnN"/>
                             <constraint firstItem="cRD-Vu-Z2v" firstAttribute="leading" secondItem="q50-Ed-Fq4" secondAttribute="leading" constant="41" id="B7D-0F-neF"/>
                             <constraint firstItem="3FM-A4-rHV" firstAttribute="trailing" secondItem="q50-Ed-Fq4" secondAttribute="trailing" id="BnH-HY-nVA"/>
-                            <constraint firstItem="t1j-4w-2Jx" firstAttribute="leading" secondItem="fQf-zw-zMT" secondAttribute="trailing" id="Buc-bF-yzq"/>
                             <constraint firstItem="1vc-wB-Ufr" firstAttribute="leading" secondItem="q50-Ed-Fq4" secondAttribute="leading" constant="41" id="Dis-tI-6w6"/>
-                            <constraint firstItem="fQf-zw-zMT" firstAttribute="top" secondItem="SiI-eD-fdz" secondAttribute="bottom" constant="8" id="Emb-Pm-YxH"/>
                             <constraint firstItem="3FM-A4-rHV" firstAttribute="leading" secondItem="q50-Ed-Fq4" secondAttribute="leading" id="IQ9-EK-scN"/>
-                            <constraint firstItem="fQf-zw-zMT" firstAttribute="leading" secondItem="q50-Ed-Fq4" secondAttribute="leading" constant="16" id="MkB-bc-Axi"/>
                             <constraint firstItem="57Y-9L-IvG" firstAttribute="leading" secondItem="q50-Ed-Fq4" secondAttribute="leading" constant="32" id="Nbm-Sp-eBS"/>
                             <constraint firstItem="lD5-ME-2mP" firstAttribute="top" secondItem="3FM-A4-rHV" secondAttribute="bottom" constant="28" id="P2M-OS-P3G"/>
                             <constraint firstItem="Pwa-Zw-KAd" firstAttribute="top" secondItem="2Ky-B3-u86" secondAttribute="bottom" id="W4l-HX-ME3"/>
@@ -1097,7 +1091,9 @@
                     </view>
                     <connections>
                         <outlet property="anonSwitch" destination="lD5-ME-2mP" id="gsr-4f-4i8"/>
+                        <outlet property="chooseBuuton" destination="E74-Rs-9w7" id="hS5-Aa-5zt"/>
                         <outlet property="dateTextField" destination="57Y-9L-IvG" id="D4n-th-G6N"/>
+                        <outlet property="imageView" destination="TRt-Rn-v54" id="swV-VN-lRq"/>
                         <outlet property="nameTextField" destination="f4S-12-EeC" id="Gie-h7-nLW"/>
                         <outlet property="reportDescriptionTextView" destination="SiI-eD-fdz" id="9db-kN-eq4"/>
                         <segue destination="39c-XF-OJY" kind="show" identifier="reportToResources" id="8Jl-Gh-0Bt"/>
@@ -1705,7 +1701,6 @@
         <image name="transparent upload symbol" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mnE-7O-Agb"/>
         <segue reference="8Jl-Gh-0Bt"/>
         <segue reference="7ic-es-Bfd"/>
         <segue reference="Uvh-gu-zaF"/>

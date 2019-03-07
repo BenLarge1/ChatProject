@@ -10,13 +10,17 @@ import UIKit
 import MessageUI
 import Firebase
 import FirebaseDatabase
+import FirebaseStorage
 
 //import FirebaseStorage MARK: Need to install firebase storage
 
 class ReportBullyingFormViewController: UIViewController, MFMailComposeViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    var ref = Database.database().reference() //gets firebase connection
+    //MARK Firebase Inits.
     
+    var ref = Database.database().reference() //gets firebase connection
+    let storage = Storage.storage() //firebase storage area
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -24,7 +28,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
         // Do any additional setup after loading the view.
     }
     
-    //MARK Variables
+    //MARK Variables #0
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var anonSwitch: UISwitch!
@@ -52,40 +56,62 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 	//MARK Variables #1
 	
 	let user = Auth.auth().currentUser
-    var imageView: UIImage!
+	
+	@IBOutlet var ReportImageView: UIImageView!
+	@IBOutlet var chooseButon: UIButton!
+    
 	var imagePicker = UIImagePickerController()
 	
-    func getReportImage()
+	@IBAction func uploadImage()
     {
-        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
+		if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
         {
-            //print("Button capture")
-            
-            imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum
-            imagePicker.allowsEditing = false
-            
-            present(imagePicker, animated: true, completion: nil)
-        }
-    }
+			imagePicker.delegate = self
+			imagePicker.sourceType = .savedPhotosAlbum
+			imagePicker.allowsEditing = false
+			
+			present(imagePicker, animated: true, completion: nil)
+		}
+	}
+	
+	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+		self.dismiss(animated: true, completion: { () -> Void in
+			
+		})
+		
+		ReportImageView.image = image
+	}
     
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!)
+    func uploadImageToDatabase()
     {
-        self.dismiss(animated: true, completion: { () -> Void in})
+		if ReportImageView.image != nil
+		{
+			
+		}
+		else
+		{
+			return
+		}
+		
+		let storageRef = storage.reference()
+		
+        // Data in memory
+        //let data = ReportImageView.image
+		
+		let img = ReportImageView.image
+		let data = ReportImageView.image!.pngData()
+
+        // Create a reference to the file you want to upload
+        let riversRef = storageRef.child("images")
         
-        imageView = image
-    }
-	
-	//uploadReportImage()
-	//{
-	
-	//}
-	
+        // Upload the file to the path "images"
+		let uploadTask = riversRef.putData(data!, metadata: nil)
+        { (metadata, error) in
+		}
+	}
+    
 	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
     {
-		getReportImage()
-		
-		//uploadReportImage()
 		
 		let key = ref.child("posts").childByAutoId().key
 		let post = ["report": reportDescriptionTextView.text as String?,
@@ -97,6 +123,8 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
         
 		sendEmail()
 		
+        uploadImageToDatabase()
+        
 		let alertController = UIAlertController(title: "Success!", message: "Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.", preferredStyle: .alert)
 		let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {action in self.GoToResourcesPages()})
 		
