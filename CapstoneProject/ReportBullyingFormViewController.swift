@@ -95,10 +95,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 		
 		let storageRef = storage.reference()
 		
-        // Data in memory
-        //let data = ReportImageView.image
-		
-		let img = ReportImageView.image
+        // data = the picture selected by the user to upload
 		let data = ReportImageView.image!.pngData()
 
         // Create a reference to the file you want to upload
