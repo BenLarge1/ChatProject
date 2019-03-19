@@ -58,11 +58,11 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 	let user = Auth.auth().currentUser
 	
 	@IBOutlet var ReportImageView: UIImageView!
-	@IBOutlet var chooseButon: UIButton!
+	//@IBOutlet var chooseButon: UIButton!
     
 	var imagePicker = UIImagePickerController()
 	
-	@IBAction func uploadImage()
+    func uploadImage()
     {
 		if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
         {
@@ -120,7 +120,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
         
 		sendEmail()
 		
-        uploadImageToDatabase()
+        //uploadImageToDatabase()
         
 		let alertController = UIAlertController(title: "Success!", message: "Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.", preferredStyle: .alert)
 		let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {action in self.GoToResourcesPages()})
@@ -173,7 +173,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 		controller.dismiss(animated: true, completion: nil)
 	}
     
-    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer)
+    /* @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer)
     {
         nameTextField.resignFirstResponder()
         dateTextField.resignFirstResponder()
@@ -181,7 +181,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = .photoLibrary
 
-    }
+    } */
     
     
     /*
