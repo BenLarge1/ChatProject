@@ -430,12 +430,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-XE-r9n">
-                                <rect key="frame" x="39" y="184" width="325" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-XE-r9n">
+                                <rect key="frame" x="39" y="192" width="276" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="Spotify">
+                                <state key="normal" image="playlist1">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -1759,11 +1758,11 @@ WW91EFR1YmU
         <image name="game_icon" width="300" height="173"/>
         <image name="links_icon" width="300" height="207"/>
         <image name="music_icon" width="247" height="300"/>
+        <image name="playlist1" width="276" height="44"/>
         <image name="report_icon" width="227" height="300"/>
         <image name="transparent upload symbol" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mnE-7O-Agb"/>
         <segue reference="MDw-Up-KSE"/>
         <segue reference="6Gv-eq-y9R"/>
         <segue reference="Uvh-gu-zaF"/>
