@@ -212,7 +212,7 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x1F-ss-8XM" kind="show" id="EnA-j7-QNS"/>
+                                    <segue destination="bU4-N9-8mx" kind="show" id="s7a-rh-m31"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5O-7g-iGE">
@@ -306,6 +306,9 @@
                                     <constraint firstAttribute="width" constant="84" id="Ync-Ba-Z8i"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="chat_icon"/>
+                                <connections>
+                                    <segue destination="bU4-N9-8mx" kind="show" id="1Sl-g3-ee9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMv-lF-NYh">
                                 <rect key="frame" x="23" y="437" width="71" height="77"/>
@@ -673,7 +676,7 @@
                                     <constraint firstAttribute="height" constant="48" id="eDK-J2-ONF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="  Cyber Bullying Chat">
+                                <state key="normal" title="  Cyberbullying">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -697,7 +700,7 @@
                                     <constraint firstAttribute="height" constant="48" id="nch-ep-4Q0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="  Today at Wilkerson Chat">
+                                <state key="normal" title="  Today at Wilkerson">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -731,7 +734,7 @@
                                     <constraint firstAttribute="height" constant="48" id="je5-Pv-rlE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="  Physical Bullying Chat">
+                                <state key="normal" title="  Physical Bullying">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -871,20 +874,102 @@
             </objects>
             <point key="canvasLocation" x="271" y="-1412"/>
         </scene>
-        <!--Chat View Controller-->
-        <scene sceneID="nXE-Iw-oVw">
+        <!--View Controller-->
+        <scene sceneID="rEL-E0-dIN">
             <objects>
-                <viewController storyboardIdentifier="chathome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x1F-ss-8XM" customClass="ChatViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AS8-vD-diZ">
+                <viewController id="bU4-N9-8mx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xne-2u-0Pi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="R6u-9x-zRw"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="TnO-FT-hXe">
+                                <rect key="frame" x="0.0" y="24" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="S8r-B2-PeN"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Wilkerson Chat Room" id="fLT-D7-XqJ"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Wildcats Against Bullying Chat Room!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJV-5E-Pt8">
+                                <rect key="frame" x="16" y="86" width="343" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7K-cd-ALY">
+                                <rect key="frame" x="34" y="159" width="325" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Qx3-Jx-hYX"/>
+                                    <constraint firstAttribute="width" constant="325" id="RVG-sK-rUf"/>
+                                </constraints>
+                                <string key="text">The chat rooms are a judgement-free space for you to express your feelings on bullying. Before you enter, here’s a few things you should know:</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QJ-Sf-vSw">
+                                <rect key="frame" x="50" y="250" width="309" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="3DO-ND-jbI"/>
+                                    <constraint firstAttribute="height" constant="167" id="rwb-7S-vv3"/>
+                                </constraints>
+                                <string key="text">-Bullying is not permitted in the chat. Anything in the chat can be reported if another student feels bullied, so be aware of the words you use.
+-If you feel bullied, make sure to screenshot the message and report it using the flag icon on the chat homepage.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59n-f4-lgS">
+                                <rect key="frame" x="0.0" y="484" width="375" height="48"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="miU-Nd-3e7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <state key="normal" title="   I Understand and Agree">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hLD-SV-utr" kind="show" id="dIg-xA-vZG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-da-RVJ">
+                                <rect key="frame" x="326" y="495" width="29" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="292-pn-E7y"/>
+                                    <constraint firstAttribute="width" constant="29" id="smU-Jo-rfg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.5450980392" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AJV-5E-Pt8" firstAttribute="top" secondItem="TnO-FT-hXe" secondAttribute="bottom" constant="18" id="0Oi-QM-tSq"/>
+                            <constraint firstItem="x7K-cd-ALY" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" constant="34" id="58E-JW-v1s"/>
+                            <constraint firstItem="7QJ-Sf-vSw" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" constant="50" id="5EW-Ap-Oox"/>
+                            <constraint firstItem="7QJ-Sf-vSw" firstAttribute="top" secondItem="x7K-cd-ALY" secondAttribute="bottom" constant="3" id="7JV-Zb-ZPR"/>
+                            <constraint firstItem="AJV-5E-Pt8" firstAttribute="centerX" secondItem="xne-2u-0Pi" secondAttribute="centerX" id="8tn-aQ-2uq"/>
+                            <constraint firstItem="FaH-vC-Bkt" firstAttribute="trailing" secondItem="ibb-da-RVJ" secondAttribute="trailing" constant="20" id="BfR-cD-yrs"/>
+                            <constraint firstItem="FaH-vC-Bkt" firstAttribute="trailing" secondItem="AJV-5E-Pt8" secondAttribute="trailing" constant="16" id="C8I-PL-Qb7"/>
+                            <constraint firstItem="59n-f4-lgS" firstAttribute="top" secondItem="7QJ-Sf-vSw" secondAttribute="bottom" constant="67" id="Ezh-BT-O24"/>
+                            <constraint firstItem="TnO-FT-hXe" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" id="LkD-uw-u8B"/>
+                            <constraint firstItem="ibb-da-RVJ" firstAttribute="top" secondItem="7QJ-Sf-vSw" secondAttribute="bottom" constant="78" id="RDq-1p-Nc6"/>
+                            <constraint firstItem="59n-f4-lgS" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" id="STe-JL-Wws"/>
+                            <constraint firstItem="x7K-cd-ALY" firstAttribute="top" secondItem="AJV-5E-Pt8" secondAttribute="bottom" constant="25" id="Vb1-wf-2oF"/>
+                            <constraint firstItem="AJV-5E-Pt8" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" constant="16" id="fX4-uj-blA"/>
+                            <constraint firstItem="TnO-FT-hXe" firstAttribute="top" secondItem="FaH-vC-Bkt" secondAttribute="top" constant="4" id="nYN-vC-Cr7"/>
+                            <constraint firstItem="TnO-FT-hXe" firstAttribute="trailing" secondItem="FaH-vC-Bkt" secondAttribute="trailing" id="pa9-GM-uL4"/>
+                            <constraint firstItem="59n-f4-lgS" firstAttribute="trailing" secondItem="FaH-vC-Bkt" secondAttribute="trailing" id="uoz-wE-0T5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FaH-vC-Bkt"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Td-fH-Ea0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3o-eP-jwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1294" y="-2058"/>
+            <point key="canvasLocation" x="-1314.4000000000001" y="-2027.136431784108"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kqg-fK-u0q">
@@ -1878,10 +1963,11 @@
     <inferredMetricsTieBreakers>
         <segue reference="MDw-Up-KSE"/>
         <segue reference="6Gv-eq-y9R"/>
-        <segue reference="Uvh-gu-zaF"/>
+        <segue reference="s7a-rh-m31"/>
+        <segue reference="dIg-xA-vZG"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="HgO-mC-RbM"/>
-        <segue reference="rUW-Hv-1g3"/>
+        <segue reference="mVH-vq-pnR"/>
         <segue reference="o3M-K6-SmN"/>
     </inferredMetricsTieBreakers>
 </document>
