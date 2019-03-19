@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "playlist2.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "playlist2-1.jpg",
+      "filename" : "Screen Shot 2019-03-19 at 1.54.52 PM.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "playlist2-2.jpg",
       "scale" : "3x"
     }
   ],

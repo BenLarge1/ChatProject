@@ -407,7 +407,7 @@
                             <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="xUz-Yl-ghr">
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="DTS-uS-5qV"/>
+                                    <constraint firstAttribute="height" constant="44" id="TaW-42-PCH"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Music" id="9SZ-sC-Qq7">
@@ -422,71 +422,109 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti-Bullying Jamz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-eN-q5G">
                                 <rect key="frame" x="0.0" y="95" width="375" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="joj-m6-omF"/>
+                                    <constraint firstAttribute="height" constant="32" id="tWU-27-pAw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Songs and videos from artist like Beyonce’, Big Time Rush, Drake and more" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-WU-Itu">
-                                <rect key="frame" x="63.5" y="128" width="248" height="36"/>
+                                <rect key="frame" x="44" y="128" width="287" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="248" id="FOQ-Mk-Wge"/>
-                                    <constraint firstAttribute="height" constant="36" id="cdW-EW-BYs"/>
+                                    <constraint firstAttribute="height" constant="42" id="rtI-al-D8v"/>
+                                    <constraint firstAttribute="width" constant="287" id="zhE-Y0-nmk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-XE-r9n">
-                                <rect key="frame" x="33.5" y="184" width="308" height="55"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBm-qT-v1o">
+                                <rect key="frame" x="34" y="184" width="307" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-XE-r9n">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" backgroundImage="playlist1">
+                                            <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="dsq-Tt-No9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvQ-Io-W1b">
+                                        <rect key="frame" x="269" y="0.0" width="38" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.062745098039215685" green="0.070588235294117646" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="&gt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="f95-jc-2WB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="ayM-jL-kea"/>
-                                    <constraint firstAttribute="width" constant="308" id="ePi-Pc-qGH"/>
+                                    <constraint firstAttribute="height" constant="55" id="fcp-JO-R2O"/>
+                                    <constraint firstAttribute="width" constant="307" id="nfq-Kh-gF3"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="playlist1">
-                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="dsq-Tt-No9"/>
-                                </connections>
-                            </button>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bop Away Bullying" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKt-6U-bZO">
                                 <rect key="frame" x="0.0" y="359" width="375" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="oRF-v9-fF7"/>
+                                    <constraint firstAttribute="height" constant="32" id="iPx-LF-2Eu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Songs and videos from artist like Rihanna, Katy Perry, Justin Bieber and more" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wd-l5-Lv4">
-                                <rect key="frame" x="63.5" y="392" width="248" height="36"/>
+                                <rect key="frame" x="43" y="392" width="289" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="T65-gs-iNB"/>
-                                    <constraint firstAttribute="width" constant="248" id="jlc-KY-efG"/>
+                                    <constraint firstAttribute="height" constant="42" id="GOr-Ma-Z5n"/>
+                                    <constraint firstAttribute="width" constant="289" id="bJY-wW-v76"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn2-Tb-jeC">
-                                <rect key="frame" x="33.5" y="448" width="308" height="55"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hr-es-pLe">
+                                <rect key="frame" x="34" y="448" width="307" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn2-Tb-jeC">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                        <state key="normal" backgroundImage="playlist2">
+                                            <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="Ug1-LJ-Ue5"/>
+                                            <action selector="launchSpotifyPlaylistTwo:" destination="b3u-nv-bKG" eventType="touchUpInside" id="tSz-eo-OVI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-k7-hbE">
+                                        <rect key="frame" x="269" y="0.0" width="38" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.062745098040000002" green="0.070588235289999995" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="&gt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="vr8-dT-nFL"/>
+                                            <action selector="launchSpotifyPlaylistTwo:" destination="b3u-nv-bKG" eventType="touchUpInside" id="n5q-Nh-YnF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="308" id="Jua-Hc-YYt"/>
-                                    <constraint firstAttribute="height" constant="55" id="xXz-eZ-tZG"/>
+                                    <constraint firstAttribute="height" constant="55" id="Ghw-S0-XQs"/>
+                                    <constraint firstAttribute="width" constant="307" id="Jj7-QB-e6h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" backgroundImage="playlist2">
-                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="Ug1-LJ-Ue5"/>
-                                    <action selector="launchSpotifyPlaylistTwo:" destination="b3u-nv-bKG" eventType="touchUpInside" id="tSz-eo-OVI"/>
-                                </connections>
-                            </button>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yb-sr-dcS">
                                 <rect key="frame" x="33.5" y="511" width="308" height="55"/>
                                 <subviews>
@@ -515,8 +553,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="308" id="P8X-pR-1Nn"/>
-                                    <constraint firstAttribute="height" constant="55" id="qzZ-uR-OPc"/>
+                                    <constraint firstAttribute="height" constant="55" id="ZR6-ku-cpu"/>
+                                    <constraint firstAttribute="width" constant="308" id="zZM-YA-xae"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svd-71-OCb">
@@ -549,34 +587,34 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="308" id="563-Ng-JbH"/>
-                                    <constraint firstAttribute="height" constant="55" id="HVv-xR-LsV"/>
+                                    <constraint firstAttribute="height" constant="55" id="Kph-lJ-sp2"/>
+                                    <constraint firstAttribute="width" constant="308" id="k3j-uk-2Us"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kbE-eN-q5G" firstAttribute="top" secondItem="xUz-Yl-ghr" secondAttribute="bottom" constant="27" id="11J-FX-6DG"/>
-                            <constraint firstItem="Svd-71-OCb" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="54x-VP-dbr"/>
-                            <constraint firstItem="xUz-Yl-ghr" firstAttribute="top" secondItem="ULk-D9-hnX" secondAttribute="top" constant="4" id="A9A-gy-H6W"/>
-                            <constraint firstItem="8yb-sr-dcS" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="LGS-5B-RLa"/>
-                            <constraint firstItem="kbE-eN-q5G" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="Oo5-Im-kny"/>
-                            <constraint firstItem="MKt-6U-bZO" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="SCZ-MB-lQg"/>
-                            <constraint firstItem="MKt-6U-bZO" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="SO4-Hd-NkE"/>
-                            <constraint firstItem="bGa-WU-Itu" firstAttribute="top" secondItem="kbE-eN-q5G" secondAttribute="bottom" constant="1" id="cQY-k5-Xyx"/>
-                            <constraint firstItem="bGa-WU-Itu" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="eSD-eE-SZe"/>
-                            <constraint firstItem="MKt-6U-bZO" firstAttribute="top" secondItem="Svd-71-OCb" secondAttribute="bottom" constant="57" id="k1n-F5-tvv"/>
-                            <constraint firstItem="xUz-Yl-ghr" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="lSE-ey-o7r"/>
-                            <constraint firstItem="6wd-l5-Lv4" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="lcH-RQ-e2y"/>
-                            <constraint firstItem="Svd-71-OCb" firstAttribute="top" secondItem="eNQ-XE-r9n" secondAttribute="bottom" constant="8" id="mV6-eK-yj1"/>
-                            <constraint firstItem="8yb-sr-dcS" firstAttribute="top" secondItem="Tn2-Tb-jeC" secondAttribute="bottom" constant="8" id="nsa-Hk-MA8"/>
-                            <constraint firstItem="Tn2-Tb-jeC" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="rZn-BG-VU9"/>
-                            <constraint firstItem="eNQ-XE-r9n" firstAttribute="top" secondItem="bGa-WU-Itu" secondAttribute="bottom" constant="20" id="rgh-Fu-CFr"/>
-                            <constraint firstItem="xUz-Yl-ghr" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="sN7-Eb-PdP"/>
-                            <constraint firstItem="Tn2-Tb-jeC" firstAttribute="top" secondItem="6wd-l5-Lv4" secondAttribute="bottom" constant="20" id="tgw-rL-MiP"/>
-                            <constraint firstItem="kbE-eN-q5G" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="wK0-u0-H8q"/>
-                            <constraint firstItem="eNQ-XE-r9n" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="x1T-cg-cKC"/>
-                            <constraint firstItem="6wd-l5-Lv4" firstAttribute="top" secondItem="MKt-6U-bZO" secondAttribute="bottom" constant="1" id="zTH-yq-zof"/>
+                            <constraint firstItem="JBm-qT-v1o" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="Auy-zm-l7W"/>
+                            <constraint firstItem="JBm-qT-v1o" firstAttribute="top" secondItem="bGa-WU-Itu" secondAttribute="bottom" constant="14" id="FWl-PA-F8C"/>
+                            <constraint firstItem="kbE-eN-q5G" firstAttribute="top" secondItem="xUz-Yl-ghr" secondAttribute="bottom" constant="27" id="FbS-4X-irk"/>
+                            <constraint firstItem="kbE-eN-q5G" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="GEO-9K-Nyr"/>
+                            <constraint firstItem="6wd-l5-Lv4" firstAttribute="top" secondItem="MKt-6U-bZO" secondAttribute="bottom" constant="1" id="GaJ-Qa-zc2"/>
+                            <constraint firstItem="8yb-sr-dcS" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="L5d-iw-Yov"/>
+                            <constraint firstItem="xUz-Yl-ghr" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="NA2-eP-jJI"/>
+                            <constraint firstItem="bGa-WU-Itu" firstAttribute="top" secondItem="kbE-eN-q5G" secondAttribute="bottom" constant="1" id="S8G-Jj-NZP"/>
+                            <constraint firstItem="MKt-6U-bZO" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="VVi-ta-tVL"/>
+                            <constraint firstItem="MKt-6U-bZO" firstAttribute="top" secondItem="Svd-71-OCb" secondAttribute="bottom" constant="57" id="VbG-eB-dDa"/>
+                            <constraint firstItem="MKt-6U-bZO" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="VpC-rn-yoK"/>
+                            <constraint firstItem="Svd-71-OCb" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="WgY-lN-7Ug"/>
+                            <constraint firstItem="9hr-es-pLe" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="bBn-M5-zCS"/>
+                            <constraint firstItem="xUz-Yl-ghr" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="baZ-Lh-tZu"/>
+                            <constraint firstItem="Svd-71-OCb" firstAttribute="top" secondItem="JBm-qT-v1o" secondAttribute="bottom" constant="8" id="hX4-v4-1fc"/>
+                            <constraint firstItem="bGa-WU-Itu" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="oHU-fk-5Te"/>
+                            <constraint firstItem="9hr-es-pLe" firstAttribute="top" secondItem="6wd-l5-Lv4" secondAttribute="bottom" constant="14" id="rtt-8P-9iB"/>
+                            <constraint firstItem="xUz-Yl-ghr" firstAttribute="top" secondItem="ULk-D9-hnX" secondAttribute="top" constant="4" id="wYc-tV-uTw"/>
+                            <constraint firstItem="6wd-l5-Lv4" firstAttribute="centerX" secondItem="wdA-9R-rz8" secondAttribute="centerX" id="x6u-Kr-ySz"/>
+                            <constraint firstItem="kbE-eN-q5G" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="xwx-zv-vt9"/>
+                            <constraint firstItem="8yb-sr-dcS" firstAttribute="top" secondItem="9hr-es-pLe" secondAttribute="bottom" constant="8" id="ycW-Pt-9PR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ULk-D9-hnX"/>
                     </view>
@@ -1831,8 +1869,8 @@
         <image name="game_icon" width="300" height="173"/>
         <image name="links_icon" width="300" height="207"/>
         <image name="music_icon" width="247" height="300"/>
-        <image name="playlist1" width="414" height="67"/>
-        <image name="playlist2" width="414" height="67"/>
+        <image name="playlist1" width="377" height="66"/>
+        <image name="playlist2" width="383" height="66"/>
         <image name="report_icon" width="227" height="300"/>
         <image name="transparent upload symbol" width="256" height="256"/>
         <image name="youtube" width="433" height="98"/>
