@@ -416,43 +416,102 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-eN-q5G">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anti-Bullying Jamz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-eN-q5G">
                                 <rect key="frame" x="0.0" y="100" width="414" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="jGH-jW-rNy"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTube" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9b-Oc-q16">
-                                <rect key="frame" x="0.0" y="357" width="414" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="f2r-SR-8uP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Songs from artist like Rihanna, Katy Perry, Justin Bieber and more" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-WU-Itu">
+                                <rect key="frame" x="64" y="133" width="248" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-XE-r9n">
+                                <rect key="frame" x="39" y="184" width="325" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <state key="normal" title="Spotify">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="dsq-Tt-No9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u3-Jm-fOP">
+                                <rect key="frame" x="39" y="252" width="325" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+WW91EFR1YmU
+</string>
+                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchYouTubePlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="fIc-2b-axk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anti-Bullying Jamz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKt-6U-bZO">
+                                <rect key="frame" x="0.0" y="389" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Songs from artist like Rihanna, Katy Perry, Justin Bieber and more" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wd-l5-Lv4">
+                                <rect key="frame" x="64" y="422" width="248" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn2-Tb-jeC">
+                                <rect key="frame" x="39" y="473" width="325" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <state key="normal" title="Spotify">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="Ug1-LJ-Ue5"/>
+                                    <action selector="launchSpotifyPlaylistTwo:" destination="b3u-nv-bKG" eventType="touchUpInside" id="tSz-eo-OVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOk-wk-1KR">
+                                <rect key="frame" x="39" y="541" width="325" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+WW91EFR1YmU
+</string>
+                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchYouTubePlaylistTwo:" destination="b3u-nv-bKG" eventType="touchUpInside" id="mAe-Ql-g6j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="o9b-Oc-q16" firstAttribute="top" secondItem="kbE-eN-q5G" secondAttribute="bottom" constant="225" id="16X-Iv-Eef"/>
-                            <constraint firstItem="o9b-Oc-q16" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="28C-dl-rq0"/>
-                            <constraint firstItem="kbE-eN-q5G" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="8Ay-4V-vBj"/>
                             <constraint firstItem="xUz-Yl-ghr" firstAttribute="top" secondItem="ULk-D9-hnX" secondAttribute="top" constant="4" id="Ae3-Eq-WwO"/>
                             <constraint firstItem="xUz-Yl-ghr" firstAttribute="leading" secondItem="ULk-D9-hnX" secondAttribute="leading" id="KX7-bb-Cyk"/>
                             <constraint firstItem="xUz-Yl-ghr" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="Sdf-h3-4FZ"/>
-                            <constraint firstItem="o9b-Oc-q16" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="gSc-Dp-mq1"/>
-                            <constraint firstItem="kbE-eN-q5G" firstAttribute="trailing" secondItem="ULk-D9-hnX" secondAttribute="trailing" id="j9i-5L-pcq"/>
-                            <constraint firstItem="kbE-eN-q5G" firstAttribute="top" secondItem="xUz-Yl-ghr" secondAttribute="bottom" constant="32" id="sL6-mV-SpN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ULk-D9-hnX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2X-MU-hsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2529" y="-1340"/>
+            <point key="canvasLocation" x="-2530.434782608696" y="-1340.217391304348"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="Xj4-8A-MDx">
@@ -1704,8 +1763,9 @@
         <image name="transparent upload symbol" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8Jl-Gh-0Bt"/>
-        <segue reference="7ic-es-Bfd"/>
+        <segue reference="mnE-7O-Agb"/>
+        <segue reference="MDw-Up-KSE"/>
+        <segue reference="6Gv-eq-y9R"/>
         <segue reference="Uvh-gu-zaF"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="HgO-mC-RbM"/>
