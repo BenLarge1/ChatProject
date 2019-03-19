@@ -908,23 +908,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QJ-Sf-vSw">
-                                <rect key="frame" x="50" y="250" width="309" height="167"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="309" id="3DO-ND-jbI"/>
-                                    <constraint firstAttribute="height" constant="167" id="rwb-7S-vv3"/>
-                                </constraints>
-                                <string key="text">-Bullying is not permitted in the chat. Anything in the chat can be reported if another student feels bullied, so be aware of the words you use.
--If you feel bullied, make sure to screenshot the message and report it using the flag icon on the chat homepage.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59n-f4-lgS">
                                 <rect key="frame" x="0.0" y="484" width="375" height="48"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="miU-Nd-3e7"/>
+                                    <constraint firstAttribute="height" constant="48" id="KXE-BB-xiA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
                                 <state key="normal" title="   I Understand and Agree">
@@ -937,32 +925,55 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-da-RVJ">
                                 <rect key="frame" x="326" y="495" width="29" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="292-pn-E7y"/>
-                                    <constraint firstAttribute="width" constant="29" id="smU-Jo-rfg"/>
+                                    <constraint firstAttribute="height" constant="27" id="ejN-nT-8Ko"/>
+                                    <constraint firstAttribute="width" constant="29" id="vuW-CM-FIJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrD-18-rIh">
+                                <rect key="frame" x="50" y="250" width="309" height="174"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reportFlag" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-Nf-Ei7">
+                                        <rect key="frame" x="240" y="130" width="31" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QJ-Sf-vSw">
+                                        <rect key="frame" x="0.0" y="0.0" width="309" height="174"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">-Bullying is not permitted in the chat. Anything in the chat can be reported if another student feels bullied, so be aware of the words you use.
+-If you feel bullied, make sure to screenshot the message and report it using the flag icon on the chat homepage.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="LAn-M9-1fj"/>
+                                    <constraint firstAttribute="width" constant="309" id="mEy-S1-xwC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039220000001" green="0.5450980392" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="AJV-5E-Pt8" firstAttribute="top" secondItem="TnO-FT-hXe" secondAttribute="bottom" constant="18" id="0Oi-QM-tSq"/>
                             <constraint firstItem="x7K-cd-ALY" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" constant="34" id="58E-JW-v1s"/>
-                            <constraint firstItem="7QJ-Sf-vSw" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" constant="50" id="5EW-Ap-Oox"/>
-                            <constraint firstItem="7QJ-Sf-vSw" firstAttribute="top" secondItem="x7K-cd-ALY" secondAttribute="bottom" constant="3" id="7JV-Zb-ZPR"/>
                             <constraint firstItem="AJV-5E-Pt8" firstAttribute="centerX" secondItem="xne-2u-0Pi" secondAttribute="centerX" id="8tn-aQ-2uq"/>
-                            <constraint firstItem="FaH-vC-Bkt" firstAttribute="trailing" secondItem="ibb-da-RVJ" secondAttribute="trailing" constant="20" id="BfR-cD-yrs"/>
+                            <constraint firstItem="xrD-18-rIh" firstAttribute="top" secondItem="x7K-cd-ALY" secondAttribute="bottom" constant="3" id="90a-wH-JkT"/>
+                            <constraint firstItem="59n-f4-lgS" firstAttribute="trailing" secondItem="FaH-vC-Bkt" secondAttribute="trailing" id="BhH-1c-luR"/>
                             <constraint firstItem="FaH-vC-Bkt" firstAttribute="trailing" secondItem="AJV-5E-Pt8" secondAttribute="trailing" constant="16" id="C8I-PL-Qb7"/>
-                            <constraint firstItem="59n-f4-lgS" firstAttribute="top" secondItem="7QJ-Sf-vSw" secondAttribute="bottom" constant="67" id="Ezh-BT-O24"/>
+                            <constraint firstItem="59n-f4-lgS" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" id="In7-7j-zMK"/>
                             <constraint firstItem="TnO-FT-hXe" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" id="LkD-uw-u8B"/>
-                            <constraint firstItem="ibb-da-RVJ" firstAttribute="top" secondItem="7QJ-Sf-vSw" secondAttribute="bottom" constant="78" id="RDq-1p-Nc6"/>
-                            <constraint firstItem="59n-f4-lgS" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" id="STe-JL-Wws"/>
+                            <constraint firstItem="FaH-vC-Bkt" firstAttribute="trailing" secondItem="ibb-da-RVJ" secondAttribute="trailing" constant="20" id="Uuh-Sn-kzs"/>
                             <constraint firstItem="x7K-cd-ALY" firstAttribute="top" secondItem="AJV-5E-Pt8" secondAttribute="bottom" constant="25" id="Vb1-wf-2oF"/>
+                            <constraint firstItem="59n-f4-lgS" firstAttribute="top" secondItem="xrD-18-rIh" secondAttribute="bottom" constant="60" id="fSn-ed-Pug"/>
                             <constraint firstItem="AJV-5E-Pt8" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" constant="16" id="fX4-uj-blA"/>
+                            <constraint firstItem="ibb-da-RVJ" firstAttribute="top" secondItem="xrD-18-rIh" secondAttribute="bottom" constant="71" id="iKI-hN-07O"/>
                             <constraint firstItem="TnO-FT-hXe" firstAttribute="top" secondItem="FaH-vC-Bkt" secondAttribute="top" constant="4" id="nYN-vC-Cr7"/>
                             <constraint firstItem="TnO-FT-hXe" firstAttribute="trailing" secondItem="FaH-vC-Bkt" secondAttribute="trailing" id="pa9-GM-uL4"/>
-                            <constraint firstItem="59n-f4-lgS" firstAttribute="trailing" secondItem="FaH-vC-Bkt" secondAttribute="trailing" id="uoz-wE-0T5"/>
+                            <constraint firstItem="xrD-18-rIh" firstAttribute="leading" secondItem="FaH-vC-Bkt" secondAttribute="leading" constant="50" id="rzM-6e-bzq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FaH-vC-Bkt"/>
                     </view>
@@ -1956,6 +1967,7 @@
         <image name="music_icon" width="247" height="300"/>
         <image name="playlist1" width="377" height="66"/>
         <image name="playlist2" width="383" height="66"/>
+        <image name="reportFlag" width="252" height="300"/>
         <image name="report_icon" width="227" height="300"/>
         <image name="transparent upload symbol" width="256" height="256"/>
         <image name="youtube" width="433" height="98"/>
