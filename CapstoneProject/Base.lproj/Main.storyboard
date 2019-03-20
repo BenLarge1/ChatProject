@@ -961,10 +961,10 @@
             </objects>
             <point key="canvasLocation" x="-674" y="-1390"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Channels View Controller-->
         <scene sceneID="4G2-XT-cGT">
             <objects>
-                <tableViewController id="5hI-y5-fz2" sceneMemberID="viewController">
+                <tableViewController id="5hI-y5-fz2" customClass="ChannelsViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Ej-mm-QdJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
