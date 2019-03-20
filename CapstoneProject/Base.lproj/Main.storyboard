@@ -679,9 +679,6 @@
                                 <state key="normal" title="  Cyberbullying">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="RmC-mE-dn0" kind="show" id="BdK-al-duC"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qna-0q-h40">
                                 <rect key="frame" x="326" y="201" width="29" height="27"/>
@@ -703,9 +700,6 @@
                                 <state key="normal" title="  Today at Wilkerson">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="3WQ-Jq-JkJ" kind="show" id="mnE-7O-Agb"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a41-s9-LOj">
                                 <rect key="frame" x="326" y="122" width="29" height="27"/>
@@ -737,9 +731,6 @@
                                 <state key="normal" title="  Physical Bullying">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="0TE-eW-5Ws" kind="show" id="auf-Xv-FeG"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlb-gt-Af3">
                                 <rect key="frame" x="326" y="312" width="29" height="27"/>
@@ -765,11 +756,7 @@
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Chat" id="NM3-Xc-fw3">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="69h-z0-Ylu">
-                                            <connections>
-                                                <segue destination="Kx5-fY-iAE" kind="show" id="mVH-vq-pnR"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="69h-z0-Ylu"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -804,7 +791,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeu-QF-7V3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="-1390"/>
+            <point key="canvasLocation" x="-674" y="-2948"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H8I-OP-z3u">
@@ -818,11 +805,7 @@
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Cyber Bullying" id="Oxu-6I-PNh">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ygw-G2-sC0">
-                                            <connections>
-                                                <segue destination="hLD-SV-utr" kind="show" id="a2W-6X-IOn"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ygw-G2-sC0"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -838,7 +821,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpV-z6-fuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="-2113"/>
+            <point key="canvasLocation" x="729" y="-2948"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0Lu-qs-p71">
@@ -852,11 +835,7 @@
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Physical Bullying" id="Tss-GU-wGJ">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="T62-JK-nFX">
-                                            <connections>
-                                                <segue destination="hLD-SV-utr" kind="show" id="sZh-DN-mXF"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="T62-JK-nFX"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -872,7 +851,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMv-n2-EOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="-1451"/>
+            <point key="canvasLocation" x="1412" y="-2948"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rEL-E0-dIN">
@@ -919,7 +898,7 @@
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hLD-SV-utr" kind="show" id="dIg-xA-vZG"/>
+                                    <segue destination="5hI-y5-fz2" kind="show" id="9le-MJ-KEU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-da-RVJ">
@@ -982,6 +961,34 @@
             </objects>
             <point key="canvasLocation" x="-674" y="-1390"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="4G2-XT-cGT">
+            <objects>
+                <tableViewController id="5hI-y5-fz2" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Ej-mm-QdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="utU-bf-pjS" customClass="ChannelsView">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="utU-bf-pjS" id="k6g-mX-F7k">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5hI-y5-fz2" id="gCq-9F-toZ"/>
+                            <outlet property="delegate" destination="5hI-y5-fz2" id="K9i-Yk-2Lk"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irp-u1-Kwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-1385"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Kqg-fK-u0q">
             <objects>
@@ -994,11 +1001,7 @@
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Today At Wilkerson" id="A7X-fo-7RW">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="9Rl-Bz-0TQ">
-                                            <connections>
-                                                <segue destination="hLD-SV-utr" kind="show" id="Uvh-gu-zaF"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="9Rl-Bz-0TQ"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1014,7 +1017,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2N-5Z-hgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="-2371"/>
+            <point key="canvasLocation" x="34" y="-2948"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PDK-WO-6lJ">
@@ -1957,11 +1960,10 @@
     <inferredMetricsTieBreakers>
         <segue reference="8Jl-Gh-0Bt"/>
         <segue reference="7ic-es-Bfd"/>
-        <segue reference="s7a-rh-m31"/>
-        <segue reference="dIg-xA-vZG"/>
+        <segue reference="1Sl-g3-ee9"/>
         <segue reference="auh-f7-CBC"/>
         <segue reference="HgO-mC-RbM"/>
-        <segue reference="afb-X2-Uth"/>
+        <segue reference="IZg-wD-d7t"/>
         <segue reference="o3M-K6-SmN"/>
     </inferredMetricsTieBreakers>
 </document>
