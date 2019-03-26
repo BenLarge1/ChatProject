@@ -82,34 +82,18 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 		ReportImageView.image = image
 	}
     
-    func uploadImageToDatabase()
+	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
     {
-		if ReportImageView.image != nil
+		if reportDescriptionTextView.text == nil
 		{
+			let alertController = UIAlertController(title: "Error", message: "Please include a description before submitting", preferredStyle: .alert)
+			let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 			
+			alertController.addAction(defaultAction)
+			self.present(alertController, animated: true, completion: nil)
 		}
 		else
 		{
-			return
-		}
-		
-		let storageRef = storage.reference()
-		
-        // data = the picture selected by the user to upload
-		let data = ReportImageView.image!.pngData()
-
-        // Create a reference to the file you want to upload
-        let riversRef = storageRef.child("images")
-        
-        // Upload the file to the path "images"
-		let uploadTask = riversRef.putData(data!, metadata: nil)
-        { (metadata, error) in
-		}
-	}
-    
-	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
-    {
-		
 		let key = ref.child("posts").childByAutoId().key
 		let post = ["report": reportDescriptionTextView.text as String?,
 					"name": nameTextField.text as String?,
@@ -119,7 +103,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 		ref.updateChildValues(childUpdates)
         
 		sendEmail()
-		
+		}
         //uploadImageToDatabase()
         
 		let alertController = UIAlertController(title: "Success!", message: "Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.", preferredStyle: .alert)

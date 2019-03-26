@@ -182,7 +182,7 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="V7e-wa-HV6" kind="show" id="auh-f7-CBC"/>
+                                    <segue destination="V7e-wa-HV6" kind="show" id="fv8-DI-hZP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-Ei-ocj">
@@ -296,7 +296,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="game_icon"/>
                                 <connections>
-                                    <segue destination="V7e-wa-HV6" kind="show" id="eAp-bn-f2T"/>
+                                    <segue destination="V7e-wa-HV6" kind="show" id="9XR-wl-gp1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe4-pI-bLy">
@@ -694,6 +694,9 @@
                                         <state key="normal" title="   Monthly Survey">
                                             <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="E70-6O-atP" kind="show" id="xue-ew-bmr"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6i-wW-FZp">
                                         <rect key="frame" x="326" y="11" width="29" height="27"/>
@@ -772,7 +775,7 @@
                                     <constraint firstAttribute="height" constant="48" id="nch-ep-4Q0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
-                                <state key="normal" title="  Today at Wilkerson">
+                                <state key="normal" title="   Wild Cats Chat">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -896,12 +899,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpV-z6-fuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="-2948"/>
+            <point key="canvasLocation" x="468" y="-3710"/>
         </scene>
-        <!--View Controller-->
+        <!--Physical Bullying Chat View Controller-->
         <scene sceneID="0Lu-qs-p71">
             <objects>
-                <viewController id="0TE-eW-5Ws" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="physicalbullyingchat" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0TE-eW-5Ws" customClass="PhysicalBullyingChatViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dwQ-qK-cNw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -926,7 +929,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMv-n2-EOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="-2948"/>
+            <point key="canvasLocation" x="126" y="-2948"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rEL-E0-dIN">
@@ -1075,7 +1078,7 @@
                             <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="uYM-m8-fOT">
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Today At Wilkerson" id="A7X-fo-7RW">
+                                    <navigationItem title="WIld Cats Chat" id="A7X-fo-7RW">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="9Rl-Bz-0TQ"/>
                                     </navigationItem>
                                 </items>
@@ -1092,7 +1095,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2N-5Z-hgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="-2948"/>
+            <point key="canvasLocation" x="-254" y="-3710"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PDK-WO-6lJ">
@@ -1369,6 +1372,7 @@
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
                                     <action selector="writeReportToDatabase:" destination="drQ-px-qf8" eventType="touchUpInside" id="VdP-hh-5ta"/>
+                                    <segue destination="nwK-Bw-mBH" kind="show" id="i5P-eD-vm0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Upload Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-4w-2Jx">
@@ -1424,7 +1428,6 @@
                         <outlet property="dateTextField" destination="57Y-9L-IvG" id="D4n-th-G6N"/>
                         <outlet property="nameTextField" destination="f4S-12-EeC" id="Gie-h7-nLW"/>
                         <outlet property="reportDescriptionTextView" destination="SiI-eD-fdz" id="9db-kN-eq4"/>
-                        <segue destination="39c-XF-OJY" kind="show" identifier="reportToResources" id="8Jl-Gh-0Bt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNq-RA-SA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1434,7 +1437,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="137" y="-627"/>
+            <point key="canvasLocation" x="87" y="-601"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="09J-BT-d0R">
@@ -2061,6 +2064,7 @@
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
                                     <action selector="writeReportToDatabase:" destination="1VH-Rz-1Ou" eventType="touchUpInside" id="LFJ-O5-rvV"/>
+                                    <segue destination="RFe-Kw-3ei" kind="show" id="v1c-OY-C7c"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIz-Q9-Zce">
@@ -2348,7 +2352,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Survey" id="a9r-Zp-qc9">
-                                        <barButtonItem key="leftBarButtonItem" title="Exit" id="Zal-yP-itw"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Exit" id="Zal-yP-itw">
+                                            <connections>
+                                                <segue destination="V7e-wa-HV6" kind="show" id="Y3t-HK-zt7"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -2547,11 +2555,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MDw-Up-KSE"/>
-        <segue reference="ELq-0S-A5O"/>
+        <segue reference="7ic-es-Bfd"/>
         <segue reference="1Sl-g3-ee9"/>
         <segue reference="Ie4-5L-Bc7"/>
         <segue reference="HgO-mC-RbM"/>
-        <segue reference="mJC-rk-oDg"/>
-        <segue reference="9nH-Z1-YxZ"/>
+        <segue reference="rUW-Hv-1g3"/>
+        <segue reference="o3M-K6-SmN"/>
     </inferredMetricsTieBreakers>
 </document>
