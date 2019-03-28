@@ -1990,10 +1990,10 @@
             </objects>
             <point key="canvasLocation" x="-2647" y="207"/>
         </scene>
-        <!--Report Bullying Form View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="PSt-cq-V0s">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="1VH-Rz-1Ou" customClass="ReportBullyingFormViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quizcontroller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1VH-Rz-1Ou" customClass="QuizViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2fS-b6-pqQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2055,7 +2055,7 @@
                                 <color key="textColor" red="0.98431372549999996" green="0.79215686269999996" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerOne" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-4t-gdc">
+                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerOne" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-4t-gdc">
                                 <rect key="frame" x="28" y="291" width="319" height="58"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -2067,7 +2067,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerTwo" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-9H-GjR">
+                            <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerTwo" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-9H-GjR">
                                 <rect key="frame" x="28" y="357" width="319" height="58"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -2079,9 +2079,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerThree" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLU-rJ-pg8">
+                            <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerThree" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLU-rJ-pg8">
                                 <rect key="frame" x="28" y="423" width="319" height="58"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                 </accessibility>
@@ -2091,9 +2091,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerFour" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-2a-f0d">
+                            <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerFour" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-2a-f0d">
                                 <rect key="frame" x="28" y="489" width="319" height="58"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                 </accessibility>
@@ -2133,6 +2133,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lU5-wu-OHN"/>
                     </view>
+                    <connections>
+                        <outlet property="actualQuestion" destination="pIz-Q9-Zce" id="efq-or-JVY"/>
+                        <outlet property="answerFourPlace" destination="bD9-2a-f0d" id="EKn-h5-8x6"/>
+                        <outlet property="answerOnePlace" destination="jqO-4t-gdc" id="Oya-mh-0Vu"/>
+                        <outlet property="answerThreePlace" destination="jLU-rJ-pg8" id="WYZ-EI-8Tl"/>
+                        <outlet property="answerTwoPlace" destination="Nd4-9H-GjR" id="HTE-pC-gdY"/>
+                        <outlet property="placeInQuizIncrementor" destination="cAN-7l-Jt1" id="jiZ-mv-JX6"/>
+                        <outlet property="questionIdentifier" destination="a8O-4s-CzY" id="vYW-Fp-AQv"/>
+                        <outlet property="submitButton" destination="Y5K-h4-HP2" id="qYI-mH-Fkd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="saI-Wg-UGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="2uP-lN-Gos">
@@ -2395,12 +2405,13 @@
         <image name="youtube" width="433" height="98"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="3ZJ-fT-ZfL"/>
         <segue reference="MDw-Up-KSE"/>
         <segue reference="7ic-es-Bfd"/>
         <segue reference="1Sl-g3-ee9"/>
-        <segue reference="3iZ-ef-7A4"/>
+        <segue reference="Ie4-5L-Bc7"/>
         <segue reference="HgO-mC-RbM"/>
-        <segue reference="mJC-rk-oDg"/>
-        <segue reference="o3M-K6-SmN"/>
+        <segue reference="afb-X2-Uth"/>
+        <segue reference="9nH-Z1-YxZ"/>
     </inferredMetricsTieBreakers>
 </document>

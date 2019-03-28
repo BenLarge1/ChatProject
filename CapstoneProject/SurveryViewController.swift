@@ -38,6 +38,8 @@ class SurveryViewController: UIViewController {
 	
 	var survey = [SurveyQuestion]()
 	
+	
+	
 	func fillQuestionArray() //fill the array of questions, this function runs when the app is first launched, and once a month to update the array
 	{
 		
