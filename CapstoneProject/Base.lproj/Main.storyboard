@@ -504,7 +504,6 @@
                                             <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="Ug1-LJ-Ue5"/>
                                             <action selector="launchSpotifyPlaylistTwo:" destination="b3u-nv-bKG" eventType="touchUpInside" id="tSz-eo-OVI"/>
                                         </connections>
                                     </button>
@@ -517,7 +516,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="launchSpotifyPlaylistOne:" destination="b3u-nv-bKG" eventType="touchUpInside" id="vr8-dT-nFL"/>
                                             <action selector="launchSpotifyPlaylistTwo:" destination="b3u-nv-bKG" eventType="touchUpInside" id="n5q-Nh-YnF"/>
                                         </connections>
                                     </button>
@@ -809,6 +807,9 @@
                                 <state key="normal" title="  Physical Bullying">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0TE-eW-5Ws" kind="show" id="1iM-BN-NHM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlb-gt-Af3">
                                 <rect key="frame" x="326" y="312" width="29" height="27"/>
@@ -869,7 +870,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeu-QF-7V3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674" y="-2948"/>
+            <point key="canvasLocation" x="238" y="-1390"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H8I-OP-z3u">
@@ -929,7 +930,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMv-n2-EOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="-2948"/>
+            <point key="canvasLocation" x="1372" y="-1390"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rEL-E0-dIN">
@@ -975,6 +976,9 @@
                                 <state key="normal" title="   I Understand and Agree">
                                     <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hLD-SV-utr" kind="show" id="aS6-rA-cqr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-da-RVJ">
                                 <rect key="frame" x="326" y="495" width="29" height="27"/>
@@ -2024,16 +2028,16 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="NextBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5K-h4-HP2">
-                                <rect key="frame" x="273" y="618" width="88" height="35"/>
+                                <rect key="frame" x="249" y="618" width="112" height="35"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="AhH-RD-1U6"/>
-                                    <constraint firstAttribute="width" constant="88" id="zxl-QQ-00M"/>
+                                    <constraint firstAttribute="height" constant="35" id="nSd-Jv-pKk"/>
+                                    <constraint firstAttribute="width" constant="112" id="yfO-Hx-hJN"/>
                                 </constraints>
-                                <state key="normal" title="SUBMIT"/>
+                                <state key="normal" title="SUBMIT QUIZ"/>
                                 <connections>
                                     <action selector="writeReportToDatabase:" destination="1VH-Rz-1Ou" eventType="touchUpInside" id="LFJ-O5-rvV"/>
-                                    <segue destination="RFe-Kw-3ei" kind="show" id="v1c-OY-C7c"/>
+                                    <segue destination="RFe-Kw-3ei" kind="show" identifier="quizToResults" id="v1c-OY-C7c"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="QuestionContent" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIz-Q9-Zce">
@@ -2106,12 +2110,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.2470588235" green="0.54117647059999996" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lU5-wu-OHN" firstAttribute="trailing" secondItem="Y5K-h4-HP2" secondAttribute="trailing" constant="14" id="0dG-Kw-a3N"/>
                             <constraint firstItem="qqd-7h-NEB" firstAttribute="leading" secondItem="lU5-wu-OHN" secondAttribute="leading" id="89i-MM-XKt"/>
                             <constraint firstItem="lU5-wu-OHN" firstAttribute="trailing" secondItem="jLU-rJ-pg8" secondAttribute="trailing" constant="28" id="AXi-3G-crg"/>
                             <constraint firstItem="pIz-Q9-Zce" firstAttribute="leading" secondItem="lU5-wu-OHN" secondAttribute="leading" constant="28" id="BJQ-gf-BWc"/>
                             <constraint firstItem="cAN-7l-Jt1" firstAttribute="top" secondItem="bD9-2a-f0d" secondAttribute="bottom" constant="60" id="BOg-eH-bh3"/>
-                            <constraint firstItem="lU5-wu-OHN" firstAttribute="bottom" secondItem="Y5K-h4-HP2" secondAttribute="bottom" constant="14" id="DpW-P8-aOW"/>
                             <constraint firstItem="Nd4-9H-GjR" firstAttribute="top" secondItem="jqO-4t-gdc" secondAttribute="bottom" constant="8" id="EzR-JC-eFJ"/>
                             <constraint firstItem="lU5-wu-OHN" firstAttribute="trailing" secondItem="Nd4-9H-GjR" secondAttribute="trailing" constant="28" id="F7B-4c-MPd"/>
                             <constraint firstItem="a8O-4s-CzY" firstAttribute="top" secondItem="qqd-7h-NEB" secondAttribute="bottom" constant="28" id="FYR-Mz-Rcg"/>
@@ -2120,6 +2122,7 @@
                             <constraint firstItem="lU5-wu-OHN" firstAttribute="trailing" secondItem="pIz-Q9-Zce" secondAttribute="trailing" constant="28" id="QeN-WO-HR8"/>
                             <constraint firstItem="pIz-Q9-Zce" firstAttribute="top" secondItem="a8O-4s-CzY" secondAttribute="bottom" constant="8" id="Xfn-I0-eK6"/>
                             <constraint firstItem="bD9-2a-f0d" firstAttribute="top" secondItem="jLU-rJ-pg8" secondAttribute="bottom" constant="8" id="agw-OO-9dR"/>
+                            <constraint firstItem="lU5-wu-OHN" firstAttribute="trailing" secondItem="Y5K-h4-HP2" secondAttribute="trailing" constant="14" id="cKN-ZN-9er"/>
                             <constraint firstItem="jqO-4t-gdc" firstAttribute="top" secondItem="pIz-Q9-Zce" secondAttribute="bottom" constant="53" id="cfg-gI-BFz"/>
                             <constraint firstItem="qqd-7h-NEB" firstAttribute="top" secondItem="lU5-wu-OHN" secondAttribute="top" constant="4" id="cmB-8k-n6u"/>
                             <constraint firstItem="cAN-7l-Jt1" firstAttribute="centerX" secondItem="2fS-b6-pqQ" secondAttribute="centerX" id="ecX-Hq-FHm"/>
@@ -2127,6 +2130,7 @@
                             <constraint firstItem="qqd-7h-NEB" firstAttribute="trailing" secondItem="lU5-wu-OHN" secondAttribute="trailing" id="gbs-Ms-aQk"/>
                             <constraint firstItem="jLU-rJ-pg8" firstAttribute="leading" secondItem="lU5-wu-OHN" secondAttribute="leading" constant="28" id="k0c-pg-XGg"/>
                             <constraint firstItem="a8O-4s-CzY" firstAttribute="leading" secondItem="lU5-wu-OHN" secondAttribute="leading" constant="32" id="pO2-5S-Cme"/>
+                            <constraint firstItem="lU5-wu-OHN" firstAttribute="bottom" secondItem="Y5K-h4-HP2" secondAttribute="bottom" constant="14" id="qcr-pw-P7q"/>
                             <constraint firstItem="jLU-rJ-pg8" firstAttribute="top" secondItem="Nd4-9H-GjR" secondAttribute="bottom" constant="8" id="rzq-Ou-fFx"/>
                             <constraint firstItem="lU5-wu-OHN" firstAttribute="trailing" secondItem="jqO-4t-gdc" secondAttribute="trailing" constant="28" id="sBP-BZ-SsY"/>
                             <constraint firstItem="bD9-2a-f0d" firstAttribute="leading" secondItem="lU5-wu-OHN" secondAttribute="leading" constant="28" id="uwU-Cu-C4j"/>
@@ -2153,10 +2157,10 @@
             </objects>
             <point key="canvasLocation" x="-1682.4000000000001" y="-2151.2743628185908"/>
         </scene>
-        <!--Report Bullying Form View Controller-->
+        <!--Quiz Results View Controller-->
         <scene sceneID="tnx-Q7-CfM">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="RFe-Kw-3ei" customClass="ReportBullyingFormViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="RFe-Kw-3ei" customClass="QuizResultsViewController" customModule="CapstoneProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bKC-jA-cNQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2181,13 +2185,13 @@
                                     <navigationItem title="Quiz" id="tkL-RE-ZfS">
                                         <barButtonItem key="leftBarButtonItem" title="Exit" id="bGp-vB-OFU">
                                             <connections>
-                                                <segue destination="V7e-wa-HV6" kind="show" id="XbZ-rP-K9W"/>
+                                                <segue destination="V7e-wa-HV6" kind="show" id="FHS-nC-PJg"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for completing the quiz! Your score is:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJn-mz-3Ld">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for completing the quiz!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJn-mz-3Ld">
                                 <rect key="frame" x="23" y="135" width="335" height="103"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="103" id="maB-7D-ccx"/>
@@ -2197,27 +2201,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZa-dW-bYw">
-                                <rect key="frame" x="81" y="310" width="214" height="178"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For More Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN0-17-hqH">
+                                <rect key="frame" x="32" y="496" width="297" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="178" id="Vv2-N1-esC"/>
-                                    <constraint firstAttribute="width" constant="214" id="rXq-uQ-dbq"/>
+                                    <constraint firstAttribute="height" constant="42" id="pkJ-Lq-hmZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="70"/>
-                                <color key="textColor" red="0.98431372549999996" green="0.79215686269999996" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.79215686269999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMH-Py-NMd">
-                                <rect key="frame" x="111" y="547" width="152" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKe-lz-6ww">
+                                <rect key="frame" x="61" y="557" width="252" height="38"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="PQT-4Q-5U9"/>
-                                    <constraint firstAttribute="height" constant="35" id="rTL-eX-5yA"/>
+                                    <constraint firstAttribute="width" constant="252" id="faJ-IP-Pcd"/>
+                                    <constraint firstAttribute="height" constant="38" id="wWB-vE-bxJ"/>
                                 </constraints>
-                                <state key="normal" title="FINISH"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <state key="normal" title="RESOURCES">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="writeReportToDatabase:" destination="RFe-Kw-3ei" eventType="touchUpInside" id="ULE-j6-pRz"/>
-                                    <segue destination="V7e-wa-HV6" kind="show" id="qey-0K-jgw"/>
+                                    <segue destination="39c-XF-OJY" kind="show" id="Wq3-KO-Nha"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2228,25 +2233,22 @@
                             <constraint firstItem="Mcc-fd-egT" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" id="6ES-2m-CdW"/>
                             <constraint firstItem="Mcc-fd-egT" firstAttribute="top" secondItem="D0u-qU-IU5" secondAttribute="top" constant="4" id="HHD-jr-eKb"/>
                             <constraint firstItem="4pB-KW-an4" firstAttribute="top" secondItem="Mcc-fd-egT" secondAttribute="bottom" constant="28" id="OE4-6w-gLv"/>
-                            <constraint firstItem="mZa-dW-bYw" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" constant="81" id="RzX-Ml-Fqh"/>
                             <constraint firstItem="Mcc-fd-egT" firstAttribute="trailing" secondItem="D0u-qU-IU5" secondAttribute="trailing" id="SKa-zf-3B0"/>
+                            <constraint firstItem="D0u-qU-IU5" firstAttribute="trailing" secondItem="KKe-lz-6ww" secondAttribute="trailing" constant="62" id="YGd-aQ-FuM"/>
                             <constraint firstItem="Mcc-fd-egT" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" id="b0i-3r-w7i"/>
+                            <constraint firstItem="KKe-lz-6ww" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" constant="61" id="de4-th-Opw"/>
+                            <constraint firstItem="D0u-qU-IU5" firstAttribute="trailing" secondItem="WN0-17-hqH" secondAttribute="trailing" constant="46" id="fnN-to-rTo"/>
                             <constraint firstItem="Mcc-fd-egT" firstAttribute="trailing" secondItem="D0u-qU-IU5" secondAttribute="trailing" id="hau-ag-E1N"/>
+                            <constraint firstItem="KKe-lz-6ww" firstAttribute="top" secondItem="WN0-17-hqH" secondAttribute="bottom" constant="19" id="hrh-6h-N8v"/>
                             <constraint firstItem="vJn-mz-3Ld" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" constant="23" id="jGu-8w-vgw"/>
+                            <constraint firstItem="WN0-17-hqH" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" constant="32" id="krS-KH-kIq"/>
                             <constraint firstItem="4pB-KW-an4" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" constant="32" id="tVr-8b-PsG"/>
-                            <constraint firstItem="SMH-Py-NMd" firstAttribute="leading" secondItem="D0u-qU-IU5" secondAttribute="leading" constant="111" id="y57-ev-yhI"/>
-                            <constraint firstItem="mZa-dW-bYw" firstAttribute="top" secondItem="vJn-mz-3Ld" secondAttribute="bottom" constant="72" id="y7p-Ff-Vd6"/>
-                            <constraint firstItem="SMH-Py-NMd" firstAttribute="top" secondItem="mZa-dW-bYw" secondAttribute="bottom" constant="59" id="zNj-j7-sfI"/>
+                            <constraint firstItem="WN0-17-hqH" firstAttribute="top" secondItem="vJn-mz-3Ld" secondAttribute="bottom" constant="258" id="xZ9-yG-bZe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D0u-qU-IU5"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCJ-9b-1DO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="VaE-gc-E6J">
-                    <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="RFe-Kw-3ei" id="gVB-iP-cyQ"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-866.39999999999998" y="-2151.2743628185908"/>
         </scene>
@@ -2405,13 +2407,13 @@
         <image name="youtube" width="433" height="98"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3ZJ-fT-ZfL"/>
-        <segue reference="MDw-Up-KSE"/>
+        <segue reference="Haw-Wf-A7a"/>
+        <segue reference="Wq3-KO-Nha"/>
         <segue reference="7ic-es-Bfd"/>
         <segue reference="1Sl-g3-ee9"/>
         <segue reference="Ie4-5L-Bc7"/>
         <segue reference="HgO-mC-RbM"/>
-        <segue reference="afb-X2-Uth"/>
+        <segue reference="rUW-Hv-1g3"/>
         <segue reference="9nH-Z1-YxZ"/>
     </inferredMetricsTieBreakers>
 </document>

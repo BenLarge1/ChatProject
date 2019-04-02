@@ -18,13 +18,15 @@
 		CE41EBAE221F4D9D001FE707 /* ReportBullyingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EBAD221F4D9D001FE707 /* ReportBullyingFormViewController.swift */; };
 		CE5A2547221B8DE800B954B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5A2546221B8DE800B954B6 /* GoogleService-Info.plist */; };
 		CE5A2549221B912100B954B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A2548221B912100B954B6 /* SignUpViewController.swift */; };
-		CE654ACF224AC7E400C052C5 /* PhysicalBullyingChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE654ACE224AC7E400C052C5 /* PhysicalBullyingChatViewController.swift */; };
 		CE6858E42242B08200746C0C /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6858E32242B08200746C0C /* Base.lproj */; };
 		CE6858E62242B48F00746C0C /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6858E52242B48F00746C0C /* ChannelsViewController.swift */; };
 		CE7FB730224D6FAA00C37082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF052208F2610082633E /* Main.storyboard */; };
 		CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */; };
 		CE952FC5224AEAF7005D97B2 /* SurveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE952FC4224AEAF7005D97B2 /* SurveryViewController.swift */; };
 		CE961B71224C0A9C00F1C434 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE961B70224C0A9C00F1C434 /* QuizViewController.swift */; };
+		CEA9350F2252B05B00C658E3 /* QuizResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9350E2252B05B00C658E3 /* QuizResultsViewController.swift */; };
+		CEA935112252B6F900C658E3 /* PhysicalBullyingChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA935102252B6F900C658E3 /* PhysicalBullyingChatViewController.swift */; };
+		CEA935132252B8B600C658E3 /* PhysicalBullyingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA935122252B8B600C658E3 /* PhysicalBullyingMessage.swift */; };
 		CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEE858220B88A2007D522D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,12 +48,14 @@
 		CE41EBAD221F4D9D001FE707 /* ReportBullyingFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportBullyingFormViewController.swift; sourceTree = "<group>"; };
 		CE5A2546221B8DE800B954B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CE5A2548221B912100B954B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		CE654ACE224AC7E400C052C5 /* PhysicalBullyingChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalBullyingChatViewController.swift; sourceTree = "<group>"; };
 		CE6858E32242B08200746C0C /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		CE6858E52242B48F00746C0C /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		CE952FC4224AEAF7005D97B2 /* SurveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveryViewController.swift; sourceTree = "<group>"; };
 		CE961B70224C0A9C00F1C434 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		CEA9350E2252B05B00C658E3 /* QuizResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsViewController.swift; sourceTree = "<group>"; };
+		CEA935102252B6F900C658E3 /* PhysicalBullyingChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalBullyingChatViewController.swift; sourceTree = "<group>"; };
+		CEA935122252B8B600C658E3 /* PhysicalBullyingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalBullyingMessage.swift; sourceTree = "<group>"; };
 		CEAEE858220B88A2007D522D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,13 +108,15 @@
 				CEAEE858220B88A2007D522D /* HomeViewController.swift */,
 				CE952FC4224AEAF7005D97B2 /* SurveryViewController.swift */,
 				CE961B70224C0A9C00F1C434 /* QuizViewController.swift */,
-				CE654ACE224AC7E400C052C5 /* PhysicalBullyingChatViewController.swift */,
+				CEA9350E2252B05B00C658E3 /* QuizResultsViewController.swift */,
 				CE5A2548221B912100B954B6 /* SignUpViewController.swift */,
 				CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */,
 				CE41EBAD221F4D9D001FE707 /* ReportBullyingFormViewController.swift */,
 				CE41EBA9221F4A9E001FE707 /* MusicViewController.swift */,
 				CE41EBAB221F4C85001FE707 /* GameViewController.swift */,
 				CE6858E52242B48F00746C0C /* ChannelsViewController.swift */,
+				CEA935102252B6F900C658E3 /* PhysicalBullyingChatViewController.swift */,
+				CEA935122252B8B600C658E3 /* PhysicalBullyingMessage.swift */,
 				CE22DF052208F2610082633E /* Main.storyboard */,
 				CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */,
 				CE22DF082208F2610082633E /* Assets.xcassets */,
@@ -271,17 +277,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE654ACF224AC7E400C052C5 /* PhysicalBullyingChatViewController.swift in Sources */,
 				CE6858E62242B48F00746C0C /* ChannelsViewController.swift in Sources */,
 				CE5A2549221B912100B954B6 /* SignUpViewController.swift in Sources */,
+				CEA935132252B8B600C658E3 /* PhysicalBullyingMessage.swift in Sources */,
 				CE41EBAA221F4A9E001FE707 /* MusicViewController.swift in Sources */,
 				CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */,
 				CE952FC5224AEAF7005D97B2 /* SurveryViewController.swift in Sources */,
 				CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */,
 				CE41EBAC221F4C85001FE707 /* GameViewController.swift in Sources */,
+				CEA9350F2252B05B00C658E3 /* QuizResultsViewController.swift in Sources */,
 				CE961B71224C0A9C00F1C434 /* QuizViewController.swift in Sources */,
 				CE41EBAE221F4D9D001FE707 /* ReportBullyingFormViewController.swift in Sources */,
 				CE22DF042208F2610082633E /* ViewController.swift in Sources */,
+				CEA935112252B6F900C658E3 /* PhysicalBullyingChatViewController.swift in Sources */,
 				CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */,
 				CE22DF022208F2610082633E /* AppDelegate.swift in Sources */,
 			);

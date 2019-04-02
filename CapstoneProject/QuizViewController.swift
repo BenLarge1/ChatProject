@@ -21,6 +21,7 @@ class QuizQuestion
 	var optionThree: String?
 	var optionFour: String?
 	var correctAnswer: String?
+	
 	//Methods
 	
 	init()
@@ -67,12 +68,12 @@ class QuizViewController: UIViewController
 	{
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
-		fillQuestionArray()
-		updateScreenForStartingQuiz()
 		enhanceUIElements()
-		
+		fillQuestionArray()
 	}
+	
 	var globalCounter = 0
+	var globalQuestionsCorrect = 0
 	
 	func updateScreenForStartingQuiz()
 	{
@@ -147,21 +148,23 @@ class QuizViewController: UIViewController
 			}
 			
 			
-		ref.child("quizzes").child(nameOfMonth).child(placeKeeping).observeSingleEvent(of: .value, with: { (snapshot) in
+		ref.child("quizzes").child("january").child(placeKeeping).observeSingleEvent(of: .value, with: { (snapshot) in
 			
 		let value = snapshot.value as? NSDictionary
 		
 		let question = QuizQuestion()
-		question.actualquestion = value?["actualQuestion"] as? String ?? ""
-		question.optionOne = value?["optionOne"] as? String ?? ""
-		question.optionTwo = value?["optionTwo"] as? String ?? ""
-		question.optionThree = value?["optionThree"] as? String ?? ""
-		question.optionFour = value?["optionFour"] as? String ?? ""
-		question.correctAnswer = value?["correctAnswer"] as? String ?? ""
+        question.actualquestion = value?["actualQuestion"] as? String ?? "\(self.nameOfMonth)"
+		question.optionOne = value?["optionOne"] as? String ?? "Did Not Receive Data"
+		question.optionTwo = value?["optionTwo"] as? String ?? "Did Not Receive Data"
+		question.optionThree = value?["optionThree"] as? String ?? "Did Not Receive Data"
+		question.optionFour = value?["optionFour"] as? String ?? "Did Not Receive Data"
+		question.correctAnswer = value?["correctAnswer"] as? String ?? "Did Not Receive Data"
 		
 		self.quiz.append(question)
 			})
 					}
+		quiz.shuffle()
+		updateScreenForStartingQuiz()
 	}
 	
 	@objc func answerOneSelected() //father forgive me for this dumb code
@@ -172,7 +175,7 @@ class QuizViewController: UIViewController
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
 				self.globalCounter += 1
-				self.updateScrenforNewQuestion()
+				self.updateScreenforNewQuestion()
 			}
 		}
 		else
@@ -189,7 +192,7 @@ class QuizViewController: UIViewController
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
 				self.globalCounter += 1
-				self.updateScrenforNewQuestion()
+				self.updateScreenforNewQuestion()
 			}
 		}
 		else
@@ -206,7 +209,7 @@ class QuizViewController: UIViewController
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
 				self.globalCounter += 1
-				self.updateScrenforNewQuestion()
+				self.updateScreenforNewQuestion()
 			}
 		}
 		else
@@ -223,7 +226,7 @@ class QuizViewController: UIViewController
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
 				self.globalCounter += 1
-				self.updateScrenforNewQuestion()
+				self.updateScreenforNewQuestion()
 			}
 		}
 		else
@@ -233,21 +236,21 @@ class QuizViewController: UIViewController
 	}
 	
 	
-	func updateScrenforNewQuestion()
+	func updateScreenforNewQuestion()
 	{
 		actualQuestion.text = quiz[globalCounter].actualquestion
 		answerOnePlace.text = quiz[globalCounter].optionOne
 		answerTwoPlace.text = quiz[globalCounter].optionTwo
 		answerThreePlace.text = quiz[globalCounter].optionThree
 		answerFourPlace.text = quiz[globalCounter].optionFour
-		placeInQuizIncrementor.text = "1/5"
-		questionIdentifier.text = "Question \(globalCounter)"
+		placeInQuizIncrementor.text = "\(globalCounter + 1)/5"
+		questionIdentifier.text = "Question \(globalCounter + 1)"
 		
-		if globalCounter >= 4 //last question
+		if globalCounter > 4 //last question
 		{
 			submitButton.isEnabled = true
-			submitButton.setTitle("See Results", for: .normal) //remove text from button
-			submitButton.backgroundColor = .blue
+			submitButton.setTitle("Submit", for: .normal)
+			submitButton.backgroundColor = .white
 		}
 		
 		//globalCounter = 0
