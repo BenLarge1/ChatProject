@@ -20,7 +20,6 @@
 		CE5A2549221B912100B954B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A2548221B912100B954B6 /* SignUpViewController.swift */; };
 		CE6858E42242B08200746C0C /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6858E32242B08200746C0C /* Base.lproj */; };
 		CE6858E62242B48F00746C0C /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6858E52242B48F00746C0C /* ChannelsViewController.swift */; };
-		CE7FB730224D6FAA00C37082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF052208F2610082633E /* Main.storyboard */; };
 		CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */; };
 		CE952FC5224AEAF7005D97B2 /* SurveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE952FC4224AEAF7005D97B2 /* SurveryViewController.swift */; };
 		CE961B71224C0A9C00F1C434 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE961B70224C0A9C00F1C434 /* QuizViewController.swift */; };
@@ -28,6 +27,7 @@
 		CEA935112252B6F900C658E3 /* PhysicalBullyingChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA935102252B6F900C658E3 /* PhysicalBullyingChatViewController.swift */; };
 		CEA935132252B8B600C658E3 /* PhysicalBullyingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA935122252B8B600C658E3 /* PhysicalBullyingMessage.swift */; };
 		CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEE858220B88A2007D522D /* HomeViewController.swift */; };
+		CEF2EBF82254054400DB7C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF052208F2610082633E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE22DF0C2208F2610082633E /* LaunchScreen.storyboard in Resources */,
-				CE7FB730224D6FAA00C37082 /* Main.storyboard in Resources */,
+				CEF2EBF82254054400DB7C2B /* Main.storyboard in Resources */,
 				CE5A2547221B8DE800B954B6 /* GoogleService-Info.plist in Resources */,
 				CE6858E42242B08200746C0C /* Base.lproj in Resources */,
 				CE22DF092208F2610082633E /* Assets.xcassets in Resources */,

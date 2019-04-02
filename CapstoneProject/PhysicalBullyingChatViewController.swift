@@ -95,19 +95,35 @@ class PhysicalBullyingChatViewController: MessagesViewController
 	var messages: [Message] = []
 	var member: Member!
 	
+	@objc func goBack()
+	{
+		performSegue(withIdentifier: "physicalbullyingtomainchat", sender: nil)
+		
+	}
+	
+	func setUpNavBar()
+	{
+		let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
+		self.view.addSubview(navBar)
+		navBar.items?.append(UINavigationItem(title: "Physical Bullying Chat"))
+		let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(goBack))
+		navBar.topItem?.leftBarButtonItem = backButton
+	}
+	
     override func viewDidLoad()
 	{
         super.viewDidLoad()
-
+		
+		setUpNavBar()
+		
         // Do any additional setup after loading the view.
 		member = Member(name: "bluemoon", color: .blue)
 		messagesCollectionView.messagesDataSource = self
 		messagesCollectionView.messagesLayoutDelegate = self
 		messageInputBar.delegate = self
 		messagesCollectionView.messagesDisplayDelegate = self
-    }
-	
-	
+	}
+}
 
     /*
     // MARK: - Navigation
@@ -118,5 +134,3 @@ class PhysicalBullyingChatViewController: MessagesViewController
         // Pass the selected object to the new view controller.
     }
     */
-
-}
