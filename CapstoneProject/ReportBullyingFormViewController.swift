@@ -11,8 +11,7 @@ import MessageUI
 import Firebase
 import FirebaseDatabase
 import FirebaseStorage
-
-//import FirebaseStorage MARK: Need to install firebase storage
+import Foundation
 
 class ReportBullyingFormViewController: UIViewController, MFMailComposeViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -58,29 +57,8 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 	let user = Auth.auth().currentUser
 	
 	@IBOutlet var ReportImageView: UIImageView!
-	//@IBOutlet var chooseButon: UIButton!
-    
-	var imagePicker = UIImagePickerController()
 	
-    func uploadImage()
-    {
-		if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
-        {
-			imagePicker.delegate = self
-			imagePicker.sourceType = .savedPhotosAlbum
-			imagePicker.allowsEditing = false
-			
-			present(imagePicker, animated: true, completion: nil)
-		}
-	}
 	
-	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
-		self.dismiss(animated: true, completion: { () -> Void in
-			
-		})
-		
-		ReportImageView.image = image
-	}
     
 	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
     {
@@ -104,7 +82,8 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
         
 		sendEmail()
 		}
-        //uploadImageToDatabase()
+		
+		
         
 		let alertController = UIAlertController(title: "Success!", message: "Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.", preferredStyle: .alert)
 		let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {action in self.GoToResourcesPages()})

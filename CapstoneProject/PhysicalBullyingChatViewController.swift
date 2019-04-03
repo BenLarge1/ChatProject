@@ -105,6 +105,8 @@ class PhysicalBullyingChatViewController: MessagesViewController
 	{
 		let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
 		self.view.addSubview(navBar)
+		navBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+		
 		navBar.items?.append(UINavigationItem(title: "Physical Bullying Chat"))
 		navBar.prefersLargeTitles = true
 		let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(goBack))

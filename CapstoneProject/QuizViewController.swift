@@ -125,7 +125,7 @@ class QuizViewController: UIViewController
 		
 		var ref: DatabaseReference!
 		ref = Database.database().reference()
-		ref.child("quizzes").child("january").observeSingleEvent(of: .value, with: { (snapshot) in
+		ref.child("quizzes").child(nameOfMonth.lowercased()).observeSingleEvent(of: .value, with: { (snapshot) in
 			
 				for item in snapshot.children.allObjects as! [DataSnapshot] {
 					let value = item.value as! NSDictionary
