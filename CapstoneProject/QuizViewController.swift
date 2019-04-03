@@ -230,11 +230,11 @@ class QuizViewController: UIViewController
 		placeInQuizIncrementor.text = "\(globalCounter + 1)/5"
 		questionIdentifier.text = "Question \(globalCounter + 1)"
 		
-		if globalCounter == 6
+		if globalCounter == 5
 		{
 			performSegue(withIdentifier: "quizToQuizEnd", sender: nil)
 		}
-		if globalCounter > 4 //last question
+		if globalCounter > 3 //last question
 		{
 			submitButton.isEnabled = true
 			submitButton.setTitle("Submit", for: .normal)
