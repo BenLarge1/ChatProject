@@ -69,11 +69,15 @@ class QuizViewController: UIViewController
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
 		enhanceUIElements()
-		fillQuestionArray()
+		updateScreenForStartingQuiz()
+		fillQuestionArray(completion: { message in
+			
+			self.updateScreenforNewQuestion()
+		})
 	}
 	
 	var globalCounter = 0
-	var globalQuestionsCorrect = 0
+	//var globalQuestionsCorrect = 0
 	
 	func updateScreenForStartingQuiz()
 	{
@@ -82,8 +86,8 @@ class QuizViewController: UIViewController
 		answerTwoPlace.text = ""
 		answerThreePlace.text = ""
 		answerFourPlace.text = ""
-		placeInQuizIncrementor.text = "\(globalCounter)/5"
-		questionIdentifier.text = "Question \(globalCounter)"
+		placeInQuizIncrementor.text = "\(globalCounter + 1)/5"
+		questionIdentifier.text = "Question \(globalCounter + 1)"
 		submitButton.isEnabled = false
 		submitButton.setTitle("", for: .normal) //remove text from button
 		submitButton.backgroundColor = .clear
@@ -111,60 +115,31 @@ class QuizViewController: UIViewController
 	
 	var quiz = [QuizQuestion]()
 	
-	func fillQuestionArray() //fill the array of questions, this function runs when the app is first launched, and once a month to update the array
+	func fillQuestionArray(completion: @escaping (_ message: String) -> Void) //fill the array of questions, this function runs when the app is first launched, and once a month to update the array
 	{
 		//detect if it's a new month
 		
 		var ref: DatabaseReference!
 		ref = Database.database().reference()
-		
-		var placeKeeping = ""
-		
-		for i in 1...10{
-		
-			switch i {
-			case 1:
-				placeKeeping = "questionOne"
-			case 2:
-				placeKeeping = "questionTwo"
-			case 3:
-				placeKeeping = "questionThree"
-			case 4:
-				placeKeeping = "questionFour"
-			case 5:
-				placeKeeping = "questionFive"
-			case 6:
-				placeKeeping = "questionSix"
-			case 7:
-				placeKeeping = "questionSeven"
-			case 8:
-				placeKeeping = "questionEight"
-			case 9:
-				placeKeeping = "questionNine"
-			case 10:
-				placeKeeping = "questionTen"
-			default:
-				print("Error in switch case, no matching cases found")
-			}
+		ref.child("quizzes").child("january").observeSingleEvent(of: .value, with: { (snapshot) in
 			
-			
-		ref.child("quizzes").child("january").child(placeKeeping).observeSingleEvent(of: .value, with: { (snapshot) in
-			
-		let value = snapshot.value as? NSDictionary
-		
-		let question = QuizQuestion()
-        question.actualquestion = value?["actualQuestion"] as? String ?? "\(self.nameOfMonth)"
-		question.optionOne = value?["optionOne"] as? String ?? "Did Not Receive Data"
-		question.optionTwo = value?["optionTwo"] as? String ?? "Did Not Receive Data"
-		question.optionThree = value?["optionThree"] as? String ?? "Did Not Receive Data"
-		question.optionFour = value?["optionFour"] as? String ?? "Did Not Receive Data"
-		question.correctAnswer = value?["correctAnswer"] as? String ?? "Did Not Receive Data"
-		
-		self.quiz.append(question)
+				for item in snapshot.children.allObjects as! [DataSnapshot] {
+					let value = item.value as! NSDictionary
+					
+					let tempQuestion = QuizQuestion()
+					tempQuestion.actualquestion = value["actualQuestion"] as? String ?? "Did Not Receive Data"
+					tempQuestion.optionOne = value["optionOne"] as? String ?? "Did Not Receive Data"
+					tempQuestion.optionTwo = value["optionTwo"] as? String ?? "Did Not Receive Data"
+					tempQuestion.optionThree = value["optionThree"] as? String ?? "Did Not Receive Data"
+					tempQuestion.optionFour = value["optionFour"] as? String ?? "Did Not Receive Data"
+					tempQuestion.correctAnswer = value["correctAnswer"] as? String ?? "Did Not Receive Data"
+					
+					self.quiz.append(tempQuestion) //ADD OBJECT TO ARRAY
+					self.quiz.shuffle()
+				}
+			completion("DONE")
 			})
-					}
-		quiz.shuffle()
-		updateScreenForStartingQuiz()
+		
 	}
 	
 	@objc func answerOneSelected() //father forgive me for this dumb code
@@ -238,6 +213,11 @@ class QuizViewController: UIViewController
 	
 	func updateScreenforNewQuestion()
 	{
+		if quiz[0].actualquestion == nil
+		{
+			print("Array was not filled")
+		}
+		else{
 		actualQuestion.text = quiz[globalCounter].actualquestion
 		answerOnePlace.text = quiz[globalCounter].optionOne
 		answerTwoPlace.text = quiz[globalCounter].optionTwo
@@ -254,6 +234,7 @@ class QuizViewController: UIViewController
 		}
 		
 		//globalCounter = 0
+		}
 	}
 	/*
 	// MARK: - Navigation

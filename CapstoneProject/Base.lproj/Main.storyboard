@@ -814,7 +814,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="Sk2-nV-KfE">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Sk2-nV-KfE">
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Chat" id="NM3-Xc-fw3">
@@ -826,6 +826,13 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reportFlag" translatesAutoresizingMaskIntoConstraints="NO" id="9IH-CX-xL9">
+                                <rect key="frame" x="326" y="28" width="31" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="6ub-FI-nbv"/>
+                                    <constraint firstAttribute="height" constant="37" id="T9i-7A-wes"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -839,11 +846,13 @@
                             <constraint firstItem="T1h-Kb-DGl" firstAttribute="leading" secondItem="knJ-dg-zNJ" secondAttribute="leading" id="Ji0-pr-05G"/>
                             <constraint firstItem="Sk2-nV-KfE" firstAttribute="leading" secondItem="knJ-dg-zNJ" secondAttribute="leading" id="OWi-DY-h4c"/>
                             <constraint firstItem="2pI-6Q-piO" firstAttribute="trailing" secondItem="knJ-dg-zNJ" secondAttribute="trailing" id="S4L-Th-JvY"/>
+                            <constraint firstItem="9IH-CX-xL9" firstAttribute="top" secondItem="knJ-dg-zNJ" secondAttribute="top" constant="8" id="TLd-yN-Ixq"/>
                             <constraint firstItem="nlb-gt-Af3" firstAttribute="top" secondItem="a08-m2-YlO" secondAttribute="bottom" constant="29" id="VLL-h9-Wdt"/>
                             <constraint firstItem="fl3-jn-gpK" firstAttribute="centerX" secondItem="1Zw-WS-sKs" secondAttribute="centerX" id="XPh-zy-bpH"/>
                             <constraint firstItem="nva-rU-zLg" firstAttribute="trailing" secondItem="knJ-dg-zNJ" secondAttribute="trailing" id="Yns-uE-epL"/>
                             <constraint firstItem="2pI-6Q-piO" firstAttribute="leading" secondItem="knJ-dg-zNJ" secondAttribute="leading" id="Z4I-9L-WPm"/>
                             <constraint firstItem="knJ-dg-zNJ" firstAttribute="trailing" secondItem="nlb-gt-Af3" secondAttribute="trailing" constant="20" id="aFA-RV-zxj"/>
+                            <constraint firstItem="knJ-dg-zNJ" firstAttribute="trailing" secondItem="9IH-CX-xL9" secondAttribute="trailing" constant="18" id="auG-Hp-HKN"/>
                             <constraint firstItem="a08-m2-YlO" firstAttribute="top" secondItem="T1h-Kb-DGl" secondAttribute="bottom" constant="8" id="fSh-ft-8SY"/>
                             <constraint firstItem="Sk2-nV-KfE" firstAttribute="trailing" secondItem="knJ-dg-zNJ" secondAttribute="trailing" id="fTh-16-pu1"/>
                             <constraint firstItem="2pI-6Q-piO" firstAttribute="top" secondItem="Sk2-nV-KfE" secondAttribute="bottom" constant="43" id="fth-Tx-aCS"/>
@@ -857,7 +866,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeu-QF-7V3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="-1390"/>
+            <point key="canvasLocation" x="237.59999999999999" y="-1390.2548725637182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H8I-OP-z3u">
@@ -897,8 +906,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-tW-BRp">
-                                <rect key="frame" x="0.0" y="24" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-tW-BRp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="grE-mf-5vu"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Physical Bullying" id="Tss-GU-wGJ">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="T62-JK-nFX"/>
@@ -908,9 +920,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.54509803921568623" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="8eK-tW-BRp" firstAttribute="leading" secondItem="PPq-gc-Ny8" secondAttribute="leading" id="ZJv-9U-CMs"/>
-                            <constraint firstItem="8eK-tW-BRp" firstAttribute="trailing" secondItem="PPq-gc-Ny8" secondAttribute="trailing" id="dHt-g4-icq"/>
-                            <constraint firstItem="8eK-tW-BRp" firstAttribute="top" secondItem="PPq-gc-Ny8" secondAttribute="top" constant="4" id="vQe-Cs-AEC"/>
+                            <constraint firstItem="8eK-tW-BRp" firstAttribute="leading" secondItem="PPq-gc-Ny8" secondAttribute="leading" id="EN3-au-iWW"/>
+                            <constraint firstItem="8eK-tW-BRp" firstAttribute="trailing" secondItem="PPq-gc-Ny8" secondAttribute="trailing" id="bem-fM-ble"/>
+                            <constraint firstItem="8eK-tW-BRp" firstAttribute="top" secondItem="dwQ-qK-cNw" secondAttribute="top" id="xr4-ev-A11"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PPq-gc-Ny8"/>
                     </view>
@@ -2391,7 +2403,7 @@
         <image name="music_icon" width="247" height="300"/>
         <image name="playlist1" width="377" height="66"/>
         <image name="playlist2" width="383" height="66"/>
-        <image name="reportFlag" width="268" height="300"/>
+        <image name="reportFlag" width="258" height="300"/>
         <image name="report_icon" width="227" height="300"/>
         <image name="transparent upload symbol" width="256" height="256"/>
         <image name="youtube" width="433" height="98"/>
@@ -2400,10 +2412,10 @@
         <segue reference="MDw-Up-KSE"/>
         <segue reference="ELq-0S-A5O"/>
         <segue reference="1Sl-g3-ee9"/>
-        <segue reference="2jw-SL-eey"/>
+        <segue reference="aS6-rA-cqr"/>
         <segue reference="fv8-DI-hZP"/>
         <segue reference="HgO-mC-RbM"/>
-        <segue reference="IZg-wD-d7t"/>
+        <segue reference="kCw-8s-sE2"/>
         <segue reference="o3M-K6-SmN"/>
     </inferredMetricsTieBreakers>
 </document>
