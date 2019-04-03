@@ -823,16 +823,26 @@
                                                 <segue destination="Kx5-fY-iAE" kind="show" id="kCw-8s-sE2"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="reportFlag" springLoaded="YES" style="plain" id="lTq-ve-XcX">
+                                            <inset key="imageInsets" minX="0.0" minY="3" maxX="-105" maxY="0.0"/>
+                                            <color key="tintColor" red="0.98431372549999996" green="0.79215686269999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="OCj-9a-5KA" kind="show" id="DEz-Fo-drb"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reportFlag" translatesAutoresizingMaskIntoConstraints="NO" id="9IH-CX-xL9">
-                                <rect key="frame" x="326" y="28" width="31" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Rooms" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJd-3m-WiC">
+                                <rect key="frame" x="124" y="24" width="127" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="31" id="6ub-FI-nbv"/>
-                                    <constraint firstAttribute="height" constant="37" id="T9i-7A-wes"/>
+                                    <constraint firstAttribute="height" constant="44" id="GvB-MT-XdQ"/>
+                                    <constraint firstAttribute="width" constant="127" id="ss8-ar-J4d"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -846,13 +856,12 @@
                             <constraint firstItem="T1h-Kb-DGl" firstAttribute="leading" secondItem="knJ-dg-zNJ" secondAttribute="leading" id="Ji0-pr-05G"/>
                             <constraint firstItem="Sk2-nV-KfE" firstAttribute="leading" secondItem="knJ-dg-zNJ" secondAttribute="leading" id="OWi-DY-h4c"/>
                             <constraint firstItem="2pI-6Q-piO" firstAttribute="trailing" secondItem="knJ-dg-zNJ" secondAttribute="trailing" id="S4L-Th-JvY"/>
-                            <constraint firstItem="9IH-CX-xL9" firstAttribute="top" secondItem="knJ-dg-zNJ" secondAttribute="top" constant="8" id="TLd-yN-Ixq"/>
+                            <constraint firstItem="QJd-3m-WiC" firstAttribute="centerX" secondItem="1Zw-WS-sKs" secondAttribute="centerX" id="U9n-nE-WB8"/>
                             <constraint firstItem="nlb-gt-Af3" firstAttribute="top" secondItem="a08-m2-YlO" secondAttribute="bottom" constant="29" id="VLL-h9-Wdt"/>
                             <constraint firstItem="fl3-jn-gpK" firstAttribute="centerX" secondItem="1Zw-WS-sKs" secondAttribute="centerX" id="XPh-zy-bpH"/>
                             <constraint firstItem="nva-rU-zLg" firstAttribute="trailing" secondItem="knJ-dg-zNJ" secondAttribute="trailing" id="Yns-uE-epL"/>
                             <constraint firstItem="2pI-6Q-piO" firstAttribute="leading" secondItem="knJ-dg-zNJ" secondAttribute="leading" id="Z4I-9L-WPm"/>
                             <constraint firstItem="knJ-dg-zNJ" firstAttribute="trailing" secondItem="nlb-gt-Af3" secondAttribute="trailing" constant="20" id="aFA-RV-zxj"/>
-                            <constraint firstItem="knJ-dg-zNJ" firstAttribute="trailing" secondItem="9IH-CX-xL9" secondAttribute="trailing" constant="18" id="auG-Hp-HKN"/>
                             <constraint firstItem="a08-m2-YlO" firstAttribute="top" secondItem="T1h-Kb-DGl" secondAttribute="bottom" constant="8" id="fSh-ft-8SY"/>
                             <constraint firstItem="Sk2-nV-KfE" firstAttribute="trailing" secondItem="knJ-dg-zNJ" secondAttribute="trailing" id="fTh-16-pu1"/>
                             <constraint firstItem="2pI-6Q-piO" firstAttribute="top" secondItem="Sk2-nV-KfE" secondAttribute="bottom" constant="43" id="fth-Tx-aCS"/>
@@ -860,6 +869,7 @@
                             <constraint firstItem="T1h-Kb-DGl" firstAttribute="trailing" secondItem="knJ-dg-zNJ" secondAttribute="trailing" id="vHt-tI-Ub2"/>
                             <constraint firstItem="nva-rU-zLg" firstAttribute="leading" secondItem="knJ-dg-zNJ" secondAttribute="leading" id="vzF-DO-6Q3"/>
                             <constraint firstItem="fl3-jn-gpK" firstAttribute="top" secondItem="nva-rU-zLg" secondAttribute="bottom" constant="8" id="x0B-I2-llZ"/>
+                            <constraint firstItem="QJd-3m-WiC" firstAttribute="top" secondItem="knJ-dg-zNJ" secondAttribute="top" constant="4" id="yGy-te-ri0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="knJ-dg-zNJ"/>
                     </view>
@@ -2039,7 +2049,7 @@
                                 <state key="normal" title="SUBMIT QUIZ"/>
                                 <connections>
                                     <action selector="writeReportToDatabase:" destination="1VH-Rz-1Ou" eventType="touchUpInside" id="LFJ-O5-rvV"/>
-                                    <segue destination="RFe-Kw-3ei" kind="show" identifier="quizToResults" id="v1c-OY-C7c"/>
+                                    <segue destination="RFe-Kw-3ei" kind="show" identifier="quizToQuizEnd" id="xdp-VS-pMe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="QuestionContent" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIz-Q9-Zce">
@@ -2063,7 +2073,7 @@
                             </label>
                             <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerOne" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqO-4t-gdc">
                                 <rect key="frame" x="28" y="291" width="319" height="58"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                 </accessibility>
@@ -2075,7 +2085,7 @@
                             </label>
                             <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerTwo" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-9H-GjR">
                                 <rect key="frame" x="28" y="357" width="319" height="58"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                 </accessibility>
@@ -2087,7 +2097,7 @@
                             </label>
                             <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerThree" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLU-rJ-pg8">
                                 <rect key="frame" x="28" y="423" width="319" height="58"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                 </accessibility>
@@ -2099,7 +2109,7 @@
                             </label>
                             <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AnswerFour" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-2a-f0d">
                                 <rect key="frame" x="28" y="489" width="319" height="58"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
                                 </accessibility>
@@ -2410,10 +2420,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MDw-Up-KSE"/>
-        <segue reference="ELq-0S-A5O"/>
+        <segue reference="DEz-Fo-drb"/>
         <segue reference="1Sl-g3-ee9"/>
         <segue reference="aS6-rA-cqr"/>
-        <segue reference="fv8-DI-hZP"/>
+        <segue reference="Ie4-5L-Bc7"/>
         <segue reference="HgO-mC-RbM"/>
         <segue reference="kCw-8s-sE2"/>
         <segue reference="o3M-K6-SmN"/>

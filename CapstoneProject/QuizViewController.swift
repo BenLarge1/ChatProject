@@ -69,7 +69,7 @@ class QuizViewController: UIViewController
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
 		enhanceUIElements()
-		updateScreenForStartingQuiz()
+		resetScreen()
 		fillQuestionArray(completion: { message in
 			
 			self.updateScreenforNewQuestion()
@@ -79,7 +79,7 @@ class QuizViewController: UIViewController
 	var globalCounter = 0
 	//var globalQuestionsCorrect = 0
 	
-	func updateScreenForStartingQuiz()
+	func resetScreen()
 	{
 		actualQuestion.text = ""
 		answerOnePlace.text = ""
@@ -91,7 +91,10 @@ class QuizViewController: UIViewController
 		submitButton.isEnabled = false
 		submitButton.setTitle("", for: .normal) //remove text from button
 		submitButton.backgroundColor = .clear
-		globalCounter = 0
+		answerOnePlace.backgroundColor = UIColor.white
+		answerTwoPlace.backgroundColor = UIColor.white
+		answerThreePlace.backgroundColor = UIColor.white
+		answerFourPlace.backgroundColor = UIColor.white
 	}
 	
 	required init?(coder aDecoder: NSCoder)
@@ -218,6 +221,7 @@ class QuizViewController: UIViewController
 			print("Array was not filled")
 		}
 		else{
+		resetScreen()
 		actualQuestion.text = quiz[globalCounter].actualquestion
 		answerOnePlace.text = quiz[globalCounter].optionOne
 		answerTwoPlace.text = quiz[globalCounter].optionTwo
@@ -226,6 +230,10 @@ class QuizViewController: UIViewController
 		placeInQuizIncrementor.text = "\(globalCounter + 1)/5"
 		questionIdentifier.text = "Question \(globalCounter + 1)"
 		
+		if globalCounter == 6
+		{
+			performSegue(withIdentifier: "quizToQuizEnd", sender: nil)
+		}
 		if globalCounter > 4 //last question
 		{
 			submitButton.isEnabled = true
