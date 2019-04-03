@@ -22,7 +22,7 @@ extension PhysicalBullyingChatViewController: MessagesDataSource {
 	}
 	
 	func currentSender() -> Sender {
-		return Sender(id: member.name, displayName: member.name)
+		return Sender(id: (Auth.auth().currentUser?.uid)!, displayName: member.name)
 	}
 	
 	func messageForItem(
@@ -65,11 +65,13 @@ extension PhysicalBullyingChatViewController: MessagesDisplayDelegate {
 		_ avatarView: AvatarView,
 		for message: MessageType,
 		at indexPath: IndexPath,
-		in messagesCollectionView: MessagesCollectionView) {
+		in messagesCollectionView: MessagesCollectionView)
+	{
 		
-		let message = messages[indexPath.section]
-		let color = message.member.color
-		avatarView.backgroundColor = color
+		avatarView.isHidden = true
+		//let message = messages[indexPath.section]
+		//let color = message.member.color
+		//avatarView.backgroundColor = color
 	}
 }
 
@@ -118,9 +120,10 @@ class PhysicalBullyingChatViewController: MessagesViewController
         super.viewDidLoad()
 		
 		setUpNavBar()
-		
+		let userID = Auth.auth().currentUser?.uid
+		let userName = Auth.auth().currentUser?.email
         // Do any additional setup after loading the view.
-		member = Member(name: "bluemoon", color: .blue)
+		member = Member(name: userName!)
 		messagesCollectionView.messagesDataSource = self
 		messagesCollectionView.messagesLayoutDelegate = self
 		messageInputBar.delegate = self

@@ -13,7 +13,6 @@ import MessageKit
 struct Member
 {
 	let name: String
-	let color: UIColor
 }
 
 struct Message
