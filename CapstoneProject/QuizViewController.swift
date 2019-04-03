@@ -95,6 +95,7 @@ class QuizViewController: UIViewController
 		answerTwoPlace.backgroundColor = UIColor.white
 		answerThreePlace.backgroundColor = UIColor.white
 		answerFourPlace.backgroundColor = UIColor.white
+		enableButtons()
 	}
 	
 	required init?(coder aDecoder: NSCoder)
@@ -149,6 +150,7 @@ class QuizViewController: UIViewController
 	{
 		if answerOnePlace.text == quiz[globalCounter].correctAnswer
 		{
+			disableButtons()
 			answerOnePlace.backgroundColor = UIColor.green
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
@@ -166,6 +168,7 @@ class QuizViewController: UIViewController
 	{
 		if answerTwoPlace.text == quiz[globalCounter].correctAnswer
 		{
+			disableButtons()
 			answerTwoPlace.backgroundColor = UIColor.green
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
@@ -183,6 +186,7 @@ class QuizViewController: UIViewController
 	{
 		if answerThreePlace.text == quiz[globalCounter].correctAnswer
 		{
+			disableButtons()
 			answerThreePlace.backgroundColor = UIColor.green
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
@@ -200,6 +204,7 @@ class QuizViewController: UIViewController
 	{
 		if answerFourPlace.text == quiz[globalCounter].correctAnswer
 		{
+			disableButtons()
 			answerFourPlace.backgroundColor = UIColor.green
 			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
 			{ // Change `2.0` to the desired number of seconds.
@@ -213,6 +218,21 @@ class QuizViewController: UIViewController
 		}
 	}
 	
+	func disableButtons()
+	{
+		answerOnePlace.isEnabled = false
+		answerTwoPlace.isEnabled = false
+		answerThreePlace.isEnabled = false
+		answerFourPlace.isEnabled = false
+	}
+	
+	func enableButtons()
+	{
+		answerOnePlace.isEnabled = true
+		answerTwoPlace.isEnabled = true
+		answerThreePlace.isEnabled = true
+		answerFourPlace.isEnabled = true
+	}
 	
 	func updateScreenforNewQuestion()
 	{
@@ -220,7 +240,15 @@ class QuizViewController: UIViewController
 		{
 			print("Array was not filled")
 		}
-		else{
+		else if globalCounter >= 5
+		{
+			DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
+			{ // Change `2.0` to the desired number of seconds.
+				self.performSegue(withIdentifier: "quizToQuizEnd", sender: nil)
+			}
+		}
+		else
+		{
 		resetScreen()
 		actualQuestion.text = quiz[globalCounter].actualquestion
 		answerOnePlace.text = quiz[globalCounter].optionOne
@@ -229,18 +257,16 @@ class QuizViewController: UIViewController
 		answerFourPlace.text = quiz[globalCounter].optionFour
 		placeInQuizIncrementor.text = "\(globalCounter + 1)/5"
 		questionIdentifier.text = "Question \(globalCounter + 1)"
-		
-		if globalCounter == 5
-		{
-			performSegue(withIdentifier: "quizToQuizEnd", sender: nil)
-		}
+			
+		/*
 		if globalCounter > 3 //last question
 		{
 			submitButton.isEnabled = true
 			submitButton.setTitle("Submit", for: .normal)
 			submitButton.backgroundColor = .white
 		}
-		
+		*/
+			
 		//globalCounter = 0
 		}
 	}
