@@ -1376,14 +1376,21 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E74-Rs-9w7">
-                                <rect key="frame" x="17" y="524" width="33" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E74-Rs-9w7">
+                                <rect key="frame" x="17" y="523" width="33" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="e39-K0-ehM"/>
                                     <constraint firstAttribute="width" constant="33" id="zvP-I1-rGZ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="transparent upload symbol"/>
+                                <connections>
+                                    <action selector="addImageToImageView:" destination="drQ-px-qf8" eventType="touchUpInside" id="iLV-Dc-kWG"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noimageselected" translatesAutoresizingMaskIntoConstraints="NO" id="Tzm-WT-CuU">
+                                <rect key="frame" x="17" y="553" width="182" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.54117647058823526" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1415,6 +1422,7 @@
                         <viewLayoutGuide key="safeArea" id="q50-Ed-Fq4"/>
                     </view>
                     <connections>
+                        <outlet property="ReportImageView" destination="Tzm-WT-CuU" id="tfm-EN-xsl"/>
                         <outlet property="anonSwitch" destination="lD5-ME-2mP" id="gsr-4f-4i8"/>
                         <outlet property="dateTextField" destination="57Y-9L-IvG" id="D4n-th-G6N"/>
                         <outlet property="nameTextField" destination="f4S-12-EeC" id="Gie-h7-nLW"/>
@@ -1428,7 +1436,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="87" y="-601"/>
+            <point key="canvasLocation" x="85.599999999999994" y="-601.34932533733138"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="09J-BT-d0R">
@@ -2494,6 +2502,7 @@
         <image name="game_icon" width="300" height="173"/>
         <image name="links_icon" width="300" height="207"/>
         <image name="music_icon" width="247" height="300"/>
+        <image name="noimageselected" width="640" height="640"/>
         <image name="playlist1" width="377" height="66"/>
         <image name="playlist2" width="383" height="66"/>
         <image name="reportFlag" width="258" height="300"/>

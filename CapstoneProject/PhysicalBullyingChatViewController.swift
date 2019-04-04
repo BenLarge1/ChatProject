@@ -75,6 +75,7 @@ extension PhysicalBullyingChatViewController: MessagesDisplayDelegate {
 	}
 }
 
+
 extension PhysicalBullyingChatViewController: MessageInputBarDelegate {
 	func messageInputBar(
 		_ inputBar: MessageInputBar,
