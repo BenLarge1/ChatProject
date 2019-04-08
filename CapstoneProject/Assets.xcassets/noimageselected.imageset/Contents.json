@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "noimageselected.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "LogoMakr_68blpN.png",
       "scale" : "2x"
     },
     {

@@ -20,12 +20,21 @@
 		CE6858E42242B08200746C0C /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6858E32242B08200746C0C /* Base.lproj */; };
 		CE6858E62242B48F00746C0C /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6858E52242B48F00746C0C /* ChannelsViewController.swift */; };
 		CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */; };
+<<<<<<< HEAD
 		CEA477CB225BE7C000DE222A /* View Controllers in Resources */ = {isa = PBXBuildFile; fileRef = CEA477CA225BE7C000DE222A /* View Controllers */; };
 		CEA477CD225BE7D200DE222A /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = CEA477CC225BE7D200DE222A /* Controllers */; };
 		CEA477CF225BE7E200DE222A /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = CEA477CE225BE7E200DE222A /* Extensions */; };
 		CEA477D1225BE7F000DE222A /* Models in Resources */ = {isa = PBXBuildFile; fileRef = CEA477D0225BE7F000DE222A /* Models */; };
 		CEA477DA225BEDEF00DE222A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA477D9225BEDEB00DE222A /* Main.storyboard */; };
+=======
+		CE952FC5224AEAF7005D97B2 /* SurveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE952FC4224AEAF7005D97B2 /* SurveryViewController.swift */; };
+		CE961B71224C0A9C00F1C434 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE961B70224C0A9C00F1C434 /* QuizViewController.swift */; };
+		CEA9350F2252B05B00C658E3 /* QuizResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9350E2252B05B00C658E3 /* QuizResultsViewController.swift */; };
+		CEA935112252B6F900C658E3 /* PhysicalBullyingChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA935102252B6F900C658E3 /* PhysicalBullyingChatViewController.swift */; };
+		CEA935132252B8B600C658E3 /* PhysicalBullyingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA935122252B8B600C658E3 /* PhysicalBullyingMessage.swift */; };
+>>>>>>> master
 		CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEE858220B88A2007D522D /* HomeViewController.swift */; };
+		CEF2EBF82254054400DB7C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF052208F2610082633E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +56,19 @@
 		CE6858E32242B08200746C0C /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		CE6858E52242B48F00746C0C /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CEA477CA225BE7C000DE222A /* View Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "View Controllers"; sourceTree = "<group>"; };
 		CEA477CC225BE7D200DE222A /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
 		CEA477CE225BE7E200DE222A /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
 		CEA477D0225BE7F000DE222A /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		CEA477D9225BEDEB00DE222A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+=======
+		CE952FC4224AEAF7005D97B2 /* SurveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveryViewController.swift; sourceTree = "<group>"; };
+		CE961B70224C0A9C00F1C434 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		CEA9350E2252B05B00C658E3 /* QuizResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsViewController.swift; sourceTree = "<group>"; };
+		CEA935102252B6F900C658E3 /* PhysicalBullyingChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalBullyingChatViewController.swift; sourceTree = "<group>"; };
+		CEA935122252B8B600C658E3 /* PhysicalBullyingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalBullyingMessage.swift; sourceTree = "<group>"; };
+>>>>>>> master
 		CEAEE858220B88A2007D522D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,16 +120,26 @@
 				CE22DF032208F2610082633E /* ViewController.swift */,
 				CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */,
 				CEAEE858220B88A2007D522D /* HomeViewController.swift */,
+				CE952FC4224AEAF7005D97B2 /* SurveryViewController.swift */,
+				CE961B70224C0A9C00F1C434 /* QuizViewController.swift */,
+				CEA9350E2252B05B00C658E3 /* QuizResultsViewController.swift */,
 				CE5A2548221B912100B954B6 /* SignUpViewController.swift */,
 				CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */,
 				CE41EBAD221F4D9D001FE707 /* ReportBullyingFormViewController.swift */,
 				CE41EBA9221F4A9E001FE707 /* MusicViewController.swift */,
 				CE41EBAB221F4C85001FE707 /* GameViewController.swift */,
 				CE6858E52242B48F00746C0C /* ChannelsViewController.swift */,
+<<<<<<< HEAD
 				CEA477D0225BE7F000DE222A /* Models */,
 				CEA477CE225BE7E200DE222A /* Extensions */,
 				CEA477CC225BE7D200DE222A /* Controllers */,
 				CEA477CA225BE7C000DE222A /* View Controllers */,
+=======
+				CEA935102252B6F900C658E3 /* PhysicalBullyingChatViewController.swift */,
+				CEA935122252B8B600C658E3 /* PhysicalBullyingMessage.swift */,
+				CE22DF052208F2610082633E /* Main.storyboard */,
+				CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */,
+>>>>>>> master
 				CE22DF082208F2610082633E /* Assets.xcassets */,
 				CE5A2546221B8DE800B954B6 /* GoogleService-Info.plist */,
 				CE22DF0D2208F2610082633E /* Info.plist */,
@@ -197,14 +224,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				CE22DF0C2208F2610082633E /* LaunchScreen.storyboard in Resources */,
+				CEF2EBF82254054400DB7C2B /* Main.storyboard in Resources */,
+>>>>>>> master
 				CE5A2547221B8DE800B954B6 /* GoogleService-Info.plist in Resources */,
 				CEA477CF225BE7E200DE222A /* Extensions in Resources */,
 				CEA477D1225BE7F000DE222A /* Models in Resources */,
 				CEA477DA225BEDEF00DE222A /* Main.storyboard in Resources */,
 				CE6858E42242B08200746C0C /* Base.lproj in Resources */,
 				CE22DF092208F2610082633E /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				CEA477CB225BE7C000DE222A /* View Controllers in Resources */,
 				CEA477CD225BE7D200DE222A /* Controllers in Resources */,
+=======
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +254,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
@@ -232,6 +268,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
@@ -274,12 +311,17 @@
 			files = (
 				CE6858E62242B48F00746C0C /* ChannelsViewController.swift in Sources */,
 				CE5A2549221B912100B954B6 /* SignUpViewController.swift in Sources */,
+				CEA935132252B8B600C658E3 /* PhysicalBullyingMessage.swift in Sources */,
 				CE41EBAA221F4A9E001FE707 /* MusicViewController.swift in Sources */,
 				CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */,
+				CE952FC5224AEAF7005D97B2 /* SurveryViewController.swift in Sources */,
 				CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */,
 				CE41EBAC221F4C85001FE707 /* GameViewController.swift in Sources */,
+				CEA9350F2252B05B00C658E3 /* QuizResultsViewController.swift in Sources */,
+				CE961B71224C0A9C00F1C434 /* QuizViewController.swift in Sources */,
 				CE41EBAE221F4D9D001FE707 /* ReportBullyingFormViewController.swift in Sources */,
 				CE22DF042208F2610082633E /* ViewController.swift in Sources */,
+				CEA935112252B6F900C658E3 /* PhysicalBullyingChatViewController.swift in Sources */,
 				CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */,
 				CE22DF022208F2610082633E /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +329,29 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+<<<<<<< HEAD
+=======
+/* Begin PBXVariantGroup section */
+		CE22DF052208F2610082633E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE22DF062208F2610082633E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE22DF0B2208F2610082633E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+>>>>>>> master
 /* Begin XCBuildConfiguration section */
 		CE22DF0E2208F2610082633E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -406,7 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CapstoneProject/CapstoneProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HBBYK72NK3;
+				DEVELOPMENT_TEAM = U66A67BS95;
 				INFOPLIST_FILE = CapstoneProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CapstoneProject;
@@ -423,7 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CapstoneProject/CapstoneProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HBBYK72NK3;
+				DEVELOPMENT_TEAM = U66A67BS95;
 				INFOPLIST_FILE = CapstoneProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CapstoneProject;

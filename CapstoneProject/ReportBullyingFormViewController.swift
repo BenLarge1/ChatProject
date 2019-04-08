@@ -11,8 +11,7 @@ import MessageUI
 import Firebase
 import FirebaseDatabase
 import FirebaseStorage
-
-//import FirebaseStorage MARK: Need to install firebase storage
+import Foundation
 
 class ReportBullyingFormViewController: UIViewController, MFMailComposeViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -20,12 +19,28 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
     
     var ref = Database.database().reference() //gets firebase connection
     let storage = Storage.storage() //firebase storage area
-
+	
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    {
+        guard let selectedImage = info[.originalImage] as? UIImage else
+        {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        reportImageView.image = selectedImage
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		let storageRef = storage.reference() //reusable reference to image locations
     }
     
     //MARK Variables #0
@@ -57,12 +72,62 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 	
 	let user = Auth.auth().currentUser
 	
+<<<<<<< HEAD
 	@IBOutlet var ReportImageView: UIImageView!
 	//@IBOutlet var chooseButon: UIButton!
 	
 	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
     {
 		
+=======
+	@IBOutlet var reportImageView: UIImageView!
+	
+    @IBAction func addImageToImageView(_ sender: Any)
+    {
+        nameTextField.resignFirstResponder()
+        dateTextField.resignFirstResponder()
+        reportDescriptionTextView.resignFirstResponder() //if the user selects "upload image" while still having the keyboard open from any text field, this will minimize it
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.delegate = self
+        
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    
+    func uploadImageToFirebase(_ image:UIImage)
+	{
+		let storageRef = Storage.storage().reference().child("reportImages")
+        let imgData = reportImageView.image?.pngData()
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/png"
+        storageRef.putData(imgData!, metadata: metaData) { (metaData, error ) in
+            if error == nil
+            {
+                print("Success")
+            }
+            else
+            {
+                print("error in uploading image to firebase")
+            }
+        }
+        
+    }
+    
+	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
+    {
+		if reportDescriptionTextView.text == nil
+		{
+			let alertController = UIAlertController(title: "Error", message: "Please include a description before submitting", preferredStyle: .alert)
+			let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+			
+			alertController.addAction(defaultAction)
+			self.present(alertController, animated: true, completion: nil)
+		}
+		else
+		{
+>>>>>>> master
 		let key = ref.child("posts").childByAutoId().key
 		let post = ["report": reportDescriptionTextView.text as String?,
 					"name": nameTextField.text as String?,
@@ -71,9 +136,15 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 		let childUpdates = ["/reports/\(String(describing: key))": post]
 		ref.updateChildValues(childUpdates)
         
+        if reportImageView.image == nil
+        {
+            uploadImageToFirebase(reportImageView.image!)
+        }
+            
 		sendEmail()
+		}
 		
-        //uploadImageToDatabase()
+		
         
 		let alertController = UIAlertController(title: "Success!", message: "Thank you! Your submission has been received and a faculty member will respond as soon as possible. In the mean time, here are some useful resources.", preferredStyle: .alert)
 		let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {action in self.GoToResourcesPages()})
