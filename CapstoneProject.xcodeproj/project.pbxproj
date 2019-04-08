@@ -10,9 +10,7 @@
 		B3C0B7224494755F9BECB627 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625C61997588548B692F056B /* Pods_CapstoneProject.framework */; };
 		CE22DF022208F2610082633E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22DF012208F2610082633E /* AppDelegate.swift */; };
 		CE22DF042208F2610082633E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22DF032208F2610082633E /* ViewController.swift */; };
-		CE22DF072208F2610082633E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF052208F2610082633E /* Main.storyboard */; };
 		CE22DF092208F2610082633E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF082208F2610082633E /* Assets.xcassets */; };
-		CE22DF0C2208F2610082633E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */; };
 		CE386CFD220B5DFB003032E9 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */; };
 		CE41EBAA221F4A9E001FE707 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EBA9221F4A9E001FE707 /* MusicViewController.swift */; };
 		CE41EBAC221F4C85001FE707 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EBAB221F4C85001FE707 /* GameViewController.swift */; };
@@ -22,6 +20,11 @@
 		CE6858E42242B08200746C0C /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CE6858E32242B08200746C0C /* Base.lproj */; };
 		CE6858E62242B48F00746C0C /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6858E52242B48F00746C0C /* ChannelsViewController.swift */; };
 		CE925F312214CD0300D8E0C2 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */; };
+		CEA477CB225BE7C000DE222A /* View Controllers in Resources */ = {isa = PBXBuildFile; fileRef = CEA477CA225BE7C000DE222A /* View Controllers */; };
+		CEA477CD225BE7D200DE222A /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = CEA477CC225BE7D200DE222A /* Controllers */; };
+		CEA477CF225BE7E200DE222A /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = CEA477CE225BE7E200DE222A /* Extensions */; };
+		CEA477D1225BE7F000DE222A /* Models in Resources */ = {isa = PBXBuildFile; fileRef = CEA477D0225BE7F000DE222A /* Models */; };
+		CEA477DA225BEDEF00DE222A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA477D9225BEDEB00DE222A /* Main.storyboard */; };
 		CEAEE859220B88A2007D522D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEE858220B88A2007D522D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +35,7 @@
 		CE22DEFE2208F2610082633E /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE22DF012208F2610082633E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE22DF032208F2610082633E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE22DF062208F2610082633E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE22DF082208F2610082633E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE22DF0B2208F2610082633E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE22DF0D2208F2610082633E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE269A8F2212554D00167C2A /* CapstoneProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapstoneProject.entitlements; sourceTree = "<group>"; };
 		CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +47,11 @@
 		CE6858E32242B08200746C0C /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		CE6858E52242B48F00746C0C /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		CE925F302214CD0300D8E0C2 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		CEA477CA225BE7C000DE222A /* View Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "View Controllers"; sourceTree = "<group>"; };
+		CEA477CC225BE7D200DE222A /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		CEA477CE225BE7E200DE222A /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		CEA477D0225BE7F000DE222A /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		CEA477D9225BEDEB00DE222A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CEAEE858220B88A2007D522D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CE269A8F2212554D00167C2A /* CapstoneProject.entitlements */,
+				CEA477D9225BEDEB00DE222A /* Main.storyboard */,
 				CE22DF012208F2610082633E /* AppDelegate.swift */,
 				CE22DF032208F2610082633E /* ViewController.swift */,
 				CE386CFC220B5DFB003032E9 /* StartPageViewController.swift */,
@@ -102,8 +109,10 @@
 				CE41EBA9221F4A9E001FE707 /* MusicViewController.swift */,
 				CE41EBAB221F4C85001FE707 /* GameViewController.swift */,
 				CE6858E52242B48F00746C0C /* ChannelsViewController.swift */,
-				CE22DF052208F2610082633E /* Main.storyboard */,
-				CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */,
+				CEA477D0225BE7F000DE222A /* Models */,
+				CEA477CE225BE7E200DE222A /* Extensions */,
+				CEA477CC225BE7D200DE222A /* Controllers */,
+				CEA477CA225BE7C000DE222A /* View Controllers */,
 				CE22DF082208F2610082633E /* Assets.xcassets */,
 				CE5A2546221B8DE800B954B6 /* GoogleService-Info.plist */,
 				CE22DF0D2208F2610082633E /* Info.plist */,
@@ -188,11 +197,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE22DF0C2208F2610082633E /* LaunchScreen.storyboard in Resources */,
 				CE5A2547221B8DE800B954B6 /* GoogleService-Info.plist in Resources */,
+				CEA477CF225BE7E200DE222A /* Extensions in Resources */,
+				CEA477D1225BE7F000DE222A /* Models in Resources */,
+				CEA477DA225BEDEF00DE222A /* Main.storyboard in Resources */,
 				CE6858E42242B08200746C0C /* Base.lproj in Resources */,
 				CE22DF092208F2610082633E /* Assets.xcassets in Resources */,
-				CE22DF072208F2610082633E /* Main.storyboard in Resources */,
+				CEA477CB225BE7C000DE222A /* View Controllers in Resources */,
+				CEA477CD225BE7D200DE222A /* Controllers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +217,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -232,7 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D83E4D03598363F091FBFD18 /* [CP] Check Pods Manifest.lock */ = {
@@ -274,25 +286,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CE22DF052208F2610082633E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE22DF062208F2610082633E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CE22DF0A2208F2610082633E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE22DF0B2208F2610082633E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE22DF0E2208F2610082633E /* Debug */ = {

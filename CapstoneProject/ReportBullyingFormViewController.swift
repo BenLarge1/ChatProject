@@ -59,54 +59,7 @@ class ReportBullyingFormViewController: UIViewController, MFMailComposeViewContr
 	
 	@IBOutlet var ReportImageView: UIImageView!
 	//@IBOutlet var chooseButon: UIButton!
-    
-	var imagePicker = UIImagePickerController()
 	
-    func uploadImage()
-    {
-		if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
-        {
-			imagePicker.delegate = self
-			imagePicker.sourceType = .savedPhotosAlbum
-			imagePicker.allowsEditing = false
-			
-			present(imagePicker, animated: true, completion: nil)
-		}
-	}
-	
-	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
-		self.dismiss(animated: true, completion: { () -> Void in
-			
-		})
-		
-		ReportImageView.image = image
-	}
-    
-    func uploadImageToDatabase()
-    {
-		if ReportImageView.image != nil
-		{
-			
-		}
-		else
-		{
-			return
-		}
-		
-		let storageRef = storage.reference()
-		
-        // data = the picture selected by the user to upload
-		let data = ReportImageView.image!.pngData()
-
-        // Create a reference to the file you want to upload
-        let riversRef = storageRef.child("images")
-        
-        // Upload the file to the path "images"
-		let uploadTask = riversRef.putData(data!, metadata: nil)
-        { (metadata, error) in
-		}
-	}
-    
 	@IBAction func writeReportToDatabase(_ sender: UIButton) //writes their name (if applicable), date, and description to database
     {
 		
